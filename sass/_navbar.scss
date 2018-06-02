@@ -1,18 +1,5 @@
-/* General rules */
-.no-margins {
-  margin: 0;
-}
-
-.no-paddinds {
-  padding: 0;
-}
-
-.no-column-gutters {
-  padding-left: 0;
-  padding-right: 0;
-}
-
 /* Navbar rules */
+
 .nav-bar {
   background-color: #e0e0e0;
   padding-top: 10px;
@@ -24,12 +11,17 @@
   justify-content: flex-end;
 }
 
-.icon, .icon-with-margins {
+%icon {
   width: 32px;
   height: 32px;
 }
 
+.icon {
+  @extend %icon;
+}
+
 .icon-with-margins {
+  @extend %icon;
   margin-right: 9px;
 }
 
@@ -49,5 +41,3 @@
   white-space: nowrap;
   overflow: hidden;
 }
-
-/*# sourceMappingURL=style.css.map */

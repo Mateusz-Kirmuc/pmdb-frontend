@@ -8,30 +8,32 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
           integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="css/style.css">
     <title>Lab-gears</title>
 </head>
 <body>
-    <nav class="container-fluid">
+    <nav class="nav-bar container-fluid">
         <div class="row no-gutters">
             <div class="col">
-                <img src="img/menu.png" alt="menu">
-                <img src="img/home-icon-silhouette.png" alt="home">
-                <img src="img/group-avatar.png" alt="group">
-                <img src="img/diary-silhouette.png" alt="diary">
-                <img src="img/settings_icon.png" alt="settings">
+                <img class="icon-with-margins" src="img/menu.png" alt="menu">
+                <img class="icon-with-margins" src="img/home-icon-silhouette.png" alt="home">
+                <img class="icon-with-margins" src="img/group-avatar.png" alt="group">
+                <img class="icon-with-margins" src="img/diary-silhouette.png" alt="diary">
+                <img class="icon" src="img/settings_icon.png" alt="settings">
             </div>
-            <div class="col-auto">
+            <div class="col-auto d-flex align-items-center ">
                 <div>
-                    <span>#biocon</span>
-                    <span>A therapeutic molecule composed of a tumor-specific carrier, a linker and a small molecule with cytotoxic activity.</span>
+                    <span class="project-title">#biocon</span>
+                    <span class="project-description d-none d-lg-inline-block">A therapeutic molecule composed of a tumor-specific carrier, a linker and a small molecule with cytotoxic activity.</span>
                 </div>
             </div>
-            <div class="col">
-                <img src="img/alert_icon.png" alt="alert">
-                <img src="img/information-icon.png" alt="information">
-                <span>Hi, user</span>
-                <img src="img/avatar_icon.png" alt="profile">
+            <div class="col right-bar">
+                <img class="icon-with-margins" src="img/alert_icon.png" alt="alert">
+                <img class="icon-with-margins" src="img/information-icon.png" alt="information">
+                <div class="d-flex align-items-center">
+                    <span class="greeting">Hi, user</span>
+                    <img class="icon" src="img/avatar_icon.png" alt="profile">
+                </div>
             </div>
         </div>
     </nav>

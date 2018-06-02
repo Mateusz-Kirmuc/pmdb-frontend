@@ -1,0 +1,16 @@
+/* General rules */
+.no-margins {
+  margin: 0;
+}
+
+.no-paddinds {
+  padding: 0;
+}
+
+.no-column-gutters {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@import './_navbar';
+
