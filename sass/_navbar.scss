@@ -20,9 +20,18 @@
   @extend %icon;
 }
 
-.icon-with-margins {
+.icon-with-right-margin {
   @extend %icon;
   margin-right: 9px;
+}
+
+.icon-with-left-margin {
+  @extend %icon;
+  margin-left: 9px;
+}
+
+.profile-container {
+  margin-left: 9px;
 }
 
 .greeting {
@@ -32,12 +41,26 @@
 .project-title {
   font-size: 20px;
   text-transform: uppercase;
+
 }
 
 .project-description {
   font-size: 19px;
-  max-width: 600px;
+}
+
+.middle-bar-container {
+  overflow: hidden;
+}
+
+.middle-bar {
+  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .project-title {
+    margin-right: 45px;
+  }
 }

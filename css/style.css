@@ -24,13 +24,21 @@
   justify-content: flex-end;
 }
 
-.icon, .icon-with-margins {
+.icon, .icon-with-right-margin, .icon-with-left-margin {
   width: 32px;
   height: 32px;
 }
 
-.icon-with-margins {
+.icon-with-right-margin {
   margin-right: 9px;
+}
+
+.icon-with-left-margin {
+  margin-left: 9px;
+}
+
+.profile-container {
+  margin-left: 9px;
 }
 
 .greeting {
@@ -44,10 +52,22 @@
 
 .project-description {
   font-size: 19px;
-  max-width: 600px;
+}
+
+.middle-bar-container {
+  overflow: hidden;
+}
+
+.middle-bar {
+  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  .project-title {
+    margin-right: 45px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
