@@ -1,0 +1,28 @@
+.sidebar {
+  display: inline-block;
+  border: solid thin;
+  height: 100%;
+  transition: width 0.5s;
+  padding: 25px 10px 25px 22px;
+}
+
+.sidebar__create-project-container {
+  display: inline-block;
+  border: solid thin;
+  vertical-align: bottom;
+}
+
+.sidebar__create-project-link {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar__img {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+
+//.sidebar__btn-text {
+//  width: 0;
+//}

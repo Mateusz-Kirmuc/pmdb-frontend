@@ -1,6 +1,6 @@
 /* General rules */
 .no-margins {
-  margin: 0;
+  margin: 0px;
 }
 
 .no-paddinds {
@@ -10,6 +10,15 @@
 .no-column-gutters {
   padding-left: 0;
   padding-right: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+.main-container {
+  border: solid thin;
+  flex: 1;
 }
 
 /* Navbar rules */
@@ -78,6 +87,31 @@
   .project-title {
     margin-right: 45px;
   }
+}
+
+.sidebar {
+  display: inline-block;
+  border: solid thin;
+  height: 100%;
+  transition: width 0.5s;
+  padding: 25px 10px 25px 22px;
+}
+
+.sidebar__create-project-container {
+  display: inline-block;
+  border: solid thin;
+  vertical-align: bottom;
+}
+
+.sidebar__create-project-link {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar__img {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
 }
 
 /*# sourceMappingURL=style.css.map */
