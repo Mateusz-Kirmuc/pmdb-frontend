@@ -1,15 +1,18 @@
 .sidebar {
   display: inline-block;
-  border: solid thin;
   height: 100%;
   transition: width 0.5s;
-  padding: 25px 10px 25px 22px;
+  background-color: #37474f;
+  padding: 25px 15px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .sidebar__create-project-container {
   display: inline-block;
-  border: solid thin;
   vertical-align: bottom;
+  border-radius: 15px;
+  padding: 3px;
+  background-color: #e0e0e0;
 }
 
 .sidebar__create-project-link {
@@ -19,12 +22,28 @@
 
 .sidebar__img {
   display: inline-block;
-  width: 32px;
-  height: 32px;
+  width: 25px;
+  height: 25px;
 }
 
 .sidebar__btn-text {
   display: none;
   overflow: hidden;
   white-space: nowrap;
+  color: #37474f;
+  font-weight: 700;
+}
+
+.sidebar__create-project-link:hover {
+  text-decoration: none;
+}
+
+.sidebar__btn-text::before {
+  content: "";
+  padding-left: 15px;
+}
+
+.sidebar__btn-text::after {
+  content: "";
+  padding-right: 25px;
 }
