@@ -23,6 +23,8 @@
   height: 32px;
 }
 
-//.sidebar__btn-text {
-//  width: 0;
-//}
+.sidebar__btn-text {
+  display: none;
+  overflow: hidden;
+  white-space: nowrap;
+}
