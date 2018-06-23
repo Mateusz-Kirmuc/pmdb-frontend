@@ -18,6 +18,10 @@
 .sidebar__create-project-link {
   display: flex;
   align-items: center;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .sidebar__img {
@@ -32,10 +36,6 @@
   white-space: nowrap;
   color: #37474f;
   font-weight: 700;
-}
-
-.sidebar__create-project-link:hover {
-  text-decoration: none;
 }
 
 .sidebar__btn-text::before {
