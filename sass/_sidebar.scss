@@ -1,13 +1,18 @@
+/* Sidebar */
+
+$sidebar-width: 62px;
+$sidebar-hover-width: 200px;
+$sidebar-right-padding: 10px;
+
 .sidebar {
   display: inline-block;
   height: 100%;
   transition: width 0.5s;
   background-color: #37474f;
-  padding: 25px 15px;
   font-family: 'Open Sans', sans-serif;
 }
 
-.sidebar__create-project-container {
+/*.sidebar__create-project-container {
   display: inline-block;
   vertical-align: bottom;
   border-radius: 15px;
@@ -46,4 +51,54 @@
 .sidebar__btn-text::after {
   content: "";
   padding-right: 25px;
+}*/
+
+/* Tab */
+
+.sidebar__tab-container {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.sidebar__tab-header {
+  display: flex;
+}
+
+.sidebar__tab-header-title {
+  display: none;
+  overflow: hidden;
+  white-space: nowrap;
+  width: $sidebar-hover-width - $sidebar-width;
+}
+
+.sidebar__tab-title-wraper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: $sidebar-hover-width - $sidebar-width - $sidebar-right-padding;
+  border-radius: 0 10px 10px 0;
+}
+
+.sidebar__tab-icon-container {
+  width: $sidebar-width;
+  text-align: center;
+}
+
+.sidebar__tab-title-wraper, .sidebar__tab-icon-container {
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+.sidebar__tab-icon {
+  width: 32px;
+  height: 32px;
+  margin: auto;
+}
+
+.sidebar__tab-title {
+  font-family: 'BebasNeue', sans-serif;
+  font-size: 1.3rem;
+  color: #e0e0e0;
+  font-weight: 700;
 }

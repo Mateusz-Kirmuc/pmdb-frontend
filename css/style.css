@@ -1,3 +1,9 @@
+/* Fonts */
+@font-face {
+    font-family: BebasNeue;
+    src: url("../fonts/BebasNeue-Regular.ttf");
+}
+
 /* General rules */
 .no-margins {
   margin: 0px;
@@ -88,16 +94,16 @@ body {
   }
 }
 
+/* Sidebar */
 .sidebar {
   display: inline-block;
   height: 100%;
   transition: width 0.5s;
   background-color: #37474f;
-  padding: 25px 15px;
   font-family: 'Open Sans', sans-serif;
 }
 
-.sidebar__create-project-container {
+/*.sidebar__create-project-container {
   display: inline-block;
   vertical-align: bottom;
   border-radius: 15px;
@@ -108,10 +114,10 @@ body {
 .sidebar__create-project-link {
   display: flex;
   align-items: center;
-}
 
-.sidebar__create-project-link:hover {
-  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .sidebar__img {
@@ -136,6 +142,54 @@ body {
 .sidebar__btn-text::after {
   content: "";
   padding-right: 25px;
+}*/
+/* Tab */
+.sidebar__tab-container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.sidebar__tab-header {
+    display: flex;
+}
+
+.sidebar__tab-header-title {
+    display: none;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 138px;
+}
+
+.sidebar__tab-title-wraper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    width: 128px;
+    border-radius: 0 10px 10px 0;
+}
+
+.sidebar__tab-icon-container {
+    width: 62px;
+    text-align: center;
+}
+
+.sidebar__tab-title-wraper, .sidebar__tab-icon-container {
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.sidebar__tab-icon {
+    width: 32px;
+    height: 32px;
+    margin: auto;
+}
+
+.sidebar__tab-title {
+    font-family: 'BebasNeue', sans-serif;
+    font-size: 1.3rem;
+    color: #e0e0e0;
+    font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */
