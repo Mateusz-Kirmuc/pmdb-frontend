@@ -1,14 +1,24 @@
+//  .
+/**
+ * Bit of explanation:
+ * -tabs are elements inside sidebar
+ * -tab has its owm header and eventualy vertically toggleable menu
+ */
+
 $(function () {
     var isSidebarExpanded = false;
     var countOpenMenus = 0;
 
-    $('.sidebar').hover(function () {
-        if (countOpenMenus === 0){
-            $('.toggleable')
-                .animate({width: 'toggle'})
-        }
-        isSidebarExpanded = !isSidebarExpanded;
+    $('.sidebar').mouseenter(function () {
+        $('.sidebar__tab-header-title').animate({width: 'show'});
+        isSidebarExpanded = true;
+    });
 
+    $('.sidebar').mouseleave(function () {
+        if (countOpenMenus === 0) {
+            $('.sidebar__tab-header-title').animate({width: 'hide'});
+            isSidebarExpanded = false;
+        }
     });
 
     $('.sidebar__tab-menu').on('customSlideUp', function (e) {
@@ -16,7 +26,6 @@ $(function () {
             countOpenMenus--;
             if(!$('.sidebar:hover').length){
                 $('.sidebar').trigger('mouseleave');
-                isSidebarExpanded = !isSidebarExpanded;
             }
         });
     });
