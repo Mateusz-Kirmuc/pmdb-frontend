@@ -1,8 +1,9 @@
 /* Sidebar */
 
 $sidebar-width: 62px;
-$sidebar-hover-width: 200px;
+$sidebar-hover-width: 230px;
 $sidebar-right-padding: 10px;
+$sidebar-font-color: #e0e0e0;
 
 .sidebar {
   display: inline-block;
@@ -10,6 +11,7 @@ $sidebar-right-padding: 10px;
   transition: width 0.5s;
   background-color: #37474f;
   font-family: 'Open Sans', sans-serif;
+  line-height: 1;
 }
 
 /*.sidebar__create-project-container {
@@ -17,7 +19,7 @@ $sidebar-right-padding: 10px;
   vertical-align: bottom;
   border-radius: 15px;
   padding: 3px;
-  background-color: #e0e0e0;
+  background-color: $sidebar-font-color;
 }
 
 .sidebar__create-project-link {
@@ -98,7 +100,30 @@ $sidebar-right-padding: 10px;
 
 .sidebar__tab-title {
   font-family: 'BebasNeue', sans-serif;
-  font-size: 1.3rem;
-  color: #e0e0e0;
+  font-size: 1.7rem;
+  color: $sidebar-font-color;
+}
+
+/* Tab with menu */
+.sidebar__tab-menu {
+  color: $sidebar-font-color;
+  margin: 0;
+  padding: 0;
+  margin-left: $sidebar-width;
+  text-transform: uppercase;
+  list-style-position: inside;
+  display: none;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.sidebar__tab-menu-item-title {
+  position: relative;
+  left: -10px;
   font-weight: 700;
+}
+
+.sidebar__tab-menu-item--vertical-space {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
