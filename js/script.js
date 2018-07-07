@@ -24,6 +24,8 @@ $(function () {
     $('.sidebar__tab-menu').on('customSlideUp', function (e) {
         $(this).slideUp(function() {
             countOpenMenus--;
+
+            // check if mouse is not over sidebar
             if(!$('.sidebar:hover').length){
                 $('.sidebar').trigger('mouseleave');
             }
@@ -35,6 +37,9 @@ $(function () {
     });
 
     $('.sidebar__tab-header').click(function () {
+        $('.tab-selected').toggleClass('tab-selected');
+        $(this).addClass('tab-selected');
+
         var tabMenu = $(this).siblings('.sidebar__tab-menu');
         if(isSidebarExpanded) {
             if (tabMenu.is(':hidden')){

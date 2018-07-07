@@ -92,6 +92,12 @@ $sidebar-font-color: #e0e0e0;
   cursor: pointer;
 }
 
+.tab-selected {
+  .sidebar__tab-title-wraper, .sidebar__tab-icon-container {
+    background-color: #edb625;
+  }
+}
+
 .sidebar__tab-icon {
   width: 32px;
   height: 32px;
@@ -104,12 +110,12 @@ $sidebar-font-color: #e0e0e0;
   color: $sidebar-font-color;
 }
 
+
 /* Tab with menu */
 .sidebar__tab-menu {
   color: $sidebar-font-color;
-  margin: 0;
+  margin: 10px 0 0 $sidebar-width;
   padding: 0;
-  margin-left: $sidebar-width;
   text-transform: uppercase;
   list-style-position: inside;
   display: none;
