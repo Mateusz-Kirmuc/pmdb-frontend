@@ -10,13 +10,20 @@ $(function () {
     var countOpenMenus = 0;
 
     $('.sidebar').mouseenter(function () {
-        $('.sidebar__tab-header-title').animate({width: 'show'});
-        isSidebarExpanded = true;
+        if(isSidebarExpanded === false){
+            $('.sidebar__tab-icon-wrapper--special').toggleClass('sidebar__tab-icon-wrapper--special-hover')
+            $('.sidebar__tab-header-title').animate({width: 'show'});
+            isSidebarExpanded = true;
+        }
     });
 
     $('.sidebar').mouseleave(function () {
         if (countOpenMenus === 0) {
-            $('.sidebar__tab-header-title').animate({width: 'hide'});
+            $.when(
+                $('.sidebar__tab-header-title').animate({width: 'hide'})
+            ).done(function () {
+                $('.sidebar__tab-icon-wrapper--special').toggleClass('sidebar__tab-icon-wrapper--special-hover');
+            });
             isSidebarExpanded = false;
         }
     });

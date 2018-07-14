@@ -4,56 +4,16 @@ $sidebar-width: 62px;
 $sidebar-hover-width: 230px;
 $sidebar-right-padding: 10px;
 $sidebar-font-color: #e0e0e0;
+$sidebar-background-color: #37474f;
 
 .sidebar {
   display: inline-block;
   height: 100%;
   transition: width 0.5s;
-  background-color: #37474f;
+  background-color: $sidebar-background-color;
   font-family: 'Open Sans', sans-serif;
   line-height: 1;
 }
-
-/*.sidebar__create-project-container {
-  display: inline-block;
-  vertical-align: bottom;
-  border-radius: 15px;
-  padding: 3px;
-  background-color: $sidebar-font-color;
-}
-
-.sidebar__create-project-link {
-  display: flex;
-  align-items: center;
-
-  &:hover {
-    text-decoration: none;
-  }
-}
-
-.sidebar__img {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-}
-
-.sidebar__btn-text {
-  display: none;
-  overflow: hidden;
-  white-space: nowrap;
-  color: #37474f;
-  font-weight: 700;
-}
-
-.sidebar__btn-text::before {
-  content: "";
-  padding-left: 15px;
-}
-
-.sidebar__btn-text::after {
-  content: "";
-  padding-right: 25px;
-}*/
 
 /* Tab */
 
@@ -116,7 +76,7 @@ $sidebar-font-color: #e0e0e0;
   color: $sidebar-font-color;
   margin: 10px 0 0 $sidebar-width;
   padding: 0;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   list-style-position: inside;
   display: none;
   overflow: hidden;
@@ -143,4 +103,49 @@ $sidebar-font-color: #e0e0e0;
 
 .sidebar__tab-arrow--rotated {
   transform: rotate(180deg);
+}
+
+/* Tab 'Create Project' aka 'special tab' */
+$sidebar-right-padding-special: 50px;
+$icon-padding-special: 5px;
+$icon-size-special: 24px;
+$icon-margin-left-special: 0.5 * $sidebar-width - 0.5 * $icon-size-special - $icon-padding-special;
+
+.sidebar__tab-icon-container--special {
+  display: flex;
+}
+
+.sidebar__tab-icon-wrapper--special {
+  background-color: #e0e0e0;
+  padding: $icon-padding-special;
+  margin-left: $icon-margin-left-special;
+  transition: all 0.1s;
+  //padding-right: $icon-padding-special;
+  border-radius: 50px;
+}
+
+.sidebar__tab-icon-wrapper--special-hover {
+  border-radius: 20px 0 0 20px;
+  padding-right: $icon-margin-left-special + $icon-padding-special;
+}
+
+.sidebar__tab-icon--special{
+  height: $icon-size-special;
+  width: $icon-size-special;
+}
+
+.sidebar__tab-header-title--special {
+  padding: 5px 0;
+}
+
+.sidebar__tab-title-wraper--special {
+  height: $icon-size-special + $icon-padding-special + $icon-padding-special;
+  width: $sidebar-hover-width - $sidebar-width - $sidebar-right-padding-special;
+  background-color: #e0e0e0;
+  border-radius: 0 20px 20px 0;
+}
+
+.sidebar__tab-title--special {
+  color: $sidebar-background-color;
+  font-size: 1.2rem;
 }
