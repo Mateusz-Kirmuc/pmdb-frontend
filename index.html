@@ -1,3 +1,4 @@
+<!--TODO: Find a way to split html file into several files (reusable parts)-->
 <!doctype html>
 <html lang="en">
 <head>
@@ -13,9 +14,17 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 
+    <!-- JavaScript scripts -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"
+            defer></script>
+    <script src="js/script.js" defer></script>
+
     <title>Lab-gears</title>
 </head>
-<body>
+<body class="d-flex flex-column">
     <nav class="nav-bar container-fluid">
         <div class="row no-gutters">
             <div class="col-auto">
@@ -59,5 +68,107 @@
             </div>
         </div>
     </nav>
+    <div class="main-container">
+        <aside class="sidebar">
+            <div class="sidebar__tab-container sidebar__tab-container--special">
+                <div class="sidebar__tab-header sidebar__tab-header--special">
+                    <div class="sidebar__tab-icon-container sidebar__tab-icon-container--special">
+                        <div class="sidebar__tab-icon-wrapper--special">
+                            <img class="sidebar__tab-icon sidebar__tab-icon--special" src="img/plus.png" alt="plus">
+                        </div>
+                    </div>
+                    <div class="sidebar__tab-header-title sidebar__tab-header-title--special" >
+                        <div class="sidebar__tab-title-wraper sidebar__tab-title-wraper--special">
+                            <span class="sidebar__tab-title sidebar__tab-title--special">Create project</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar__tab-container">
+                <div class="sidebar__tab-header tab-selected">
+                    <div class="sidebar__tab-icon-container">
+                        <img class="sidebar__tab-icon" src="img/black-light-bulb.png" alt="bulb">
+                    </div>
+                    <div class="sidebar__tab-header-title " >
+                        <div class="sidebar__tab-title-wraper">
+                            <span class="sidebar__tab-title">PROJECTS</span>
+                            <img class="sidebar__tab-arrow" src="img/arrow.png" alt="arrow">
+                        </div>
+                    </div>
+                </div>
+                <ul class="sidebar__tab-menu">
+                    <li class="sidebar__tab-menu-item">
+                        <span class="sidebar__tab-menu-item-title">biocon</span>
+                    </li>
+                    <li class="sidebar__tab-menu-item sidebar__tab-menu-item--vertical-space">
+                        <span class="sidebar__tab-menu-item-title">
+                            onco-trainl
+                        </span>
+                    </li>
+                    <li class="sidebar__tab-menu-item sidebar__tab-menu-item--vertical-space">
+                        <span class="sidebar__tab-menu-item-title">
+                            onco-ps3
+                        </span>
+                    </li>
+                    <li class="sidebar__tab-menu-item sidebar__tab-menu-item--vertical-space">
+                        <span class="sidebar__tab-menu-item-title">
+                            bpsd
+                        </span>
+                    </li>
+                    <li class="sidebar__tab-menu-item sidebar__tab-menu-item--vertical-space">
+                        <span class="sidebar__tab-menu-item-title">tests</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar__tab-container">
+                <div class="sidebar__tab-header">
+                    <div class="sidebar__tab-icon-container">
+                        <img class="sidebar__tab-icon" src="img/eye.png" alt="bulb">
+                    </div>
+                    <div class="sidebar__tab-header-title " >
+                        <div class="sidebar__tab-title-wraper">
+                            <span class="sidebar__tab-title">saved views</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar__tab-container">
+                <div class="sidebar__tab-header">
+                    <div class="sidebar__tab-icon-container">
+                        <img class="sidebar__tab-icon" src="img/share.png" alt="bulb">
+                    </div>
+                    <div class="sidebar__tab-header-title " >
+                        <div class="sidebar__tab-title-wraper">
+                            <span class="sidebar__tab-title">shared views</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar__tab-container">
+                <div class="sidebar__tab-header">
+                    <div class="sidebar__tab-icon-container">
+                        <img class="sidebar__tab-icon" src="img/download-button.png" alt="bulb">
+                    </div>
+                    <div class="sidebar__tab-header-title " >
+                        <div class="sidebar__tab-title-wraper">
+                            <span class="sidebar__tab-title">import manager</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar__tab-container">
+                <div class="sidebar__tab-header">
+                    <div class="sidebar__tab-icon-container">
+                        <img class="sidebar__tab-icon" src="img/files.png" alt="bulb">
+                    </div>
+                    <div class="sidebar__tab-header-title" >
+                        <div class="sidebar__tab-title-wraper">
+                            <span class="sidebar__tab-title">reports</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
 </body>
 </html>

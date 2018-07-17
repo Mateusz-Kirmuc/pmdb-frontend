@@ -1,110 +1,22 @@
-/* Fonts */
-@font-face {
-  font-family: BebasNeue;
-  src: url("../fonts/BebasNeue-Regular.ttf");
-}
-
-/* General rules */
-.no-margins {
-  margin: 0px;
-}
-
-.no-paddinds {
-  padding: 0;
-}
-
-.no-column-gutters {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-body {
-  height: 100vh;
-}
-
-.main-container {
-  flex: 1;
-}
-
-/* Navbar rules */
-.nav-bar {
-  background-color: #e0e0e0;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.nav-bar a {
-  text-decoration: none;
-}
-
-.right-bar {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.icon {
-  width: 32px;
-  height: 32px;
-}
-
-.icon-link-with-right-margin {
-  margin-right: 9px;
-}
-
-.icon-link-with-left-margin {
-  margin-left: 9px;
-}
-
-.profile-container {
-  margin-left: 9px;
-}
-
-.greeting {
-  margin-right: 18px;
-}
-
-.project-title, .project-description {
-  font-family: 'Open Sans', sans-serif;
-}
-
-.project-title {
-  font-size: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.project-description {
-  font-size: 19px;
-  color: #37474f;
-}
-
-.middle-bar-container {
-  overflow: hidden;
-}
-
-.middle-bar {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-@media (min-width: 992px) {
-  .project-title {
-    margin-right: 45px;
-  }
-}
-
 /* Sidebar */
+
+$sidebar-width: 62px;
+$sidebar-hover-width: 230px;
+$sidebar-right-padding: 10px;
+$sidebar-font-color: #e0e0e0;
+$sidebar-background-color: #37474f;
+
 .sidebar {
   display: inline-block;
   height: 100%;
   transition: width 0.5s;
-  background-color: #37474f;
+  background-color: $sidebar-background-color;
   font-family: 'Open Sans', sans-serif;
   line-height: 1;
 }
 
 /* Tab */
+
 .sidebar__tab-container {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -118,7 +30,7 @@ body {
   display: none;
   overflow: hidden;
   white-space: nowrap;
-  width: 168px;
+  width: $sidebar-hover-width - $sidebar-width;
 }
 
 .sidebar__tab-title-wraper {
@@ -126,12 +38,12 @@ body {
   height: 100%;
   justify-content: space-between;
   align-items: center;
-  width: 158px;
+  width: $sidebar-hover-width - $sidebar-width - $sidebar-right-padding;
   border-radius: 0 10px 10px 0;
 }
 
 .sidebar__tab-icon-container {
-  width: 62px;
+  width: $sidebar-width;
   text-align: center;
 }
 
@@ -140,8 +52,10 @@ body {
   cursor: pointer;
 }
 
-.tab-selected .sidebar__tab-title-wraper, .tab-selected .sidebar__tab-icon-container {
-  background-color: #edb625;
+.tab-selected {
+  .sidebar__tab-title-wraper, .sidebar__tab-icon-container {
+    background-color: #edb625;
+  }
 }
 
 .sidebar__tab-icon {
@@ -153,14 +67,16 @@ body {
 .sidebar__tab-title {
   font-family: 'BebasNeue', sans-serif;
   font-size: 1.7rem;
-  color: #e0e0e0;
+  color: $sidebar-font-color;
 }
+
 
 /* Tab with menu */
 .sidebar__tab-menu {
-  color: #e0e0e0;
-  margin: 10px 0 0 62px;
+  color: $sidebar-font-color;
+  margin: 10px 0 0 $sidebar-width;
   padding: 0;
+  //text-transform: uppercase;
   list-style-position: inside;
   display: none;
   overflow: hidden;
@@ -190,26 +106,32 @@ body {
 }
 
 /* Tab 'Create Project' aka 'special tab' */
+$sidebar-right-padding-special: 50px;
+$icon-padding-special: 5px;
+$icon-size-special: 24px;
+$icon-margin-left-special: 0.5 * $sidebar-width - 0.5 * $icon-size-special - $icon-padding-special;
+
 .sidebar__tab-icon-container--special {
   display: flex;
 }
 
 .sidebar__tab-icon-wrapper--special {
   background-color: #e0e0e0;
-  padding: 5px;
-  margin-left: 14px;
+  padding: $icon-padding-special;
+  margin-left: $icon-margin-left-special;
   transition: all 0.1s;
+  //padding-right: $icon-padding-special;
   border-radius: 50px;
 }
 
 .sidebar__tab-icon-wrapper--special-hover {
   border-radius: 20px 0 0 20px;
-  padding-right: 19px;
+  padding-right: $icon-margin-left-special + $icon-padding-special;
 }
 
-.sidebar__tab-icon--special {
-  height: 24px;
-  width: 24px;
+.sidebar__tab-icon--special{
+  height: $icon-size-special;
+  width: $icon-size-special;
 }
 
 .sidebar__tab-header-title--special {
@@ -217,15 +139,13 @@ body {
 }
 
 .sidebar__tab-title-wraper--special {
-  height: 34px;
-  width: 118px;
+  height: $icon-size-special + $icon-padding-special + $icon-padding-special;
+  width: $sidebar-hover-width - $sidebar-width - $sidebar-right-padding-special;
   background-color: #e0e0e0;
   border-radius: 0 20px 20px 0;
 }
 
 .sidebar__tab-title--special {
-  color: #37474f;
+  color: $sidebar-background-color;
   font-size: 1.2rem;
 }
-
-/*# sourceMappingURL=style.css.map */
