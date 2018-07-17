@@ -1,6 +1,12 @@
+/* Fonts */
+@font-face {
+  font-family: BebasNeue;
+  src: url("../fonts/BebasNeue-Regular.ttf");
+}
+
 /* General rules */
 .no-margins {
-  margin: 0;
+  margin: 0px;
 }
 
 .no-paddinds {
@@ -12,5 +18,15 @@
   padding-right: 0;
 }
 
+body {
+  height: 100vh;
+}
+
+.main-container {
+  flex: 1;
+}
+
+
 @import './_navbar';
 
+@import './_sidebar';
