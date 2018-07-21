@@ -24,9 +24,32 @@ body {
 
 .main-container {
   flex: 1;
+  display: flex;
+}
+
+/* Workspace rules */
+
+.workspace {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.working-area {
+  flex: 1;
+  padding: 20px 0;
+  display: flex;
+}
+
+.table-details {
+  flex: 1;
+  background-color: green;
+  height: 100%;
 }
 
 
 @import './_navbar';
 
 @import './_sidebar';
+
+@import './_table';
