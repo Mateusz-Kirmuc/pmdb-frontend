@@ -24,29 +24,23 @@ body {
 }
 
 .main-container {
-    position: relative;
+  position: relative;
   flex: 1;
-    display: flex;
+  display: flex;
 }
 
 /* Workspace rules */
 .workspace {
-    display: flex;
-    flex-direction: column;
-    padding-left: 62px;
-    flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 62px;
+  flex: 1;
 }
 
 .working-area {
-    flex: 1;
-    padding: 20px 0;
-    display: flex;
-}
-
-.table-details {
-    flex: 1;
-    background-color: green;
-    height: 100%;
+  flex: 1;
+  padding: 10px 0 30px 0;
+  display: flex;
 }
 
 /* Navbar rules */
@@ -71,11 +65,11 @@ body {
 }
 
 .icon-link-with-right-margin {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .icon-link-with-left-margin {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .profile-container {
@@ -125,9 +119,9 @@ body {
   background-color: #37474f;
   font-family: 'Open Sans', sans-serif;
   line-height: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* Tab */
@@ -256,10 +250,11 @@ body {
 
 /* Table rules */
 .table {
-    height: 100%;
-    flex: 2;
-    background-color: red;
-    margin-bottom: 0;
+  height: 100%;
+  flex: 1;
+  margin: auto;
+  max-width: 70%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*# sourceMappingURL=style.css.map */
