@@ -1,3 +1,4 @@
+/* Sidebar variables */
 /* Fonts */
 @font-face {
   font-family: BebasNeue;
@@ -23,6 +24,7 @@ body {
 }
 
 .main-container {
+    position: relative;
   flex: 1;
     display: flex;
 }
@@ -31,6 +33,7 @@ body {
 .workspace {
     display: flex;
     flex-direction: column;
+    padding-left: 62px;
     flex: 1;
 }
 
@@ -122,6 +125,9 @@ body {
   background-color: #37474f;
   font-family: 'Open Sans', sans-serif;
   line-height: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /* Tab */
