@@ -11,7 +11,7 @@ $(function () {
     var countOpenMenus = 0;
 
     $('.sidebar').mouseenter(function () {
-        if(isSidebarExpanded === false){
+        if (isSidebarExpanded === false) {
             $('.sidebar__tab-icon-wrapper--special').toggleClass('sidebar__tab-icon-wrapper--special-hover')
             $('.sidebar__tab-header-title').animate({width: 'show'});
             isSidebarExpanded = true;
@@ -30,11 +30,11 @@ $(function () {
     });
 
     $('.sidebar__tab-menu').on('customSlideUp', function (e) {
-        $(this).slideUp(function() {
+        $(this).slideUp(function () {
             countOpenMenus--;
 
             // check if mouse is not over sidebar
-            if(!$('.sidebar:hover').length){
+            if (!$('.sidebar:hover').length) {
                 $('.sidebar').trigger('mouseleave');
             }
         });
@@ -51,8 +51,8 @@ $(function () {
         $(this).addClass('tab-selected');
 
         var tabMenu = $(this).siblings('.sidebar__tab-menu');
-        if(isSidebarExpanded) {
-            if (tabMenu.is(':hidden')){
+        if (isSidebarExpanded) {
+            if (tabMenu.is(':hidden')) {
                 tabMenu.trigger('customSlideDown');
                 countOpenMenus++;
             }
