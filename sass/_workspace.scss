@@ -5,7 +5,7 @@
   height: 100%;
   flex: 1;
   margin: auto;
-  min-width: 600px;
+  //min-width: 600px;
   max-width: 70%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 0 30px;
@@ -18,17 +18,17 @@
   align-items: center;
 }
 
-.table__icons-center {
-  margin-left: 10%;
+.table__icons--align-right {
+  justify-self: right;
 }
 
 .table__search-box {
-  flex: 1;
+  flex: 4;
   display: flex;
   border: solid 1px #484C54;
-  margin-left: 8%;
   border-radius: 5px;
   align-items: center;
+  min-width: 0;
 }
 
 .table__search-input {
@@ -36,10 +36,7 @@
   border: none;
   outline: none;
   margin-right: 10px;
-}
-
-.table__icons-right {
-  margin-left: 6%;
+  min-width: 0;
 }
 
 .table__icon {
@@ -53,4 +50,8 @@
 
 .table__icon--margin-left {
   margin-left: 10px;
+}
+
+.table__space-filler {
+  flex: 1;
 }
