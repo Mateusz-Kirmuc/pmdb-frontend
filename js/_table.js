@@ -56,9 +56,10 @@ $(function () {
                 render: function (data) {
                     return '<input class="table__select-one ' + data + '" type="checkbox">';
                 },
-                title: '<input type="checkbox" class="table__select-all">'
+                title: '<input type="checkbox" class="table__select-all">',
+                orderable: false
             }
-
-        ]
+        ],
+        order: []
     });
 });
