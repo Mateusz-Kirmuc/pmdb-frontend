@@ -118,7 +118,7 @@ $(function () {
         ]
     };
 
-    $('.table__sheet').DataTable({
+    var table = $('.table__sheet').DataTable({
         data: JSON.data,
         columns: JSON.columns,
         columnDefs: [
@@ -138,12 +138,16 @@ $(function () {
         order: [],
         paging: false,
         info: false,
+        dom: 't',
         createdRow: function (row) {
             $(row).addClass('table__row');
         },
         initComplete: function () {
-            console.log('been here!');
             $('.table__thead > tr').addClass('table__row table__row--header');
         }
+    });
+
+    $(".table__search").keyup(function () {
+        table.search(this.value).draw();
     });
 });

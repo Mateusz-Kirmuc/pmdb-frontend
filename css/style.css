@@ -346,7 +346,7 @@ body {
     justify-self: right;
 }
 
-.table__search-box {
+.table__search-container {
     -ms-flex: 4;
     flex: 4;
     display: -ms-flexbox;
@@ -358,7 +358,7 @@ body {
     min-width: 0;
 }
 
-.table__search-input {
+.table__search {
     -ms-flex: 1;
     flex: 1;
     border: none;
