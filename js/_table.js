@@ -16,7 +16,7 @@ $(function () {
             },
             {
                 'id': 2,
-                'name': 'ADO-01',
+                'name': 'ADO-02',
                 'type': 'chemical',
                 'group': 'toxic',
                 'added_on': '2017-01-03',
@@ -26,7 +26,7 @@ $(function () {
             },
             {
                 'id': 3,
-                'name': 'ADO-01',
+                'name': 'ADO-03',
                 'type': 'chemical',
                 'group': 'toxic',
                 'added_on': '2017-01-03',
@@ -58,8 +58,21 @@ $(function () {
                 },
                 title: '<input type="checkbox" class="table__select-all">',
                 orderable: false
+            },
+            {
+                className: 'table__cell',
+                targets: '_all'
             }
         ],
-        order: []
+        order: [],
+        paging: false,
+        info: false,
+        createdRow: function (row) {
+            $(row).addClass('table__row');
+        },
+        initComplete: function () {
+            console.log('been here!');
+            $('.table__thead > tr').addClass('table__row table__row--header');
+        }
     });
 });
