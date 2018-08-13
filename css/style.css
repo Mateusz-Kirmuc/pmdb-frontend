@@ -408,4 +408,12 @@ body {
     left: 3px;
 }
 
+.table__name-link {
+    color: #8290AB;
+}
+
+.table__name-link:hover {
+    text-decoration: none;
+}
+
 /*# sourceMappingURL=style.css.map */

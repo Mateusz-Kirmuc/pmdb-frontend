@@ -102,9 +102,6 @@
 }
 
 .table__select {
-  //border: #E7E7E7 solid 1px;
-  //background-color: white;
-
   border: none;
 }
 
@@ -113,4 +110,13 @@
   width: 12px;
   position: absolute;
   left: 3px;
+}
+
+.table__name-link {
+  color: #8290AB;
+  //font-weight: 600;
+}
+
+.table__name-link:hover {
+  text-decoration: none;
 }

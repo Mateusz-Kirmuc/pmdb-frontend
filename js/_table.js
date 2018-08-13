@@ -6,7 +6,7 @@ $(function () {
         data: [
             {
                 'id': 1,
-                'name': 'ADO-01',
+                'name': '<a href="#" class="table__name-link">ADO-01</a>',
                 'type': 'chemical',
                 'group': '<img class="table__icon" src="img/non-toxic.svg">non-toxic',
                 'added_on': '2017-01-03',
@@ -16,7 +16,7 @@ $(function () {
             },
             {
                 'id': 2,
-                'name': 'ADO-02',
+                'name': '<a href="#" class="table__name-link">ADO-02</a>',
                 'type': 'chemical',
                 'group': '<img class="table__icon" src="img/toxic.svg">toxic',
                 'added_on': '2017-01-03',
@@ -26,7 +26,7 @@ $(function () {
             },
             {
                 'id': 3,
-                'name': 'ADO-03',
+                'name': '<a href="#" class="table__name-link">ADO-03</a>',
                 'type': 'chemical',
                 'group': '<img class="table__icon" src="img/flask.svg">toxic',
                 'added_on': '2017-01-03',
@@ -36,7 +36,7 @@ $(function () {
             },
             {
                 'id': 4,
-                'name': 'ADO-01',
+                'name': '<a href="#" class="table__name-link">ADO-04</a>',
                 'type': 'chemical',
                 'group': '<img class="table__icon" src="img/light-bulb.svg">non-toxic',
                 'added_on': '2017-01-03',
@@ -46,7 +46,7 @@ $(function () {
             },
             {
                 'id': 5,
-                'name': 'ADO-02',
+                'name': '<a href="#" class="table__name-link">ADO-05</a>',
                 'type': 'chemical',
                 'group': '<img class="table__icon" src="img/key.svg">toxic',
                 'added_on': '2017-01-03',
@@ -56,7 +56,7 @@ $(function () {
             },
             {
                 'id': 6,
-                'name': 'ADO-03',
+                'name': '<a href="#" class="table__name-link">ADO-06</a>',
                 'type': 'chemical',
                 'group': '<img class="table__icon" src="img/lock.svg">lock',
                 'added_on': '2017-01-03',
@@ -101,7 +101,7 @@ $(function () {
                     }
                     return data;
                 }
-            }
+            },
         ],
         order: [],
         paging: false,
