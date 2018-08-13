@@ -139,6 +139,7 @@ $(function () {
         paging: false,
         info: false,
         dom: 't',
+        autoWidth: false,
         createdRow: function (row) {
             $(row).addClass('table__row');
         },
