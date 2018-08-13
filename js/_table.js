@@ -47,7 +47,7 @@ $(function () {
         ]
     };
 
-    var table = $('.table__sheet').DataTable({
+    var table = $('.table').DataTable({
         data: JSON.data,
         columns: JSON.columns,
         columnDefs: [
@@ -76,7 +76,7 @@ $(function () {
         }
     });
 
-    $(".table__search").keyup(function () {
+    $(".sheet__search").keyup(function () {
         table.search(this.value).draw();
     });
 });

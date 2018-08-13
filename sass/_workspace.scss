@@ -1,7 +1,7 @@
 /* Workspace rules */
 
 /* Table rules */
-.table {
+.sheet {
   height: 100%;
   flex: 1;
   margin: auto;
@@ -22,7 +22,7 @@
   justify-self: right;
 }
 
-.table__search-box {
+.table__search-container {
   flex: 4;
   display: flex;
   border: solid 1px #484C54;
@@ -31,7 +31,7 @@
   min-width: 0;
 }
 
-.table__search-input {
+.table__search {
   flex: 1;
   border: none;
   outline: none;
