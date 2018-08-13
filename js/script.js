@@ -79,7 +79,7 @@ $(function () {
                 'id': 1,
                 'name': 'ADO-01',
                 'type': 'chemical',
-                'group': 'toxic',
+                'group': '<img class="table__icon" src="img/non-toxic.svg">non-toxic',
                 'added_on': '2017-01-03',
                 'added_by': 'User1',
                 'author': 'User1',
@@ -89,7 +89,7 @@ $(function () {
                 'id': 2,
                 'name': 'ADO-02',
                 'type': 'chemical',
-                'group': 'toxic',
+                'group': '<img class="table__icon" src="img/toxic.svg">toxic',
                 'added_on': '2017-01-03',
                 'added_by': 'User1',
                 'author': 'User1',
@@ -99,10 +99,40 @@ $(function () {
                 'id': 3,
                 'name': 'ADO-03',
                 'type': 'chemical',
-                'group': 'toxic',
+                'group': '<img class="table__icon" src="img/flask.svg">toxic',
                 'added_on': '2017-01-03',
                 'added_by': 'User1',
                 'author': 'User1',
+                'number_of_samples': 1
+            },
+            {
+                'id': 4,
+                'name': 'ADO-01',
+                'type': 'chemical',
+                'group': '<img class="table__icon" src="img/light-bulb.svg">non-toxic',
+                'added_on': '2017-01-03',
+                'added_by': 'User1',
+                'author': 'User1',
+                'number_of_samples': 1
+            },
+            {
+                'id': 5,
+                'name': 'ADO-02',
+                'type': 'chemical',
+                'group': '<img class="table__icon" src="img/key.svg">toxic',
+                'added_on': '2017-01-03',
+                'added_by': 'User1',
+                'author': 'User1',
+                'number_of_samples': 1
+            },
+            {
+                'id': 6,
+                'name': 'ADO-03',
+                'type': 'chemical',
+                'group': '<img class="table__icon" src="img/lock.svg">lock',
+                'added_on': '2017-01-03',
+                'added_by': 'User1',
+                'author': '',
                 'number_of_samples': 1
             },
         ],
@@ -110,11 +140,11 @@ $(function () {
             {data: 'id'},
             {title: 'Name', data: 'name'},
             {title: 'Type', data: 'type'},
-            {title: 'Group', data: 'group'},
+            {title: 'Group', data: 'group', width: '20%'},
             {title: 'Added on', data: 'added_on'},
             {title: 'Added by', data: 'added_by'},
             {title: 'Author', data: 'author'},
-            {title: 'Number of samples', data: 'number_of_samples'}
+            {title: 'No. of samples', data: 'number_of_samples'}
         ]
     };
 
@@ -123,16 +153,25 @@ $(function () {
         columns: JSON.columns,
         columnDefs: [
             {
-                "targets": 0,
+                targets: 0,
                 render: function (data) {
-                    return '<input class="table__select-one ' + data + '" type="checkbox">';
+                    return '<div class="table__select-container"><input class="table__select table__select--one ' + data + '" type="checkbox"></div>';
                 },
-                title: '<input type="checkbox" class="table__select-all">',
+                title: '<div class="table__select-container"><input type="checkbox" class="table__select table__select--all"></div>',
                 orderable: false
             },
             {
                 className: 'table__cell',
                 targets: '_all'
+            },
+            {
+                targets: '_all',
+                render: function (data) {
+                    if (data === [] || data === '' || data === {}) {
+                        return '&mdash;';
+                    }
+                    return data;
+                }
             }
         ],
         order: [],
@@ -145,6 +184,7 @@ $(function () {
         },
         initComplete: function () {
             $('.table__thead > tr').addClass('table__row table__row--header');
+            $('th').addClass('table__cell--header');
         }
     });
 
