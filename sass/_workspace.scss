@@ -11,18 +11,18 @@
   padding: 0 30px;
 }
 
-.table__dashboard {
+.sheet__dashboard {
   border-bottom: solid 2px #B9BAB6;
   padding: 5px 40px;
   display: flex;
   align-items: center;
 }
 
-.table__icons--align-right {
+.sheet__icons--align-right {
   justify-self: right;
 }
 
-.table__search-container {
+.sheet__search-container {
   flex: 4;
   display: flex;
   border: solid 1px #484C54;
@@ -31,7 +31,7 @@
   min-width: 0;
 }
 
-.table__search {
+.sheet__search {
   flex: 1;
   border: none;
   outline: none;
@@ -39,19 +39,19 @@
   min-width: 0;
 }
 
-.table__icon {
+.sheet__icon {
   width: 20px;
   height: 20px;
 }
 
-.table__search-icon {
+.sheet__search-icon {
   margin: 0 10px;
 }
 
-.table__icon--margin-left {
+.sheet__icon--margin-left {
   margin-left: 10px;
 }
 
-.table__space-filler {
+.sheet__space-filler {
   flex: 1;
 }
