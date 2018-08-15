@@ -116,6 +116,7 @@ $(function () {
         initComplete: function () {
             $('.table__thead > tr').addClass('table__row table__row--header');
             $('th').addClass('table__cell--header');
+            $('.table__cell--header.sorting').append('<img class="table__sort-icon" src="img/arrows.svg">');
         }
     });
 

@@ -302,7 +302,9 @@ body {
     height: 100%;
     flex: 1;
     margin: auto;
-    max-width: 70%;
+    min-width: 700px;
+    max-width: 1000px;
+    width: 70%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 0 30px;
 }
@@ -358,6 +360,7 @@ body {
     width: 100%;
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
+    table-layout: fixed;
 }
 
 .table__row {
@@ -395,6 +398,8 @@ body {
     background-color: #394950;
     border: #FFFFFF 1px solid;
     color: #FFFFFF;
+    white-space: nowrap;
+    width: auto;
 }
 
 .table__select {
@@ -414,6 +419,12 @@ body {
 
 .table__name-link:hover {
     text-decoration: none;
+}
+
+.table__sort-icon {
+    height: 12px;
+    width: 12px;
+    color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

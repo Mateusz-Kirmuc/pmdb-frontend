@@ -140,7 +140,7 @@ $(function () {
             {data: 'id'},
             {title: 'Name', data: 'name'},
             {title: 'Type', data: 'type'},
-            {title: 'Group', data: 'group', width: '20%'},
+            {title: 'Group', data: 'group'},
             {title: 'Added on', data: 'added_on'},
             {title: 'Added by', data: 'added_by'},
             {title: 'Author', data: 'author'},
@@ -158,11 +158,13 @@ $(function () {
                     return '<div class="table__select-container"><input class="table__select table__select--one ' + data + '" type="checkbox"></div>';
                 },
                 title: '<div class="table__select-container"><input type="checkbox" class="table__select table__select--all"></div>',
+                width: '25px',
                 orderable: false
             },
             {
-                className: 'table__cell',
-                targets: '_all'
+                targets: '_all',
+                className: 'table__cell'
+
             },
             {
                 targets: '_all',
@@ -185,6 +187,7 @@ $(function () {
         initComplete: function () {
             $('.table__thead > tr').addClass('table__row table__row--header');
             $('th').addClass('table__cell--header');
+            $('.table__cell--header.sorting').append('<img class="table__sort-icon" src="img/arrows.svg">');
         }
     });
 
