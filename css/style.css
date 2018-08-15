@@ -400,17 +400,26 @@ body {
     color: #FFFFFF;
     white-space: nowrap;
     width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.table__cell--header:not(:first-child) {
+    padding-right: 18px;
+    padding-left: 18px;
 }
 
 .table__select {
     border: none;
 }
 
-.table__icon {
+.table__group-icon {
     height: 12px;
     width: 12px;
     position: absolute;
     left: 3px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .table__name-link {
@@ -425,6 +434,10 @@ body {
     height: 12px;
     width: 12px;
     color: white;
+    right: 3px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /*# sourceMappingURL=style.css.map */
