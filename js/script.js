@@ -83,7 +83,9 @@ $(function () {
                 'added_on': '2017-01-03',
                 'added_by': 'User1',
                 'author': 'User1',
-                'number_of_samples': 1
+                'number_of_samples': 1,
+                'random_column_1': 'Random text 1',
+                'random_column_2': 'Random text 2',
             },
             {
                 'id': 2,
@@ -93,7 +95,9 @@ $(function () {
                 'added_on': '2017-01-03',
                 'added_by': 'User1',
                 'author': 'User1',
-                'number_of_samples': 1
+                'number_of_samples': 1,
+                'random_column_1': 'Random text 1',
+                'random_column_2': 'Random text 2',
             },
             {
                 'id': 3,
@@ -103,7 +107,9 @@ $(function () {
                 'added_on': '2017-01-03',
                 'added_by': 'User1',
                 'author': 'User1',
-                'number_of_samples': 1
+                'number_of_samples': 1,
+                'random_column_1': 'Random text 1',
+                'random_column_2': 'Random text 2',
             },
             {
                 'id': 4,
@@ -113,7 +119,9 @@ $(function () {
                 'added_on': '2017-01-03',
                 'added_by': 'User1',
                 'author': 'User1',
-                'number_of_samples': 1
+                'number_of_samples': 1,
+                'random_column_1': 'Random text 1',
+                'random_column_2': 'Random text 2',
             },
             {
                 'id': 5,
@@ -123,17 +131,9 @@ $(function () {
                 'added_on': '2017-01-03',
                 'added_by': 'User1',
                 'author': 'User1',
-                'number_of_samples': 1
-            },
-            {
-                'id': 6,
-                'name': '<a href="#" class="table__name-link">ADO-06</a>',
-                'type': 'chemical',
-                'group': '<img class="table__group-icon" src="img/lock.svg">lock',
-                'added_on': '2017-01-03',
-                'added_by': 'User1',
-                'author': '',
-                'number_of_samples': 1
+                'number_of_samples': 1,
+                'random_column_1': 'Random text 1',
+                'random_column_2': 'Random text 2',
             },
         ],
         columns: [
@@ -144,7 +144,9 @@ $(function () {
             {title: 'Added on', data: 'added_on'},
             {title: 'Added by', data: 'added_by'},
             {title: 'Author', data: 'author'},
-            {title: 'No. of samples', data: 'number_of_samples'}
+            {title: 'No. of samples', data: 'number_of_samples'},
+            {title: 'Random column 1', data: 'random_column_1'},
+            {title: 'Random column 2', data: 'random_column_2'},
         ]
     };
 
