@@ -10,19 +10,24 @@ $(function () {
     var countOpenMenus = 0;
 
     $('.sidebar').mouseenter(function () {
-        if(isSidebarExpanded === false){
-            $('.sidebar__tab-icon-wrapper--special').toggleClass('sidebar__tab-icon-wrapper--special-hover')
-            $('.sidebar__tab-header-title').animate({width: 'show'});
-            isSidebarExpanded = true;
-        }
+
+        timer = setTimeout(function () {
+            if (isSidebarExpanded === false) {
+                $('.sidebar__tab-icon-wrapper--special').addClass('sidebar__tab-icon-wrapper--special-hover')
+                $('.sidebar__tab-header-title').animate({width: 'show'});
+                isSidebarExpanded = true;
+            }
+        }, 200);
+
     });
 
     $('.sidebar').mouseleave(function () {
+        clearTimeout(timer);
         if (countOpenMenus === 0) {
             $.when(
                 $('.sidebar__tab-header-title').animate({width: 'hide'})
             ).done(function () {
-                $('.sidebar__tab-icon-wrapper--special').toggleClass('sidebar__tab-icon-wrapper--special-hover');
+                $('.sidebar__tab-icon-wrapper--special').removeClass('sidebar__tab-icon-wrapper--special-hover');
             });
             isSidebarExpanded = false;
         }
