@@ -51,8 +51,10 @@ $(function () {
     $('.sidebar__tab-header').click(function () {
         $(this).find('.sidebar__tab-arrow').toggleClass('sidebar__tab-arrow--rotated')
 
-        $('.tab-selected').toggleClass('tab-selected');
-        $(this).addClass('tab-selected');
+        if (!$(this).hasClass('sidebar__tab-header--special')) {
+            $('.tab-selected').toggleClass('tab-selected');
+            $(this).addClass('tab-selected');
+        }
 
         var tabMenu = $(this).siblings('.sidebar__tab-menu');
         if(isSidebarExpanded) {
