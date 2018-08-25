@@ -188,10 +188,28 @@ $(function () {
             $('.table__thead > tr').addClass('table__row table__row--header');
             $('th').addClass('table__cell--header');
             $('.table__cell--header.sorting').append('<img class="table__sort-icon" src="img/arrows.svg">');
+            $('.table__cell--header:not(:first-child)').addClass('table__cell--header-no-checkbox');
         }
     });
 
     $(".sheet__search").keyup(function () {
         table.search(this.value).draw();
+    });
+
+    $('.sorting.table__cell--header.table__cell--header-no-checkbox').click(function () {
+        $('.table__sort-icon-sorted')
+            .replaceWith('<img class="table__sort-icon" src="img/arrows.svg">');
+
+        if ($(this).hasClass('sorting_asc')) {
+            $(this)
+                .children('.table__sort-icon')
+                .replaceWith('<img class="table__sort-icon table__sort-icon-sorted" src="img/sort_asc.svg">');
+        }
+
+        if ($(this).hasClass('sorting_desc')) {
+            $(this)
+                .children('.table__sort-icon')
+                .replaceWith('<img class="table__sort-icon table__sort-icon-sorted" src="img/sort_desc.svg">');
+        }
     });
 });

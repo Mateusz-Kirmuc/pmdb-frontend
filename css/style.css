@@ -404,9 +404,10 @@ body {
     text-overflow: ellipsis;
 }
 
-.table__cell--header:not(:first-child) {
+.table__cell--header-no-checkbox {
     padding-right: 18px;
     padding-left: 18px;
+    outline: none;
 }
 
 .table__select {
@@ -438,6 +439,7 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
