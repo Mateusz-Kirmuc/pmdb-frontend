@@ -29,8 +29,9 @@ body {
 /* Navbar rules */
 .nav-bar {
   background-color: #e0e0e0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+    height: 35px;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 .nav-bar a {
@@ -43,8 +44,8 @@ body {
 }
 
 .icon {
-  width: 32px;
-  height: 32px;
+    width: 24px;
+    height: 24px;
 }
 
 .icon-link-with-right-margin {
@@ -68,13 +69,13 @@ body {
 }
 
 .project-title {
-  font-size: 20px;
+    font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .project-description {
-  font-size: 19px;
+    font-size: 18px;
   color: #37474f;
 }
 
@@ -118,7 +119,7 @@ body {
   display: none;
   overflow: hidden;
   white-space: nowrap;
-  width: 168px;
+    width: 180px;
 }
 
 .sidebar__tab-title-wraper {
@@ -126,12 +127,12 @@ body {
   height: 100%;
   justify-content: space-between;
   align-items: center;
-  width: 158px;
+    width: 170px;
   border-radius: 0 10px 10px 0;
 }
 
 .sidebar__tab-icon-container {
-  width: 62px;
+    width: 50px;
   text-align: center;
 }
 
@@ -145,21 +146,21 @@ body {
 }
 
 .sidebar__tab-icon {
-  width: 32px;
-  height: 32px;
+    width: 24px;
+    height: 24px;
   margin: auto;
 }
 
 .sidebar__tab-title {
   font-family: 'BebasNeue', sans-serif;
-  font-size: 1.7rem;
+    font-size: 1.3rem;
   color: #e0e0e0;
 }
 
 /* Tab with menu */
 .sidebar__tab-menu {
   color: #e0e0e0;
-  margin: 10px 0 0 62px;
+    margin: 10px 0 0 50px;
   padding: 0;
   list-style-position: inside;
   display: none;
@@ -171,6 +172,7 @@ body {
   position: relative;
   left: -10px;
   font-weight: 700;
+    font-size: 16px;
 }
 
 .sidebar__tab-menu-item--vertical-space {
@@ -197,14 +199,14 @@ body {
 .sidebar__tab-icon-wrapper--special {
   background-color: #e0e0e0;
   padding: 5px;
-  margin-left: 14px;
+    margin-left: 8px;
   transition: all 0.1s;
   border-radius: 50px;
 }
 
 .sidebar__tab-icon-wrapper--special-hover {
   border-radius: 20px 0 0 20px;
-  padding-right: 19px;
+    padding-right: 13px;
 }
 
 .sidebar__tab-icon--special {
@@ -218,7 +220,7 @@ body {
 
 .sidebar__tab-title-wraper--special {
   height: 34px;
-  width: 118px;
+    width: 130px;
   background-color: #e0e0e0;
   border-radius: 0 20px 20px 0;
 }

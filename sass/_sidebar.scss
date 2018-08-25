@@ -1,6 +1,6 @@
 /* Sidebar */
 
-$sidebar-width: 62px;
+$sidebar-width: 50px;
 $sidebar-hover-width: 230px;
 $sidebar-right-padding: 10px;
 $sidebar-font-color: #e0e0e0;
@@ -59,14 +59,14 @@ $sidebar-background-color: #37474f;
 }
 
 .sidebar__tab-icon {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   margin: auto;
 }
 
 .sidebar__tab-title {
   font-family: 'BebasNeue', sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   color: $sidebar-font-color;
 }
 
@@ -87,6 +87,7 @@ $sidebar-background-color: #37474f;
   position: relative;
   left: -10px;
   font-weight: 700;
+  font-size: 16px;
 }
 
 .sidebar__tab-menu-item--vertical-space {

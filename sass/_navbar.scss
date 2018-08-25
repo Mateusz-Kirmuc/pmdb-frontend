@@ -2,8 +2,9 @@
 
 .nav-bar {
   background-color: #e0e0e0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  height: 35px;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 .nav-bar a {
@@ -16,8 +17,8 @@
 }
 
 .icon {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
 }
 
 .icon-link-with-right-margin {
@@ -41,14 +42,14 @@
 }
 
 .project-title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   @extend %navbar-text;
 }
 
 .project-description {
-  font-size: 19px;
+  font-size: 18px;
   color: #37474f;
   @extend %navbar-text;
 }
