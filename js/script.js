@@ -212,4 +212,14 @@ $(function () {
                 .replaceWith('<img class="table__sort-icon table__sort-icon-sorted" src="img/sort_desc.svg">');
         }
     });
+
+    $('.table__select--all').click(function () {
+        var all_checked = $(this).prop('checked');
+
+        if (all_checked) {
+            $('.table__select--one').prop('checked', true);
+        } else {
+            $('.table__select--one').prop('checked', false);
+        }
+    });
 });
