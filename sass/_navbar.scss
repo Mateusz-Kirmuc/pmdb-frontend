@@ -2,22 +2,70 @@
 
 .nav-bar {
   background-color: #e0e0e0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  height: 35px;
+  padding: 0 15px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 1;
+}
+
+.nav-bar__container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.nav-bar__left-bar {
+  position: relative;
+  min-height: 1px;
+  padding-right: 0;
+  padding-left: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: none;
+}
+
+.nav-bar__middle-bar-container {
+  padding-right: 0;
+  padding-left: 0;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
 }
 
 .nav-bar a {
   text-decoration: none;
 }
 
-.right-bar {
+.nav-bar__right-bar {
   display: flex;
   justify-content: flex-end;
+  padding-right: 0;
+  padding-left: 0;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: none;
+  min-height: 1px;
+  position: relative;
 }
 
 .icon {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
 }
 
 .icon-link-with-right-margin {
@@ -28,8 +76,10 @@
   margin-left: 20px;
 }
 
-.profile-container {
+.nav-bar__profile-container {
   margin-left: 9px;
+  align-items: center;
+  display: flex !important;
 }
 
 .greeting {
@@ -41,23 +91,20 @@
 }
 
 .project-title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   @extend %navbar-text;
 }
 
-.project-description {
-  font-size: 19px;
+.nav-bar__project-description {
+  font-size: 18px;
   color: #37474f;
   @extend %navbar-text;
+  display: none;
 }
 
-.middle-bar-container {
-  overflow: hidden;
-}
-
-.middle-bar {
+.nav-bar__middle-bar {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -67,5 +114,9 @@
 @media (min-width: 992px) {
   .project-title {
     margin-right: 45px;
+  }
+
+  .nav-bar__project-description {
+    display: inline;
   }
 }
