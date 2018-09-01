@@ -1,5 +1,11 @@
 /* Sidebar */
 
+$sidebar-width: 50px;
+$sidebar-hover-width: 230px;
+$sidebar-right-padding: 10px;
+$sidebar-font-color: #e0e0e0;
+$sidebar-background-color: #37474f;
+
 .sidebar {
   display: inline-block;
   height: 100%;
@@ -56,16 +62,17 @@
 }
 
 .sidebar__tab-icon {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   margin: auto;
 }
 
 .sidebar__tab-title {
   font-family: 'BebasNeue', sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   color: $sidebar-font-color;
 }
+
 
 /* Tab with menu */
 .sidebar__tab-menu {
@@ -83,6 +90,7 @@
   position: relative;
   left: -5px;
   font-weight: 700;
+  font-size: 16px;
 }
 
 .sidebar__tab-menu-item--vertical-space {
@@ -102,6 +110,10 @@
 }
 
 /* Tab 'Create Project' aka 'special tab' */
+$sidebar-right-padding-special: 50px;
+$icon-padding-special: 5px;
+$icon-size-special: 24px;
+$icon-margin-left-special: 0.5 * $sidebar-width - 0.5 * $icon-size-special - $icon-padding-special;
 
 .sidebar__tab-icon-container--special {
   display: flex;

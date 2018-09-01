@@ -18,7 +18,8 @@
     "watch": "npm-run-all build -p watch:*",
     "watch:js": "onchange 'js/_*.js' -- npm run build:js",
     "watch:browser-sync": "node_modules/.bin/browser-sync start --server --files 'css/*.css' '*.html' 'js/*.js'",
-    "watch:sass": "node-sass --output-style expanded --source-map true -o css sass --watch --recursive"
+    "watch:sass": "node-sass --output-style expanded --source-map true -o css sass --watch --recursive",
+    "watch:js": "onchange 'js/_*.js' -- npm run build:js"
   },
   "keywords": [],
   "author": "",
