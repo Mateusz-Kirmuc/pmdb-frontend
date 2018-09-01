@@ -7,7 +7,9 @@
   max-width: 1000px;
   width: 70%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 0 30px;
+  padding: 5px 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .sheet__dashboard {
@@ -15,6 +17,27 @@
   padding: 5px 40px;
   display: flex;
   align-items: center;
+}
+
+.sheet__table-container {
+  flex: 1;
+  overflow: auto;
+}
+
+.sheet__table-container::-webkit-scrollbar {
+  height: 6px;
+  width: 8px;
+}
+
+.sheet__table-container:hover::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #DCDCDC;
+
+}
+
+.sheet__table-container::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent;
 }
 
 .sheet__icons--align-right {
@@ -63,7 +86,7 @@
   width: 100%;
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
-  table-layout: fixed;
+  table-layout: auto;
 }
 
 .table__row {
@@ -92,6 +115,7 @@
 }
 
 .table__select-container {
+  width: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -108,8 +132,8 @@
 }
 
 .table__cell--header-no-checkbox {
-  padding-right: 18px;
-  padding-left: 18px;
+  padding-right: 30px;
+  padding-left: 30px;
   outline: none;
 }
 
