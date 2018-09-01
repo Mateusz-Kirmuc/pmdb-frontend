@@ -68,3 +68,7 @@ typings/
 
 # ide files
 .idea
+
+# Built files
+css/*.css*
+js/*.js
