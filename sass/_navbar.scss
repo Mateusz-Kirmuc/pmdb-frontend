@@ -19,6 +19,8 @@
   flex-wrap: wrap;
   margin-right: 0;
   margin-left: 0;
+  height: 100%;
+  justify-content: space-between;
 }
 
 .nav-bar__left-bar {
@@ -33,15 +35,11 @@
 }
 
 .nav-bar__middle-bar-container {
-  padding-right: 0;
-  padding-left: 0;
-  overflow: hidden;
   align-items: center;
   justify-content: center;
-  display: flex;
+  display: none;
   flex-basis: 0;
   flex-grow: 1;
-  max-width: 100%;
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -97,26 +95,18 @@
   @extend %navbar-text;
 }
 
-.nav-bar__project-description {
-  font-size: 18px;
-  color: #37474f;
-  @extend %navbar-text;
-  display: none;
+.nav-bar__logo {
+  height: 100%;
+  object-fit: contain;
 }
 
-.nav-bar__middle-bar {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-  .project-title {
-    margin-right: 45px;
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .nav-bar__container {
+    justify-content: initial;
   }
 
-  .nav-bar__project-description {
-    display: inline;
+  .nav-bar__middle-bar-container {
+    display: flex;
   }
 }
