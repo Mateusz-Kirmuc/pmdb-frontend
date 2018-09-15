@@ -10,6 +10,7 @@
   display: inline-flex;
   max-width: 100%;
   flex-direction: column;
+  padding: 0 10px 10px 10px;
 }
 
 .sheet__dashboard {
@@ -21,21 +22,27 @@
 
 .sheet__table-container {
   flex: 1;
-  overflow: auto;
+  overflow-y: auto;
 }
 
-.sheet__table-container::-webkit-scrollbar {
+.sheet__table-wrapper {
+  max-height: 100%;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.sheet__table-wrapper::-webkit-scrollbar {
   height: 6px;
   width: 8px;
 }
 
-.sheet__table-container:hover::-webkit-scrollbar-thumb {
+.sheet__table-wrapper:hover::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #DCDCDC;
 
 }
 
-.sheet__table-container::-webkit-scrollbar-track {
+.sheet__table-wrapper::-webkit-scrollbar-track {
   border-radius: 10px;
   background-color: transparent;
 }
