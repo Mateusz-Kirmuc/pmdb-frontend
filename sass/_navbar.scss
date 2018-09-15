@@ -32,6 +32,7 @@
   flex: 0 0 auto;
   width: auto;
   max-width: none;
+  max-height: 25px;
 }
 
 .nav-bar__middle-bar-container {
@@ -43,6 +44,7 @@
   position: relative;
   width: 100%;
   min-height: 1px;
+  max-height: 25px;
 }
 
 .nav-bar a {
@@ -59,6 +61,7 @@
   max-width: none;
   min-height: 1px;
   position: relative;
+  max-height: 25px;
 }
 
 .icon {
