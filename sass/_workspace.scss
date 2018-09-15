@@ -1,12 +1,12 @@
 /* Workspace rules */
-.sheet {
+.workspace {
   flex: 1;
   overflow: hidden;
   display: flex;
   justify-content: center;
 }
 
-.sheet__container {
+.sheet {
   display: inline-flex;
   max-width: 100%;
   flex-direction: column;
