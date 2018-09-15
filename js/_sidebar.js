@@ -75,6 +75,7 @@ $(function () {
     $('.nav-bar__toggle-sidebar').click(function () {
         var sidebar = $('.sidebar');
 
+        // expand sidebar
         if (sidebar.hasClass('hover-on') && !isSidebarExpanded) {
             sidebar.trigger('mouseenter', 0);
             sidebar.off('mouseenter mouseleave');
@@ -82,6 +83,7 @@ $(function () {
 
         }
 
+        // hide sidebar
         else if (sidebar.hasClass('hover-off')) {
             sidebar.on('mouseenter', sidebarMouseenterHandler);
             sidebar.on('mouseleave', sidebarMouseleaveHandler);
