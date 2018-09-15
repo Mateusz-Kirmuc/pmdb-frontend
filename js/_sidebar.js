@@ -10,14 +10,14 @@ $(function () {
     var isSidebarExpanded = false;
     var countOpenMenus = 0;
 
-    var sidebarMouseenterHandler = function () {
+    var sidebarMouseenterHandler = function (event, delay = 600) {
         timer = setTimeout(function () {
             if (isSidebarExpanded === false) {
                 $('.sidebar__tab-icon-wrapper--special').addClass('sidebar__tab-icon-wrapper--special-hover')
                 $('.sidebar__tab-header-title').animate({width: 'show'});
                 isSidebarExpanded = true;
             }
-        }, 600);
+        }, delay);
     };
 
     var sidebarMouseleaveHandler = function () {
@@ -76,7 +76,7 @@ $(function () {
         var sidebar = $('.sidebar');
 
         if (sidebar.hasClass('hover-on') && !isSidebarExpanded) {
-            sidebar.trigger('mouseenter');
+            sidebar.trigger('mouseenter', 0);
             sidebar.off('mouseenter mouseleave');
             sidebar.toggleClass('hover-on hover-off sidebar--hoverable');
 
