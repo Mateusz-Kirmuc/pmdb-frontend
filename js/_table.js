@@ -302,6 +302,7 @@ $(function () {
                 'author': 'User1',
                 'number_of_samples': 1,
                 'random_column_1': 'Random text 1',
+                'random_column_2': 'Random text 2',
             }
         ],
         columns: [

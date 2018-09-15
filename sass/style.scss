@@ -30,6 +30,7 @@ body {
   position: relative;
   flex: 1;
   display: flex;
+  min-height: 0px;
 }
 
 @import './_navbar';

@@ -27,24 +27,8 @@
 
 .sheet__table-wrapper {
   max-height: 100%;
-  overflow-x: auto;
+  overflow: auto;
   padding-bottom: 10px;
-}
-
-.sheet__table-wrapper::-webkit-scrollbar {
-  height: 6px;
-  width: 8px;
-}
-
-.sheet__table-wrapper:hover::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: #DCDCDC;
-
-}
-
-.sheet__table-wrapper::-webkit-scrollbar-track {
-  border-radius: 10px;
-  background-color: transparent;
 }
 
 .sheet__icons--align-right {
