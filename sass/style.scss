@@ -32,21 +32,6 @@ body {
   display: flex;
 }
 
-/* Workspace rules */
-
-.workspace {
-  display: flex;
-  flex-direction: column;
-  padding-left: 62px;
-  flex: 1;
-}
-
-.working-area {
-  flex: 1;
-  padding: 5px 0 10px 0;
-  display: flex;
-}
-
 @import './_navbar';
 
 @import './_sidebar';

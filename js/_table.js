@@ -2,7 +2,7 @@
 
 
 $(function () {
-    var JSON = {
+    var JSON_duza_tabela = {
         data: [
             {
                 'id': 1,
@@ -79,9 +79,44 @@ $(function () {
         ]
     };
 
+    var JSON_mala_tabela = {
+        data: [
+            {
+                'id': 1,
+                'name': '<a href="#" class="table__name-link">ADO-01</a>',
+                'type': 'chemical',
+            },
+            {
+                'id': 2,
+                'name': '<a href="#" class="table__name-link">ADO-02</a>',
+                'type': 'chemical',
+            },
+            {
+                'id': 3,
+                'name': '<a href="#" class="table__name-link">ADO-03</a>',
+                'type': 'chemical',
+            },
+            {
+                'id': 4,
+                'name': '<a href="#" class="table__name-link">ADO-04</a>',
+                'type': 'chemical',
+            },
+            {
+                'id': 5,
+                'name': '<a href="#" class="table__name-link">ADO-05</a>',
+                'type': 'chemical',
+            },
+        ],
+        columns: [
+            {data: 'id'},
+            {title: 'Name', data: 'name'},
+            {title: 'Type', data: 'type'},
+        ]
+    };
+
     var table = $('.table').DataTable({
-        data: JSON.data,
-        columns: JSON.columns,
+        data: JSON_duza_tabela.data,
+        columns: JSON_duza_tabela.columns,
         columnDefs: [
             {
                 targets: 0,
