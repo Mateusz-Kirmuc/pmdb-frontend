@@ -66,11 +66,20 @@
   height: 24px;
 }
 
-.icon-link-with-right-margin {
+.nav-bar__toggle-sidebar {
+  cursor: pointer;
+  border: none;
+}
+
+.nav-bar__toggle-sidebar:focus {
+  outline: none;
+}
+
+.icon-with-right-margin {
   margin-right: 20px;
 }
 
-.icon-link-with-left-margin {
+.icon-with-left-margin {
   margin-left: 20px;
 }
 
