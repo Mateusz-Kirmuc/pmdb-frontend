@@ -30,21 +30,7 @@ body {
   position: relative;
   flex: 1;
   display: flex;
-}
-
-/* Workspace rules */
-
-.workspace {
-  display: flex;
-  flex-direction: column;
-  padding-left: 62px;
-  flex: 1;
-}
-
-.working-area {
-  flex: 1;
-  padding: 5px 0 10px 0;
-  display: flex;
+  min-height: 0px;
 }
 
 @import './_navbar';

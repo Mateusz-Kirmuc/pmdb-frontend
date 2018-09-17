@@ -1,13 +1,16 @@
 /* Workspace rules */
-.sheet {
-  height: 100%;
+.workspace {
   flex: 1;
-  margin: auto;
-  min-width: 700px;
-  max-width: 1000px;
-  width: 70%;
+  overflow: hidden;
   display: flex;
+  justify-content: center;
+}
+
+.sheet {
+  display: inline-flex;
+  max-width: 100%;
   flex-direction: column;
+  padding: 0 10px 10px 10px;
 }
 
 .sheet__dashboard {
@@ -19,23 +22,13 @@
 
 .sheet__table-container {
   flex: 1;
+  overflow-y: auto;
+}
+
+.sheet__table-wrapper {
+  max-height: 100%;
   overflow: auto;
-}
-
-.sheet__table-container::-webkit-scrollbar {
-  height: 6px;
-  width: 8px;
-}
-
-.sheet__table-container:hover::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: #DCDCDC;
-
-}
-
-.sheet__table-container::-webkit-scrollbar-track {
-  border-radius: 10px;
-  background-color: transparent;
+  padding-bottom: 10px;
 }
 
 .sheet__icons--align-right {
@@ -85,6 +78,7 @@
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
   table-layout: auto;
+  position: relative;
 }
 
 .table__row {
@@ -166,4 +160,15 @@
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
+}
+
+/* Menu rules */
+.menu {
+  height: 100%;
+  width: 300px;
+  background-color: red;
+  border: solid black;
+  position: absolute;
+  top: 0;
+  right: 0;
 }

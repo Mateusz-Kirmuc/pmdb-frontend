@@ -6,6 +6,11 @@ $sidebar-right-padding: 10px;
 $sidebar-font-color: #e0e0e0;
 $sidebar-background-color: #37474f;
 
+.sidebar-container {
+  min-width: $sidebar-width;
+  position: relative;
+}
+
 .sidebar {
   display: inline-block;
   height: 100%;
@@ -13,9 +18,13 @@ $sidebar-background-color: #37474f;
   background-color: $sidebar-background-color;
   font-family: 'Open Sans', sans-serif;
   line-height: 1;
+}
+
+.sidebar--hoverable {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 
 /* Tab */

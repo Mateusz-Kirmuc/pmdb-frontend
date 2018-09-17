@@ -32,6 +32,7 @@
   flex: 0 0 auto;
   width: auto;
   max-width: none;
+  max-height: 25px;
 }
 
 .nav-bar__middle-bar-container {
@@ -43,6 +44,7 @@
   position: relative;
   width: 100%;
   min-height: 1px;
+  max-height: 25px;
 }
 
 .nav-bar a {
@@ -59,6 +61,7 @@
   max-width: none;
   min-height: 1px;
   position: relative;
+  max-height: 25px;
 }
 
 .icon {
@@ -66,11 +69,22 @@
   height: 24px;
 }
 
-.icon-link-with-right-margin {
+.nav-bar__toggle-sidebar {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+.nav-bar__toggle-sidebar:focus {
+  outline: none;
+}
+
+.icon-with-right-margin {
   margin-right: 20px;
 }
 
-.icon-link-with-left-margin {
+.icon-with-left-margin {
   margin-left: 20px;
 }
 
