@@ -185,18 +185,18 @@ $menu-horizontal-padding: 20px;
   right: 15px;
 }
 
-.menu__header-container {
+.details__header-container {
   width: $menu-width - 2*$menu-horizontal-padding - 20px;
   margin: auto;
   padding: 5px 10px;
   border-bottom: 1px solid #CDCDCD;
 }
 
-.menu__project-name-container {
+.details__project-name-container {
   font-size: 16px;
 }
 
-.menu__last-modification-container {
+.details__last-modification-container {
   font-size: 12px;
   color: #959595;
 }
