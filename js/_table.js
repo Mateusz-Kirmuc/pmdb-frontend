@@ -395,6 +395,10 @@ $(function () {
             $('th').addClass('table__cell--header');
             $('.table__cell--header.sorting').append('<img class="table__sort-icon" src="img/arrows.svg">');
             $('.table__cell--header:not(:first-child)').addClass('table__cell--header-no-checkbox');
+
+            $('.table__name-link').click(function () {
+                $('.menu').show();
+            });
         }
     });
 
