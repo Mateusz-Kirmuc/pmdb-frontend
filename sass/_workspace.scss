@@ -1,5 +1,5 @@
 $menu-width: 350px;
-$menu-horizontal-padding: 20px;
+$menu-horizontal-padding: 30px;
 
 /* Workspace rules */
 .workspace {
@@ -183,7 +183,7 @@ $menu-horizontal-padding: 20px;
   height: 20px;
   position: absolute;
   top: 10px;
-  right: 15px;
+  right: 10px;
 }
 
 /* Details menu rules */
@@ -201,11 +201,11 @@ $menu-horizontal-padding: 20px;
 }
 
 .details__basic-informations-container {
-  margin-top: 10px;
   font-size: 14px;
 }
 
-.details__basic-informations-header {
+.details__container-header {
+  margin-top: 10px;
   font-weight: 700;
   border-bottom: 1px #EEEEEE solid;
 }
@@ -220,4 +220,69 @@ $menu-horizontal-padding: 20px;
   margin-top: 10px;
   border-bottom: 1px #EEEEEE solid;
 }
+
+.details__files-container {
+  font-size: 14px;
+}
+
+.details__file-container {
+  border: 1px #EEEEEE solid;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: flex;
+  padding: 5px 15px 5px 0;
+  position: relative;
+}
+
+.details__file-icon-container {
+  width: 40px;
+  display: flex;
+  //align-items: center;
+}
+
+.details__file-icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+}
+
+.details__file-info-container {
+  flex: 1;
+}
+
+.details__file-header {
+  font-weight: 700;
+}
+
+.details__file-short-info, .details__file-long-info {
+  font-size: 12px;
+  color: #959595;
+}
+
+.details__file-user {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.details__more-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: flex;
+  height: 20px;
+  width: 30px;
+  align-items: center;
+  justify-content: center;
+  border: 1px #EEEEEE solid;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  background: none;
+}
+
+.details__more-icon {
+  width: 10px;
+  //height: 10px;
+}
+
 
