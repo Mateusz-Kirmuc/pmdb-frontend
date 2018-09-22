@@ -175,6 +175,7 @@ $menu-horizontal-padding: 20px;
   border-left: solid 1px #898C8C;
   background-color: white;
   padding: 10px $menu-horizontal-padding;
+
 }
 
 .menu__exit-icon {
@@ -185,6 +186,8 @@ $menu-horizontal-padding: 20px;
   right: 15px;
 }
 
+/* Details menu rules */
+
 .details__header-container {
   width: $menu-width - 2*$menu-horizontal-padding - 20px;
   margin: auto;
@@ -192,11 +195,29 @@ $menu-horizontal-padding: 20px;
   border-bottom: 1px solid #CDCDCD;
 }
 
-.details__project-name-container {
-  font-size: 16px;
-}
-
 .details__last-modification-container {
   font-size: 12px;
   color: #959595;
 }
+
+.details__basic-informations-container {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.details__basic-informations-header {
+  font-weight: 700;
+  border-bottom: 1px #EEEEEE solid;
+}
+
+.details__data-container {
+  //margin-top: 5px;
+}
+
+.details__data-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  border-bottom: 1px #EEEEEE solid;
+}
+
