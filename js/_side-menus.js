@@ -7,6 +7,7 @@ $(function () {
     });
 
     $('.sheet__show-column-control-menu').click(function () {
+        $('.menu__content').hide();
         // child will show after parent
         $('.menu').show(0, function () {
             $('.columns-control').show();
