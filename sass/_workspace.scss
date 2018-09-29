@@ -197,6 +197,9 @@ $menu-header-width: $menu-width - 2*$menu-horizontal-padding - 20px;
 }
 
 /* Details menu rules */
+.details {
+  display: none;
+}
 
 .details__last-modification-container {
   font-size: 12px;
@@ -294,6 +297,10 @@ $menu-header-width: $menu-width - 2*$menu-horizontal-padding - 20px;
 }
 
 /* Columns control menu */
+.columns-control {
+  display: none;
+}
+
 .columns-control__header-icon {
   width: 20px;
   height: 20px;

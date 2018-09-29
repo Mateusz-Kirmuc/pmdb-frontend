@@ -5,4 +5,11 @@ $(function () {
             $('.menu__content').hide();
         });
     });
+
+    $('.sheet__show-column-control-menu').click(function () {
+        // child will show after parent
+        $('.menu').show(0, function () {
+            $('.columns-control').show();
+        });
+    });
 });
