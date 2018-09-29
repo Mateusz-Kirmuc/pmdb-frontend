@@ -325,3 +325,48 @@ $menu-horizontal-padding: 30px;
   margin-left: 10px;
   font-weight: bold;
 }
+
+.columns-control__rows {
+  border-top: 1px solid #CDCDCD;
+}
+
+.columns-control__row {
+  padding: 10px 30px;
+  border-bottom: 1px solid #CDCDCD;
+  display: flex;
+  justify-content: space-between;
+}
+
+.columns-control__row:hover {
+  background-color: #DFE0E1;
+}
+
+.columns-control__icons-container {
+  position: relative;
+}
+
+.columns-control__row-icon {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.columns-control__row-icon--horizontal-margins {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.columns-control__edit-column-icon, .columns-control__remove-column-icon {
+  visibility: hidden;
+}
+
+.columns-control__hide-column-icon {
+  display: none;
+}
+
+.columns-control__row:hover {
+  .columns-control__edit-column-icon, .columns-control__remove-column-icon {
+    visibility: initial;
+  }
+}
+
