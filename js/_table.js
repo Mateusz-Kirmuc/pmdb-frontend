@@ -398,6 +398,7 @@ $(function () {
 
             $('.table__name-link').click(function () {
                 $('.menu').show();
+                $('.details').show();
             });
         }
     });
