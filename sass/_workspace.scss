@@ -1,5 +1,6 @@
 $menu-width: 350px;
 $menu-horizontal-padding: 30px;
+$menu-header-width: $menu-width - 2*$menu-horizontal-padding - 20px;
 
 /* Workspace rules */
 .workspace {
@@ -188,14 +189,14 @@ $menu-horizontal-padding: 30px;
   cursor: pointer;
 }
 
-/* Details menu rules */
-
-.details__header-container {
-  width: $menu-width - 2*$menu-horizontal-padding - 20px;
+.menu__header-container {
+  width: $menu-header-width;
   margin: auto;
   padding: 5px 10px;
   border-bottom: 1px solid #CDCDCD;
 }
+
+/* Details menu rules */
 
 .details__last-modification-container {
   font-size: 12px;
@@ -296,13 +297,6 @@ $menu-horizontal-padding: 30px;
 .columns-control__header-icon {
   width: 20px;
   height: 20px;
-}
-
-.columns-control__header-container {
-  width: $menu-width - 2*$menu-horizontal-padding - 20px;
-  margin: auto;
-  padding: 5px 10px;
-  border-bottom: 1px solid #CDCDCD;
 }
 
 .columns-control__add-column-button {
