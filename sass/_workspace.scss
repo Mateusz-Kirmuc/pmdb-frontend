@@ -176,7 +176,7 @@ $menu-horizontal-padding: 30px;
   background-color: white;
   padding: 10px $menu-horizontal-padding;
   overflow-y: auto;
-  display: none;
+  //display: none;
 }
 
 .menu__exit-icon {
@@ -292,4 +292,15 @@ $menu-horizontal-padding: 30px;
   text-decoration: inherit;
 }
 
+/* Columns control menu */
+.columns-control__icon {
+  width: 20px;
+  height: 20px;
+}
 
+.columns-control__header-container {
+  width: $menu-width - 2*$menu-horizontal-padding - 20px;
+  margin: auto;
+  padding: 5px 10px;
+  border-bottom: 1px solid #CDCDCD;
+}
