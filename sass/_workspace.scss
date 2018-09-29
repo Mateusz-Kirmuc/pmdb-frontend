@@ -305,7 +305,7 @@ $menu-horizontal-padding: 30px;
   border-bottom: 1px solid #CDCDCD;
 }
 
-.columns-control__add-button {
+.columns-control__add-column-button {
   border-radius: 15px;
   padding: 5px 10px;
   background-color: #6AD1DE;
@@ -313,6 +313,7 @@ $menu-horizontal-padding: 30px;
   display: flex;
   align-items: center;
   margin: 15px auto;
+  cursor: pointer;
 }
 
 .columns-control__add-icon {
