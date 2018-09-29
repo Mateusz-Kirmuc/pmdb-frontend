@@ -293,7 +293,7 @@ $menu-horizontal-padding: 30px;
 }
 
 /* Columns control menu */
-.columns-control__icon {
+.columns-control__header-icon {
   width: 20px;
   height: 20px;
 }
@@ -303,4 +303,25 @@ $menu-horizontal-padding: 30px;
   margin: auto;
   padding: 5px 10px;
   border-bottom: 1px solid #CDCDCD;
+}
+
+.columns-control__add-button {
+  border-radius: 15px;
+  padding: 5px 10px;
+  background-color: #6AD1DE;
+  border: none;
+  display: flex;
+  align-items: center;
+  margin: 15px auto;
+}
+
+.columns-control__add-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.columns-control__button-text {
+  color: white;
+  margin-left: 10px;
+  font-weight: bold;
 }
