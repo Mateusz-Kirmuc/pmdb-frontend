@@ -197,7 +197,7 @@
                 <div class="sheet__icons">
                     <a href="#"><img class="sheet__icon" src="img/filter.svg" alt="tags"></a>
                     <a href="#"><img class="sheet__icon sheet__icon--margin-left" src="img/menu.svg" alt="menu"></a>
-                    <a href="#"><img class="sheet__icon sheet__icon--margin-left" src="img/columns.svg"
+                    <a href="#" class="sheet__show-column-control-menu"><img class="sheet__icon sheet__icon--margin-left " src="img/columns.svg"
                                      alt="table"></a>
                 </div>
             </div>
@@ -210,8 +210,8 @@
         </div>
         <div class="menu">
             <img class="menu__exit-icon" src="img/error.svg" alt="exit">
-            <div class="details">
-                <div class="details__header-container">
+            <div class="details menu__content">
+                <div class="menu__header-container">
                     <div class="details__project-name-container">
                         <span>Project details: </span><a href="#" class="details__project-name">Baclofen</a>
                     </div>
@@ -348,6 +348,108 @@
                                 there.
                                 And you test as you wish.
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns-control menu__content">
+                <div class="menu__header-container">
+                    <img src="img/columns.svg" alt="columns" class="columns-control__header-icon">
+                    <span class="columns-control__header">Columns</span>
+                </div>
+                <button class="columns-control__add-column-button">
+                    <img src="img/plus-white.svg" alt="add-column" class="columns-control__add-icon">
+                    <span class="columns-control__button-text">Create new column</span>
+                </button>
+                <div class="columns-control__rows">
+                    <div class="columns-control__row">
+                        <span class="columns-control__column-name">API</span>
+                        <div class="columns-control__icons-container">
+                            <img src="img/eye-open-column.svg" alt="show column" class="columns-control__row-icon columns-control__show-column-icon">
+                            <img src="img/eye-closed-column.svg" alt="hide column" class="columns-control__row-icon columns-control__hide-column-icon">
+                            <img src="img/edit-column.svg" alt="edit column" class="columns-control__row-icon columns-control__row-icon--horizontal-margins columns-control__edit-column-icon">
+                            <img src="img/remove-column.svg" alt="remove column" class="columns-control__row-icon columns-control__remove-column-icon">
+                        </div>
+                    </div>
+                    <div class="columns-control__row">
+                        <span class="columns-control__column-name">Type</span>
+                        <div class="columns-control__icons-container">
+                            <img src="img/eye-open-column.svg" alt="show column" class="columns-control__row-icon columns-control__show-column-icon">
+                            <img src="img/eye-closed-column.svg" alt="hide column" class="columns-control__row-icon columns-control__hide-column-icon">
+                            <img src="img/edit-column.svg" alt="edit column" class="columns-control__row-icon columns-control__row-icon--horizontal-margins columns-control__edit-column-icon">
+                            <img src="img/remove-column.svg" alt="remove column" class="columns-control__row-icon columns-control__remove-column-icon">
+                        </div>
+                    </div>
+                    <div class="columns-control__row">
+                        <span class="columns-control__column-name">Status</span>
+                        <div class="columns-control__icons-container">
+                            <img src="img/eye-open-column.svg" alt="show column" class="columns-control__row-icon columns-control__show-column-icon">
+                            <img src="img/eye-closed-column.svg" alt="hide column" class="columns-control__row-icon columns-control__hide-column-icon">
+                            <img src="img/edit-column.svg" alt="edit column" class="columns-control__row-icon columns-control__row-icon--horizontal-margins columns-control__edit-column-icon">
+                            <img src="img/remove-column.svg" alt="remove column" class="columns-control__row-icon columns-control__remove-column-icon">
+                        </div>
+                    </div>
+                    <div class="columns-control__row">
+                        <span class="columns-control__column-name">Added on</span>
+                        <div class="columns-control__icons-container">
+                            <img src="img/eye-open-column.svg" alt="show column" class="columns-control__row-icon columns-control__show-column-icon">
+                            <img src="img/eye-closed-column.svg" alt="hide column" class="columns-control__row-icon columns-control__hide-column-icon">
+                            <img src="img/edit-column.svg" alt="edit column" class="columns-control__row-icon columns-control__row-icon--horizontal-margins columns-control__edit-column-icon">
+                            <img src="img/remove-column.svg" alt="remove column" class="columns-control__row-icon columns-control__remove-column-icon">
+                        </div>
+                    </div>
+                    <div class="columns-control__row">
+                        <span class="columns-control__column-name">Added by</span>
+                        <div class="columns-control__icons-container">
+                            <img src="img/eye-open-column.svg" alt="show column" class="columns-control__row-icon columns-control__show-column-icon">
+                            <img src="img/eye-closed-column.svg" alt="hide column" class="columns-control__row-icon columns-control__hide-column-icon">
+                            <img src="img/edit-column.svg" alt="edit column" class="columns-control__row-icon columns-control__row-icon--horizontal-margins columns-control__edit-column-icon">
+                            <img src="img/remove-column.svg" alt="remove column" class="columns-control__row-icon columns-control__remove-column-icon">
+                        </div>
+                    </div>
+                    <div class="columns-control__row">
+                        <span class="columns-control__column-name">PM</span>
+                        <div class="columns-control__icons-container">
+                            <img src="img/eye-open-column.svg" alt="show column" class="columns-control__row-icon columns-control__show-column-icon">
+                            <img src="img/eye-closed-column.svg" alt="hide column" class="columns-control__row-icon columns-control__hide-column-icon">
+                            <img src="img/edit-column.svg" alt="edit column" class="columns-control__row-icon columns-control__row-icon--horizontal-margins columns-control__edit-column-icon">
+                            <img src="img/remove-column.svg" alt="remove column" class="columns-control__row-icon columns-control__remove-column-icon">
+                        </div>
+                    </div>
+                    <div class="columns-control__row">
+                        <span class="columns-control__column-name">Category</span>
+                        <div class="columns-control__icons-container">
+                            <img src="img/eye-open-column.svg" alt="show column" class="columns-control__row-icon columns-control__show-column-icon">
+                            <img src="img/eye-closed-column.svg" alt="hide column" class="columns-control__row-icon columns-control__hide-column-icon">
+                            <img src="img/edit-column.svg" alt="edit column" class="columns-control__row-icon columns-control__row-icon--horizontal-margins columns-control__edit-column-icon">
+                            <img src="img/remove-column.svg" alt="remove column" class="columns-control__row-icon columns-control__remove-column-icon">
+                        </div>
+                    </div>
+                    <div class="columns-control__row">
+                        <span class="columns-control__column-name">Strength</span>
+                        <div class="columns-control__icons-container">
+                            <img src="img/eye-open-column.svg" alt="show column" class="columns-control__row-icon columns-control__show-column-icon">
+                            <img src="img/eye-closed-column.svg" alt="hide column" class="columns-control__row-icon columns-control__hide-column-icon">
+                            <img src="img/edit-column.svg" alt="edit column" class="columns-control__row-icon columns-control__row-icon--horizontal-margins columns-control__edit-column-icon">
+                            <img src="img/remove-column.svg" alt="remove column" class="columns-control__row-icon columns-control__remove-column-icon">
+                        </div>
+                    </div>
+                    <div class="columns-control__row">
+                        <span class="columns-control__column-name">Brand name</span>
+                        <div class="columns-control__icons-container">
+                            <img src="img/eye-open-column.svg" alt="show column" class="columns-control__row-icon columns-control__show-column-icon">
+                            <img src="img/eye-closed-column.svg" alt="hide column" class="columns-control__row-icon columns-control__hide-column-icon">
+                            <img src="img/edit-column.svg" alt="edit column" class="columns-control__row-icon columns-control__row-icon--horizontal-margins columns-control__edit-column-icon">
+                            <img src="img/remove-column.svg" alt="remove column" class="columns-control__row-icon columns-control__remove-column-icon">
+                        </div>
+                    </div>
+                    <div class="columns-control__row">
+                        <span class="columns-control__column-name">Market</span>
+                        <div class="columns-control__icons-container">
+                            <img src="img/eye-open-column.svg" alt="show column" class="columns-control__row-icon columns-control__show-column-icon">
+                            <img src="img/eye-closed-column.svg" alt="hide column" class="columns-control__row-icon columns-control__hide-column-icon">
+                            <img src="img/edit-column.svg" alt="edit column" class="columns-control__row-icon columns-control__row-icon--horizontal-margins columns-control__edit-column-icon">
+                            <img src="img/remove-column.svg" alt="remove column" class="columns-control__row-icon columns-control__remove-column-icon">
                         </div>
                     </div>
                 </div>
