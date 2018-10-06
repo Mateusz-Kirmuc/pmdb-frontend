@@ -190,7 +190,7 @@ $menu-header-width: $menu-width - 2*$menu-horizontal-padding - 20px;
   cursor: pointer;
 }
 
-._menu-header {
+.menu-header {
   width: $menu-header-width;
   margin: auto;
   padding: 5px 10px;
@@ -198,7 +198,7 @@ $menu-header-width: $menu-width - 2*$menu-horizontal-padding - 20px;
 }
 
 /* Menu content rules */
-._menu-content {
+.menu-content {
   padding-top: 20px;
   padding-bottom: 20px;
 }
