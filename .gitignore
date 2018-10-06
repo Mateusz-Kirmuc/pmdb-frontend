@@ -72,3 +72,6 @@ typings/
 # Built files
 css/*.css*
 js/script.js
+
+# Project notes
+notes.txt
