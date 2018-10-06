@@ -372,3 +372,8 @@ $menu-header-width: $menu-width - 2*$menu-horizontal-padding - 20px;
     visibility: initial;
   }
 }
+/* Manipulate projects side menu */
+.manipulate-menu__submit-btn {
+  background-color: #4CC7AC;
+  color: #fff;
+}
