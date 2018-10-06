@@ -21,4 +21,9 @@ $(function () {
             $('.manipulate-menu').show();
         });
     });
+
+    $('.custom-select').select2({
+        width: '100%',
+        theme: 'bootstrap4'
+    });
 });
