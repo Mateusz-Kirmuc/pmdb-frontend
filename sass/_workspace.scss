@@ -197,6 +197,12 @@ $menu-header-width: $menu-width - 2*$menu-horizontal-padding - 20px;
   border-bottom: 1px solid #CDCDCD;
 }
 
+/* Menu content rules */
+._menu-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 /* Details menu rules */
 .details {
   display: none;
