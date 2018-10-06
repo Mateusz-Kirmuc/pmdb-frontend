@@ -354,7 +354,7 @@ $(function () {
         ]
     };
 
-    var table = $('.table').DataTable({
+    var table = $('._table').DataTable({
         data: JSON_duza_tabela.data,
         columns: JSON_duza_tabela.columns,
         columnDefs: [
