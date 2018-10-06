@@ -178,7 +178,7 @@ $menu-header-width: $menu-width - 2*$menu-horizontal-padding - 20px;
   background-color: white;
   padding: 10px $menu-horizontal-padding;
   overflow-y: auto;
-  //display: none;
+  display: none;
 }
 
 .menu__exit-icon {
