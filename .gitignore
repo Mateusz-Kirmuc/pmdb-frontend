@@ -70,5 +70,8 @@ typings/
 .idea
 
 # Built files
-css/*.css*
+css/style.css*
 js/script.js
+
+# Project notes
+notes.txt
