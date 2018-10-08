@@ -8,7 +8,10 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/select2-bootstrap4.css">
+
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
@@ -19,6 +22,7 @@
             crossorigin="anonymous"></script>
     <script type="text/javascript" charset="utf-8"
             src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
     <script src="js/script.js"></script>
 
     <title>Lab-gears</title>
@@ -174,7 +178,7 @@
         <div class="sheet">
             <div class="sheet__dashboard">
                 <div class="sheet__icons">
-                    <a href="#"><img class="sheet__icon" src="img/plus.svg" alt="add"></a>
+                    <a class="sheet__show-manipulation-menu" href="#"><img class="sheet__icon" src="img/plus.svg" alt="add"></a>
                     <a href="#"><img class="sheet__icon sheet__icon--margin-left" src="img/upload.svg" alt="upload"></a>
                 </div>
                 <div class="sheet__space-filler"></div>
@@ -207,7 +211,7 @@
         <div class="menu">
             <img class="menu__exit-icon" src="img/error.svg" alt="exit">
             <div class="details menu__content">
-                <div class="_menu-header">
+                <div class="menu-header">
                     <div class="details__project-name-container">
                         <span>Project details: </span><a href="#" class="details__project-name">Baclofen</a>
                     </div>
@@ -349,7 +353,7 @@
                 </div>
             </div>
             <div class="columns-control menu__content">
-                <div class="_menu-header">
+                <div class="menu-header">
                     <img src="img/columns.svg" alt="columns" class="menu-header__header-icon">
                     <span class="menu-header__header">Columns</span>
                 </div>
@@ -448,6 +452,101 @@
                             <img src="img/remove-column.svg" alt="remove column" class="columns-control__row-icon columns-control__remove-column-icon">
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="manipulate-menu menu__content">
+                <div class="menu-header">
+                    <img src="img/plus-round.svg" alt="columns" class="menu-header__header-icon">
+                    <span class="menu-header__header">Create new project</span>
+                </div>
+                <div class="menu-content">
+                    <form action="#" class="manipulate-form">
+                        <div class="form-group required">
+                            <label for="manipulate-form__api-control" class="control-label">API</label>
+                            <input type="text" class="form-control" id="manipulate-form__api-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="manipulate-form__brand-name-control" class="control-label">Brand name</label>
+                            <input type="text" class="form-control" id="manipulate-form__brand-name-control">
+                        </div>
+                        <div class="form-group required">
+                            <label for="manipulate-form__type-control" class="control-label">Type</label>
+                            <select class="form-control custom-select" id="manipulate-form__type-control">
+                                <option value="type 1">Option 1</option>
+                                <option value="type 2">Option 2</option>
+                                <option value="type 3">Option 3</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="manipulate-form__status-control" class="control-label">Status</label>
+                            <select class="form-control custom-select" id="manipulate-form__status-control">
+                                <option value="type 1">Option 1</option>
+                                <option value="type 2">Option 1</option>
+                                <option value="type 3">Option 1</option>
+                            </select>
+                        </div>
+                        <div class="form-group required">
+                            <label for="manipulate-form__pm-control" class="control-label">Project manager</label>
+                            <select class="form-control custom-select" id="manipulate-form__pm-control">
+                                <option value="type 1">Option 1</option>
+                                <option value="type 2">Option 2</option>
+                                <option value="type 3">Option 3</option>
+                            </select>
+                        </div>
+                        <div class="form-group required">
+                            <label for="manipulate-form__strength-control" class="control-label">Strength</label>
+                            <input type="text" class="form-control" id="manipulate-form__strength-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="manipulate-form__therapeutical-area-control" class="control-label">Therapeutical area</label>
+                            <select class="form-control custom-select" id="manipulate-form__therapeutical-area-control">
+                                <option value="type 1">Option 1</option>
+                                <option value="type 2">Option 1</option>
+                                <option value="type 3">Option 1</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="manipulate-form__category-control" class="control-label">Category</label>
+                            <select class="form-control custom-select" id="manipulate-form__category-control">
+                                <option value="type 1">Option 1</option>
+                                <option value="type 2">Option 1</option>
+                                <option value="type 3">Option 1</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="manipulate-form__pack-size-control" class="control-label">Pack size</label>
+                            <input type="text" class="form-control" id="manipulate-form__pack-size-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="manipulate-form__pack-type-control" class="control-label">Pack type</label>
+                            <select class="form-control custom-select" id="manipulate-form__pack-type-control">
+                                <option value="type 1">Option 1</option>
+                                <option value="type 2">Option 1</option>
+                                <option value="type 3">Option 1</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="manipulate-form__shell-life-control" class="control-label">Shell Life</label>
+                            <select class="form-control custom-select" id="manipulate-form__shell-life-control">
+                                <option value="type 1">Option 1</option>
+                                <option value="type 2">Option 1</option>
+                                <option value="type 3">Option 1</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="manipulate-form__moq-control" class="control-label">MOQ</label>
+                            <input type="text" class="form-control" id="manipulate-form__moq-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="manipulate-form__mah-control" class="control-label">MAH</label>
+                            <input type="text" class="form-control" id="manipulate-form__mah-control">
+                        </div>
+                        <div class="row">
+                            <div class="col-6  offset-6">
+                                <button type="submit" class="btn btn-block manipulate-form__submit-btn">Save</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

@@ -13,4 +13,17 @@ $(function () {
             $('.columns-control').show();
         });
     });
+
+    $('.sheet__show-manipulation-menu').click(function () {
+        $('.menu__content').hide();
+        // child will show after parent
+        $('.menu').show(0, function () {
+            $('.manipulate-menu').show();
+        });
+    });
+
+    $('.custom-select').select2({
+        width: '100%',
+        theme: 'bootstrap4'
+    });
 });
