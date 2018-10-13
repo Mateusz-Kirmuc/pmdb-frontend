@@ -2,12 +2,12 @@ $(function () {
     $('.menu__exit-icon').click(function () {
         // child will be hide after container
         $('.menu').hide(0, function () {
-            $('.menu__content').hide();
+            $('.menu-container').hide();
         });
     });
 
     $('.sheet__show-column-control-menu').click(function () {
-        $('.menu__content').hide();
+        $('.menu-container').hide();
         // child will show after parent
         $('.menu').show(0, function () {
             $('.columns-control').show();
@@ -15,7 +15,7 @@ $(function () {
     });
 
     $('.sheet__show-manipulation-menu').click(function () {
-        $('.menu__content').hide();
+        $('.menu-container').hide();
         // child will show after parent
         $('.menu').show(0, function () {
             $('.manipulate-menu').show();

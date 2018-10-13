@@ -397,7 +397,7 @@ $(function () {
             $('.table__cell--header:not(:first-child)').addClass('table__cell--header-no-checkbox');
 
             $('.table__name-link').click(function () {
-                $('.menu__content').hide();
+                $('.menu-container').hide();
                 // child will show after parent
                 $('.menu').show(0, function () {
                     $('.details').show();
