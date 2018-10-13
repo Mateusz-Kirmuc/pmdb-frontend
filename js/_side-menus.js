@@ -22,6 +22,14 @@ $(function () {
         });
     });
 
+    $('.sheet__show-filter-menu').click(function () {
+        $('.menu__content').hide();
+        // child will show after parent
+        $('.menu').show(0, function () {
+            $('.filter-menu').show();
+        });
+    });
+
     $('.custom-select').select2({
         width: '100%',
         theme: 'bootstrap4'
