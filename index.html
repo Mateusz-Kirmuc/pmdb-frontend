@@ -206,7 +206,7 @@
                 </table>
             </div>
         </div>
-        <div class="menu">
+        <div class="menu" style="display: block">
             <img class="menu__exit-icon" src="img/error.svg" alt="exit">
             <div class="details menu-container">
                 <div class="menu-header">
@@ -457,9 +457,20 @@
                     <img src="img/plus-round.svg" alt="columns" class="menu-header__header-icon">
                     <span class="menu-header__header">Create new project</span>
                 </div>
+
+            </div>
+            <div class="filter-menu menu__content" style="display: block">
+                <div class="menu-header">
+                    <img src="img/filter.svg" alt="columns" class="menu-header__header-icon">
+                    <span class="menu-header__header">Filter</span>
+                    <div class="menu-content__clear-container float-right">
+                        <img class="menu-header__header-icon menu-header__clear-icon" src="img/delete-cross.svg" alt="clear filters">
+                        <span class="menu-header__header--orange">Clear</span>
+                    </div>
+                </div>
                 <div class="menu-content">
                     <form action="#" class="manipulate-form">
-                        <div class="form-group required">
+                        <div class="form-group">
                             <label for="manipulate-form__api-control" class="control-label">API</label>
                             <input type="text" class="form-control" id="manipulate-form__api-control">
                         </div>
@@ -467,7 +478,7 @@
                             <label for="manipulate-form__brand-name-control" class="control-label">Brand name</label>
                             <input type="text" class="form-control" id="manipulate-form__brand-name-control">
                         </div>
-                        <div class="form-group required">
+                        <div class="form-group">
                             <label for="manipulate-form__type-control" class="control-label">Type</label>
                             <select class="form-control custom-select" id="manipulate-form__type-control">
                                 <option value="type 1">Option 1</option>
@@ -483,7 +494,7 @@
                                 <option value="type 3">Option 1</option>
                             </select>
                         </div>
-                        <div class="form-group required">
+                        <div class="form-group">
                             <label for="manipulate-form__pm-control" class="control-label">Project manager</label>
                             <select class="form-control custom-select" id="manipulate-form__pm-control">
                                 <option value="type 1">Option 1</option>
@@ -491,7 +502,7 @@
                                 <option value="type 3">Option 3</option>
                             </select>
                         </div>
-                        <div class="form-group required">
+                        <div class="form-group">
                             <label for="manipulate-form__strength-control" class="control-label">Strength</label>
                             <input type="text" class="form-control" id="manipulate-form__strength-control">
                         </div>
@@ -541,20 +552,10 @@
                         </div>
                         <div class="row">
                             <div class="col-6  offset-6">
-                                <button type="submit" class="btn btn-block manipulate-form__submit-btn">Save</button>
+                                <button type="submit" class="btn btn-block manipulate-form__submit-btn">Search</button>
                             </div>
                         </div>
                     </form>
-                </div>
-            </div>
-            <div class="filter-menu menu__content">
-                <div class="menu-header">
-                    <img src="img/filter.svg" alt="columns" class="menu-header__header-icon">
-                    <span class="menu-header__header">Filter</span>
-                    <div class="menu-content__clear-container float-right">
-                        <img class="menu-header__header-icon menu-header__clear-icon" src="img/delete-cross.svg" alt="clear filters">
-                        <span class="menu-header__header--orange">Clear</span>
-                    </div>
                 </div>
             </div>
         </div>
