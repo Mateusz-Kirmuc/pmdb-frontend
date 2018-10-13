@@ -197,7 +197,15 @@ $menu-header-width: $menu-width - 2*$menu-horizontal-padding - 20px;
   border-bottom: 1px solid #CDCDCD;
 }
 
-/* Menu content rules */
+.menu-header__clear-icon {
+  cursor: pointer;
+}
+
+.menu-header__header--orange {
+  color: #ff7f50;
+}
+
+  /* Menu content rules */
 .menu-content {
   padding-top: 20px;
   padding-bottom: 20px;
