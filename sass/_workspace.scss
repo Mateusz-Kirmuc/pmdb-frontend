@@ -205,17 +205,18 @@ $menu-header-width: $menu-width - 2*$menu-horizontal-padding - 20px;
   color: #ff7f50;
 }
 
-  /* Menu content rules */
+  /* Menu container rules */
+.menu-container {
+  display: none;
+}
+
+/* Menu content rules */
 .menu-content {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 /* Details menu rules */
-.details {
-  display: none;
-}
-
 .details__last-modification-container {
   font-size: 12px;
   color: #959595;
@@ -312,10 +313,6 @@ $menu-header-width: $menu-width - 2*$menu-horizontal-padding - 20px;
 }
 
 /* Columns control menu */
-.columns-control {
-  display: none;
-}
-
 .menu-header__header-icon {
   width: 20px;
   height: 20px;
