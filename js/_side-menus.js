@@ -30,6 +30,10 @@ $(function () {
         });
     });
 
+    $('.menu-header__clear-icon').click(function () {
+        $('.filter-menu .form-control').val(null).trigger('change');
+    });
+
     $('.custom-select').select2({
         width: '100%',
         theme: 'bootstrap4'
