@@ -34,6 +34,21 @@ $(function () {
         $('.filter-menu .form-control').val(null).trigger('change');
     });
 
+    $('.manipulate-form').submit(function (event) {
+        $.ajax({
+            'url': '',
+            'type': 'post',
+            'contentType': 'json',
+            'data': $(this).serializeArray(),
+            'success': function (result, status, xhr) {
+
+            },
+            'error': function (xhr, status, error) {
+
+            }
+        });
+    });
+
     $('.custom-select').select2({
         width: '100%',
         theme: 'bootstrap4'
