@@ -404,6 +404,10 @@ $(function () {
                 });
 
             });
+
+            $('.table__select--one').change(function () {
+                showHideManipulationIcons();
+            })
         }
     });
 
@@ -438,5 +442,24 @@ $(function () {
         } else {
             $('.table__select--one').prop('checked', false);
         }
+        showHideManipulationIcons();
     });
+
+    /**
+     * Decide whether show or hide table rows manipulation icons (edit, delete, import) basing on number of selected rows
+     */
+    function showHideManipulationIcons() {
+        let numberOfSelectedRows = $('.table__select:checked').length;
+
+        if (numberOfSelectedRows === 0) {
+            $('.sheet__manipulation-icon').css('visibility', 'hidden');
+        }
+        if (numberOfSelectedRows === 1) {
+            $('.sheet__manipulation-icon:not(:first-child)').css('visibility', 'visible');
+            $('.sheet__manipulation-icon:first-child').css('visibility', 'hidden');
+        }
+        if (numberOfSelectedRows > 1) {
+            $('.sheet__manipulation-icon').css('visibility', 'visible');
+        }
+    }
 });

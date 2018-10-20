@@ -62,6 +62,10 @@ $menu-header-width: $menu-width - 2*$menu-horizontal-padding - 20px;
   height: 20px;
 }
 
+.sheet__manipulation-icon {
+  visibility: hidden;
+}
+
 .sheet__search-icon {
   margin: 0 10px;
 }
