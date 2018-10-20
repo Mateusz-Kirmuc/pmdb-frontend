@@ -181,9 +181,9 @@
                 </div>
                 <div class="sheet__space-filler"></div>
                 <div class="sheet__icons">
-                    <a href="#"><img class="sheet__icon" src="img/edit.svg" alt="edit"></a>
-                    <a href="#"><img class="sheet__icon sheet__icon--margin-left" src="img/remove.svg" alt="remove"></a>
-                    <a href="#"><img class="sheet__icon sheet__icon--margin-left" src="img/download.svg"
+                    <a href="#" class="sheet__manipulation-icon"><img class="sheet__icon" src="img/edit.svg" alt="edit"></a>
+                    <a href="#" class="sheet__manipulation-icon"><img class="sheet__icon sheet__icon--margin-left" src="img/remove.svg" alt="remove"></a>
+                    <a href="#" class="sheet__manipulation-icon"><img class="sheet__icon sheet__icon--margin-left" src="img/download.svg"
                                      alt="download"></a>
                 </div>
                 <div class="sheet__space-filler"></div>
@@ -193,7 +193,7 @@
                 </div>
                 <div class="sheet__space-filler"></div>
                 <div class="sheet__icons">
-                    <a href="#"><img class="sheet__icon" src="img/filter.svg" alt="tags"></a>
+                    <a href="#"><img class="sheet__icon sheet__show-filter-menu" src="img/filter.svg" alt="tags"></a>
                     <a href="#"><img class="sheet__icon sheet__icon--margin-left" src="img/menu.svg" alt="menu"></a>
                     <a href="#" class="sheet__show-column-control-menu"><img class="sheet__icon sheet__icon--margin-left " src="img/columns.svg"
                                      alt="table"></a>
@@ -206,7 +206,7 @@
                 </table>
             </div>
         </div>
-        <div class="menu">
+        <div class="menu" style="display: block">
             <img class="menu__exit-icon" src="img/error.svg" alt="exit">
             <div class="details menu-container">
                 <div class="menu-header">
@@ -460,88 +460,190 @@
                 <div class="menu-content">
                     <form action="#" class="menu-form">
                         <div class="form-group required">
-                            <label for="menu-form__api-control" class="control-label">API</label>
-                            <input type="text" class="form-control" id="menu-form__api-control">
+                            <label class="control-label">API</label>
+                            <input type="text" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label for="menu-form__brand-name-control" class="control-label">Brand name</label>
-                            <input type="text" class="form-control" id="menu-form__brand-name-control">
+                            <label class="control-label">Brand name</label>
+                            <input type="text" class="form-control">
                         </div>
                         <div class="form-group required">
-                            <label for="menu-form__type-control" class="control-label">Type</label>
-                            <select class="form-control custom-select" id="menu-form__type-control">
+                            <label class="control-label">Type</label>
+                            <select class="form-control custom-select">
                                 <option value="type 1">Option 1</option>
                                 <option value="type 2">Option 2</option>
                                 <option value="type 3">Option 3</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="menu-form__status-control" class="control-label">Status</label>
-                            <select class="form-control custom-select" id="menu-form__status-control">
+                            <label class="control-label">Status</label>
+                            <select class="form-control custom-select">
                                 <option value="type 1">Option 1</option>
                                 <option value="type 2">Option 1</option>
                                 <option value="type 3">Option 1</option>
                             </select>
                         </div>
                         <div class="form-group required">
-                            <label for="menu-form__pm-control" class="control-label">Project manager</label>
-                            <select class="form-control custom-select" id="menu-form__pm-control">
+                            <label class="control-label">Project manager</label>
+                            <select class="form-control custom-select">
                                 <option value="type 1">Option 1</option>
                                 <option value="type 2">Option 2</option>
                                 <option value="type 3">Option 3</option>
                             </select>
                         </div>
                         <div class="form-group required">
-                            <label for="menu-form__strength-control" class="control-label">Strength</label>
-                            <input type="text" class="form-control" id="menu-form__strength-control">
+                            <label class="control-label">Strength</label>
+                            <input type="text" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label for="menu-form__therapeutical-area-control" class="control-label">Therapeutical area</label>
-                            <select class="form-control custom-select" id="menu-form__therapeutical-area-control">
+                            <label class="control-label">Therapeutical area</label>
+                            <select class="form-control custom-select">
                                 <option value="type 1">Option 1</option>
                                 <option value="type 2">Option 1</option>
                                 <option value="type 3">Option 1</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="menu-form__category-control" class="control-label">Category</label>
-                            <select class="form-control custom-select" id="menu-form__category-control">
+                            <label class="control-label">Category</label>
+                            <select class="form-control custom-select">
                                 <option value="type 1">Option 1</option>
                                 <option value="type 2">Option 1</option>
                                 <option value="type 3">Option 1</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="menu-form__pack-size-control" class="control-label">Pack size</label>
-                            <input type="text" class="form-control" id="menu-form__pack-size-control">
+                            <label class="control-label">Pack size</label>
+                            <input type="text" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label for="menu-form__pack-type-control" class="control-label">Pack type</label>
-                            <select class="form-control custom-select" id="menu-form__pack-type-control">
+                            <label class="control-label">Pack type</label>
+                            <select class="form-control custom-select">
                                 <option value="type 1">Option 1</option>
                                 <option value="type 2">Option 1</option>
                                 <option value="type 3">Option 1</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="menu-form__shell-life-control" class="control-label">Shell Life</label>
-                            <select class="form-control custom-select" id="menu-form__shell-life-control">
+                            <label class="control-label">Shell Life</label>
+                            <select class="form-control custom-select">
                                 <option value="type 1">Option 1</option>
                                 <option value="type 2">Option 1</option>
                                 <option value="type 3">Option 1</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="menu-form__moq-control" class="control-label">MOQ</label>
-                            <input type="text" class="form-control" id="menu-form__moq-control">
+                            <label class="control-label">MOQ</label>
+                            <input type="text" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label for="menu-form__mah-control" class="control-label">MAH</label>
-                            <input type="text" class="form-control" id="menu-form__mah-control">
+                            <label class="control-label">MAH</label>
+                            <input type="text" class="form-control">
                         </div>
                         <div class="row">
                             <div class="col-6  offset-6">
                                 <button type="submit" class="btn btn-block menu-form__submit-btn">Save</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="filter-menu menu-container" style="display: block">
+                <div class="menu-header">
+                    <img src="img/filter.svg" alt="columns" class="menu-header__header-icon">
+                    <span class="menu-header__header">Filter</span>
+                    <div class="menu-content__clear-container float-right">
+                        <img class="menu-header__header-icon menu-header__clear-icon" src="img/delete-cross.svg" alt="clear filters">
+                        <span class="menu-header__header--orange">Clear</span>
+                    </div>
+                </div>
+                <div class="menu-content">
+                    <form action="#" class="manipulate-form">
+                        <div class="form-group">
+                            <label class="control-label">API</label>
+                            <input name="api" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Brand name</label>
+                            <input name="brand-name"  type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Type</label>
+                            <select name="type"  class="form-control custom-select" multiple="multiple">
+                                <option value="type 1">Option 1</option>
+                                <option value="type 2">Option 2</option>
+                                <option value="type 3">Option 3</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Status</label>
+                            <select name="status" class="form-control custom-select" multiple="multiple">
+                                <option value="type 1">Option 1</option>
+                                <option value="type 2">Option 1</option>
+                                <option value="type 3">Option 1</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Project manager</label>
+                            <select name="project-manager" class="form-control custom-select" multiple="multiple">
+                                <option value="type 1">Option 1</option>
+                                <option value="type 2">Option 2</option>
+                                <option value="type 3">Option 3</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Strength</label>
+                            <input name="strength" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Therapeutical area</label>
+                            <select name="therapeutical-area" class="form-control custom-select" multiple="multiple">
+                                <option value="type 1">Option 1</option>
+                                <option value="type 2">Option 1</option>
+                                <option value="type 3">Option 1</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Category</label>
+                            <select name="category"  class="form-control custom-select" multiple="multiple">
+                                <option value="type 1">Option 1</option>
+                                <option value="type 2">Option 1</option>
+                                <option value="type 3">Option 1</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Pack size</label>
+                            <input name="pack-size" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Pack type</label>
+                            <select name="pack-type" class="form-control custom-select" multiple="multiple">
+                                <option value="type 1">Option 1</option>
+                                <option value="type 2">Option 1</option>
+                                <option value="type 3">Option 1</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Shell life</label>
+                            <div class="row">
+                                <div class="form-group col">
+                                    <input name="shell-life-from" type="number" class="form-control" placeholder="From" min="0">
+                                </div>
+                                <div class="form-group col">
+                                    <input name="shell-life-to"  type="number" class="form-control" placeholder="To" min="0">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">MOQ</label>
+                            <input name="moq"  type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">MAH</label>
+                            <input name="mah" type="text" class="form-control">
+                        </div>
+                        <div class="row">
+                            <div class="col-6  offset-6">
+                                <button type="submit" class="btn btn-block manipulate-form__submit-btn">Search</button>
                             </div>
                         </div>
                     </form>

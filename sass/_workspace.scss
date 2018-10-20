@@ -62,6 +62,10 @@ $menu-header-width: $menu-width - 2*$menu-horizontal-padding - 20px;
   height: 20px;
 }
 
+.sheet__manipulation-icon {
+  visibility: hidden;
+}
+
 .sheet__search-icon {
   margin: 0 10px;
 }
@@ -197,6 +201,15 @@ $menu-header-width: $menu-width - 2*$menu-horizontal-padding - 20px;
   border-bottom: 1px solid #CDCDCD;
 }
 
+.menu-header__clear-icon {
+  cursor: pointer;
+}
+
+.menu-header__header--orange {
+  color: #ff7f50;
+}
+
+  /* Menu container rules */
 .menu-container {
   display: none;
 }
