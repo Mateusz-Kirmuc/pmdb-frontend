@@ -53,4 +53,13 @@ $(function () {
         width: '100%',
         theme: 'bootstrap4'
     });
+
+    // handlers for date inputs (workaround to keep html5 datepicker and input placeholder)
+    $('.date-control').on('focus', function () {
+        this.type = 'date';
+    });
+
+    $('.date-control').on('blur', function () {
+        this.type = 'text';
+    });
 });
