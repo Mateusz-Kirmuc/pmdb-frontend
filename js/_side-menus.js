@@ -18,7 +18,7 @@ $(function () {
         $('.menu-container').hide();
         // child will show after parent
         $('.menu').show(0, function () {
-            $('.manipulate-menu').show();
+            $('.menu-manipulate').show();
         });
     });
 
@@ -26,12 +26,12 @@ $(function () {
         $('.menu__content').hide();
         // child will show after parent
         $('.menu').show(0, function () {
-            $('.filter-menu').show();
+            $('.menu-filter').show();
         });
     });
 
     $('.menu-header__clear-icon').click(function () {
-        $('.filter-menu .form-control').val(null).trigger('change');
+        $('.menu-filter .form-control').val(null).trigger('change');
     });
 
     $('.manipulate-form').submit(function (event) {
