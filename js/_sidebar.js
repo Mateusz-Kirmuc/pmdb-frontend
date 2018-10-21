@@ -6,7 +6,7 @@
  * -tab has its owm header and eventualy vertically toggleable menu
  */
 
-$(function () {
+// $(function () {
     var isSidebarExpanded = false;
     var countOpenMenus = 0;
 
@@ -91,4 +91,4 @@ $(function () {
             sidebar.toggleClass('hover-on hover-off');
         }
     });
-});
+// });
