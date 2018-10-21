@@ -1,5 +1,7 @@
 /* Side menus script */
 
+let filterApiUrl = '/api/project/datatable/';
+
 // $(function () {
     $('.menu__exit-icon').click(function () {
         // child will be hide after container
@@ -48,6 +50,20 @@
             'error': function (xhr, status, error) {
 
             }
+        });
+    });
+
+    $('.filter-form').submit(function (event) {
+        $.ajax({
+            'url': filterApiUrl,
+            'type': 'post',
+            'contentType': 'json',
+            'data': $(this).serializeArray(),
+            'success': function (result, status, xhr) {
+                table.clear();
+                table.rows.add(result);
+                table.draw();
+            },
         });
     });
 
