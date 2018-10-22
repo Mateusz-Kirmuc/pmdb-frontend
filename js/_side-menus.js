@@ -1,4 +1,8 @@
-$(function () {
+/* Side menus script */
+
+let filterApiUrl = '/api/project/datatable/';
+
+// $(function () {
     $('.menu__exit-icon').click(function () {
         // child will be hide after container
         $('.menu').hide(0, function () {
@@ -18,7 +22,7 @@ $(function () {
         $('.menu-container').hide();
         // child will show after parent
         $('.menu').show(0, function () {
-            $('.manipulate-menu').show();
+            $('.menu-manipulate').show();
         });
     });
 
@@ -26,12 +30,12 @@ $(function () {
         $('.menu__content').hide();
         // child will show after parent
         $('.menu').show(0, function () {
-            $('.filter-menu').show();
+            $('.menu-filter').show();
         });
     });
 
     $('.menu-header__clear-icon').click(function () {
-        $('.filter-menu .form-control').val(null).trigger('change');
+        $('.menu-filter .form-control').val(null).trigger('change');
     });
 
     $('.manipulate-form').submit(function (event) {
@@ -49,8 +53,31 @@ $(function () {
         });
     });
 
+    $('.filter-form').submit(function (event) {
+        $.ajax({
+            'url': filterApiUrl,
+            'type': 'post',
+            'contentType': 'json',
+            'data': $(this).serializeArray(),
+            'success': function (result, status, xhr) {
+                table.clear();
+                table.rows.add(result);
+                table.draw();
+            },
+        });
+    });
+
     $('.custom-select').select2({
         width: '100%',
         theme: 'bootstrap4'
     });
-});
+
+    // handlers for date inputs (workaround to keep html5 datepicker and input placeholder)
+    $('.date-control').on('focus', function () {
+        this.type = 'date';
+    });
+
+    $('.date-control').on('blur', function () {
+        this.type = 'text';
+    });
+// });
