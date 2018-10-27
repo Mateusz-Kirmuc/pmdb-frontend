@@ -1,5 +1,4 @@
 /* Table script */
-module.exports = function () {
     var JSON_duza_tabela = {
         data: [
             {
@@ -460,4 +459,5 @@ module.exports = function () {
             $('.sheet__manipulation-icon').css('visibility', 'visible');
         }
     }
-};
+
+module.exports = table;
