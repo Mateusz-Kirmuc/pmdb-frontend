@@ -21,7 +21,7 @@
     <script type="text/javascript" charset="utf-8"
             src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
-    <script src="static/js/script.js"></script>
+    <script src="static/js/script.js" defer></script>
 
     <title>PMDB</title>
 </head>
@@ -206,7 +206,7 @@
                 </table>
             </div>
         </div>
-        <div class="menu" style="display: block">
+        <div class="menu">
             <img class="menu__exit-icon" src="img/error.svg" alt="exit">
             <div class="details menu-container">
                 <div class="menu-header">
@@ -547,17 +547,17 @@
                     </form>
                 </div>
             </div>
-            <div class="menu-filter menu-container" style="display: block">
+            <div class="menu-filter menu-container">
                 <div class="menu-header">
                     <img src="img/filter.svg" alt="columns" class="menu-header__header-icon">
                     <span class="menu-header__header">Filter</span>
                     <div class="menu-content__clear-container float-right">
-                        <img class="menu-header__header-icon menu-header__clear-icon" src="img/delete-cross.svg" alt="clear filters">
+                        <img class="menu-header__header-icon menu-header__clear-icon" src="img/close-cross.svg" alt="clear filters">
                         <span class="menu-header__header--orange">Clear</span>
                     </div>
                 </div>
                 <div class="menu-content">
-                    <form action="#" class="manipulate-form">
+                    <form action="#" class="menu-form filter-form">
                         <div class="form-group">
                             <label class="control-label">API</label>
                             <input name="api" type="text" class="form-control">
@@ -565,6 +565,17 @@
                         <div class="form-group">
                             <label class="control-label">Brand name</label>
                             <input name="brand-name"  type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Added by</label>
+                            <div class="row">
+                                <div class="col form-group">
+                                    <input placeholder="From" class="form-control date-control" type="text">
+                                </div>
+                                <div class="col form-group">
+                                    <input placeholder="To" class="form-control date-control" type="text">
+                                </div>
+                            </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label">Type</label>
@@ -643,7 +654,7 @@
                         </div>
                         <div class="row">
                             <div class="col-6  offset-6">
-                                <button type="submit" class="btn btn-block manipulate-form__submit-btn">Search</button>
+                                <button type="submit" class="btn btn-block menu-form__submit-btn">Search</button>
                             </div>
                         </div>
                     </form>
