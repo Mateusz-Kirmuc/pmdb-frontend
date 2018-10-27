@@ -304,15 +304,13 @@
         ],
         columns: [
             {data: 'id'},
-            {title: 'Name', data: 'name'},
-            {title: 'Type', data: 'type'},
-            {title: 'Group', data: 'group'},
-            {title: 'Added on', data: 'added_on'},
-            {title: 'Added by', data: 'added_by'},
-            {title: 'Author', data: 'author'},
-            {title: 'No. of samples', data: 'number_of_samples'},
-            {title: 'Random column 1', data: 'random_column_1'},
-            {title: 'Random column 2', data: 'random_column_2'},
+            {title: 'Name', data: 'name', name: 'name'},
+            {title: 'Type', data: 'type', name: 'type'},
+            {title: 'Group', data: 'group', name: 'group'},
+            {title: 'Added on', data: 'added_on', name: 'added_on'},
+            {title: 'Added by', data: 'added_by', name: 'added_by'},
+            {title: 'Author', data: 'author', name: 'author'},
+            {title: 'No. of samples', data: 'number_of_samples', name: 'number_of_samples'},
         ]
     };
 
@@ -345,9 +343,9 @@
             },
         ],
         columns: [
-            {data: 'id'},
-            {title: 'Name', data: 'name'},
-            {title: 'Type', data: 'type'},
+            {data: 'id', name: 'id'},
+            {title: 'Name', data: 'name', name: 'name'},
+            {title: 'Type', data: 'type', name: 'type'},
         ]
     };
 
