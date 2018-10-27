@@ -16,8 +16,8 @@
     "build:js": "browserify js/main.js -o static/js/script.js",
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
     "watch": "npm-run-all build -p watch:*",
-    "watch:js": "onchange '*/main.js' -- npm run build:js",
-    "watch:browser-sync": "node_modules/.bin/browser-sync start --server --files 'css/*.css' '*.html' 'js/*.js'",
+    "watch:js": "onchange 'js/*.js' -- npm run build:js",
+    "watch:browser-sync": "node_modules/.bin/browser-sync start --server --files 'css/*.css' '*.html' 'static/js/*.js'",
     "watch:sass": "node-sass --output-style expanded --source-map true -o css sass --watch --recursive"
   },
   "keywords": [],
