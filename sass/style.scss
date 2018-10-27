@@ -1,39 +1,5 @@
 @import './_variables';
 
-/* Fonts */
-@font-face {
-  font-family: BebasNeue;
-  src: url("../fonts/BebasNeue-Regular.ttf");
-}
-
-/* General rules */
-.no-margins {
-  margin: 0px;
-}
-
-.no-paddinds {
-  padding: 0;
-}
-
-.no-column-gutters {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-body {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.main-container {
-  position: relative;
-  flex: 1;
-  display: flex;
-  min-height: 0px;
-}
-
 @import './_navbar';
 
 @import './_sidebar';
@@ -43,3 +9,5 @@ body {
 @import './_customize-bootstrap';
 
 @import './_select2_bootstrap4';
+
+@import './_general';
