@@ -1,8 +1,8 @@
 /* Side menus script */
 
+module.exports = function () {
 let filterApiUrl = '/api/project/datatable/';
 
-// $(function () {
     $('.menu__exit-icon').click(function () {
         // child will be hide after container
         $('.menu').hide(0, function () {
@@ -80,4 +80,4 @@ let filterApiUrl = '/api/project/datatable/';
     $('.date-control').on('blur', function () {
         this.type = 'text';
     });
-// });
+};
