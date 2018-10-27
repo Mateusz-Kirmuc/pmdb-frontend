@@ -33,6 +33,14 @@ $('.sheet__show-filter-menu').click(function () {
     });
 });
 
+$('.sheet__show-choices-group-menu').click(function () {
+    $('.menu__content').hide();
+    // child will show after parent
+    $('.menu').show(0, function () {
+        $('.menu-choices-group').show();
+    });
+});
+
 $('.menu-header__clear-icon').click(function () {
     $('.menu-filter .form-control').val(null).trigger('change');
 });
