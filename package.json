@@ -13,11 +13,11 @@
     "build": "npm-run-all build:* test",
     "build:sass": "node-sass --output-style compact -o css sass",
     "build:autoprefixer": "autoprefixer-cli css/style.css",
-    "build:js": "concat-cli -f js/_*.js -o js/script.js",
+    "build:js": "browserify js/main.js -o static/js/script.js",
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
     "watch": "npm-run-all build -p watch:*",
-    "watch:js": "onchange 'js/_*.js' -- npm run build:js",
-    "watch:browser-sync": "node_modules/.bin/browser-sync start --server --files 'css/*.css' '*.html' 'js/*.js'",
+    "watch:js": "onchange 'js/*.js' -- npm run build:js",
+    "watch:browser-sync": "node_modules/.bin/browser-sync start --server --files 'css/*.css' '*.html' 'static/js/*.js'",
     "watch:sass": "node-sass --output-style expanded --source-map true -o css sass --watch --recursive"
   },
   "keywords": [],
@@ -26,6 +26,7 @@
   "devDependencies": {
     "autoprefixer-cli": "^1.0.0",
     "browser-sync": "^2.24.4",
+    "browserify": "^16.2.3",
     "concat": "^1.0.3",
     "concat-cli": "^4.0.0",
     "globstar": "^1.0.0",

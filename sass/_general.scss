@@ -1,0 +1,38 @@
+/* General rules */
+
+@font-face {
+  font-family: BebasNeue;
+  src: url("../fonts/BebasNeue-Regular.ttf");
+}
+
+.no-margins {
+  margin: 0px;
+}
+
+.no-paddinds {
+  padding: 0;
+}
+
+.no-column-gutters {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main-container {
+  position: relative;
+  flex: 1;
+  display: flex;
+  min-height: 0px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
