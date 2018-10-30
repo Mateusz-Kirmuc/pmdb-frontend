@@ -1,5 +1,3 @@
-let table = require('./_table.js');
-
 $('.columns-control__show-column-icon').click(function () {
     $(this).hide();
     $(this).siblings('.columns-control__hide-column-icon').css('display', 'inline');
