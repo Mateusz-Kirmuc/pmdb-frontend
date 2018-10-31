@@ -457,5 +457,3 @@
             $('.sheet__manipulation-icon').css('visibility', 'visible');
         }
     }
-
-module.exports = table;
