@@ -26,7 +26,7 @@ $('.sheet__show-manipulation-menu').click(function () {
 });
 
 $('.sheet__show-filter-menu').click(function () {
-    $('.menu__content').hide();
+    $('.menu-container').hide();
     // child will show after parent
     $('.menu').show(0, function () {
         $('.menu-filter').show();
@@ -34,7 +34,7 @@ $('.sheet__show-filter-menu').click(function () {
 });
 
 $('.sheet__show-choices-menu').click(function () {
-    $('.menu__content').hide();
+    $('.menu-container').hide();
     // child will show after parent
     $('.menu').show(0, function () {
         $('.menu-choices').show();
