@@ -450,10 +450,11 @@
             $('.sheet__manipulation-icon').css('visibility', 'hidden');
         }
         if (numberOfSelectedRows === 1) {
-            $('.sheet__manipulation-icon:not(:first-child)').css('visibility', 'visible');
-            $('.sheet__manipulation-icon:first-child').css('visibility', 'hidden');
+            $('.sheet__manipulation-icon').css('visibility', 'visible');
+
         }
         if (numberOfSelectedRows > 1) {
-            $('.sheet__manipulation-icon').css('visibility', 'visible');
+          $('.sheet__manipulation-icon:not(:first-child)').css('visibility', 'visible');
+          $('.sheet__manipulation-icon:first-child').css('visibility', 'hidden');
         }
     }
