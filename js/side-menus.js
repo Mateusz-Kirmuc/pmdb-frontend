@@ -60,11 +60,11 @@ $('#create_form').submit(function(event){
         $('.menu').hide(0, function () {
             $('.menu__content').hide();
         });
-        $('#msg__success').show();
+        $('.alert').show();
+        $('.alert').alert();
         table.draw();
-        setTimeout(function() { $('#msg__success').hide(); }, 5000);
-
-
+        setTimeout(function() { $(".alert").alert('close') }, 3000);
+        
       },
       error: function(XMLHttpRequest, textStatus, errorThrown) {
         // console.log(XMLHttpRequest);

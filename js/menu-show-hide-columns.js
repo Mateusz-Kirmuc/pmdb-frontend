@@ -11,3 +11,9 @@ $('.columns-control__hide-column-icon').click(function () {
     let column = table.column($(this).attr('data-column') + ':name');
     column.visible(true);
 });
+
+$(".alert").hide();
+
+$('.close').click(function() {
+   $('.alert').close();
+})
