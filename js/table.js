@@ -393,6 +393,23 @@
 
             $('.table__name-link').click(function () {
                 $('.menu-container').hide();
+                // update details menu
+                // require of ObjID attribute on table__name-link
+                var objID = $(this).attr('objID');
+                if (objID === undefined) {
+                    objID = 1;
+                }
+                $.ajax({
+                  url: '/api/project/1/'.replace(/1/, objID.toString()),
+                  dataType: 'json',
+                  success: function(data) {
+                    Object.keys(data).forEach(function(key) {
+                        if ( data[key] !== null && data[key] !== '' ){
+                          $('#details__'+key).text(data[key]);
+                        }
+                    });
+                  }
+                });
                 // child will show after parent
                 $('.menu').show(0, function () {
                     $('.details').show();
