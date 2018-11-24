@@ -320,6 +320,24 @@ $menu-header-width: $menu-width - 2*$menu-horizontal-padding - 20px;
   font-size: 0.65rem;
 }
 
+.nav-tabs .nav-link.active {
+  .details__tab-icon {
+    display: none;
+  }
+  .details__tab-icon-active {
+    display: initial;
+  }
+}
+
+.nav-tabs .nav-link:not(.active) {
+  .details__tab-icon {
+    display: initial;
+  }
+  .details__tab-icon-active {
+    display: none;
+  }
+}
+
 /* Columns control menu */
 .menu-header__header-icon {
   width: 20px;
