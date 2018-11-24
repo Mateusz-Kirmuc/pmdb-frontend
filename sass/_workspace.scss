@@ -94,7 +94,7 @@ $menu-header-width: $menu-width - 2*$menu-horizontal-padding - 20px;
   border-bottom: #CACACA 1px solid;
 }
 
-.table__row:hover {
+.table__row:not(.table__row--selected):hover {
   background-color: #DFDFDF;
 }
 
@@ -169,6 +169,10 @@ $menu-header-width: $menu-width - 2*$menu-horizontal-padding - 20px;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
+}
+
+.table__row--selected {
+  background-color: rgba(73, 196, 161, 0.5);
 }
 
 /* Menu rules */
