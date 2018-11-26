@@ -356,9 +356,9 @@
             {
                 targets: 0,
                 render: function (data) {
-                    return '<div class="table__select-container"><input class="table__select table__select--one ' + data + '" type="checkbox"></div>';
+                    return '<div class="table__select-container"><input class="table__select table__select-one ' + data + '" type="checkbox"></div>';
                 },
-                title: '<div class="table__select-container"><input type="checkbox" class="table__select table__select--all"></div>',
+                title: '<div class="table__select-container"><input type="checkbox" class="table__select table__select-all"></div>',
                 width: '25px',
                 orderable: false
             },
@@ -417,8 +417,14 @@
 
             });
 
-            $('.table__select--one').change(function () {
+            $('.table__select-one').change(function () {
                 showHideManipulationIcons();
+
+                if($(this).is(':checked')) {
+                    $(this).closest('.table__row').addClass('table__row--selected');
+                } else {
+                    $(this).closest('.table__row').removeClass('table__row--selected');
+                }
             })
         }
     });
@@ -446,13 +452,13 @@
         }
     });
 
-    $('.table__select--all').click(function () {
+    $('.table__select-all').click(function () {
         var all_checked = $(this).prop('checked');
 
         if (all_checked) {
-            $('.table__select--one').prop('checked', true);
+            $('.table__select-one').prop('checked', true).change();
         } else {
-            $('.table__select--one').prop('checked', false);
+            $('.table__select-one').prop('checked', false).change();
         }
         showHideManipulationIcons();
     });
