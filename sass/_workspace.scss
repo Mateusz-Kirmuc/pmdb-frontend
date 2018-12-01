@@ -179,6 +179,10 @@ $menu-header-width: $menu-width - 2*$menu-horizontal-padding - 20px;
   background-color: rgba(196, 73, 73, 0.5);
 }
 
+.table__row--selected-to-export {
+  background-color: rgba(73, 157, 196, 0.5);
+}
+
 /* Menu rules */
 .menu {
   height: 100%;
