@@ -3,16 +3,20 @@
 /**
 * Bit of explanation:
 * -tabs are elements inside sidebar
-* -tab has its owm header and eventualy vertically toggleable menu
+* -tab has its own header and eventualy vertically toggleable menu
+* -there is one 'special tab, first one, with expandable 'plus icon'
 */
 
 var isSidebarExpanded = false;
 
 var sidebarMouseenterHandler = function (event, delay = 100) {
+    // set delay of sidebar expand
     timer = setTimeout(function () {
         if (isSidebarExpanded === false) {
+            // modify 'special tab' plus icon
             $('.sidebar__tab-icon-wrapper--special').addClass('sidebar__tab-icon-wrapper--special-hover');
 
+            // horizontally expand hidden parts of tab: tab's title and menu
             let sidebarHeaderTitle = $('.sidebar__tab-header-title');
             let sidebarTabMenu = $('.sidebar__tab-menu');
 
@@ -26,13 +30,14 @@ var sidebarMouseenterHandler = function (event, delay = 100) {
 
 var sidebarMouseleaveHandler = function () {
     clearTimeout(timer);
-        $.when(
-            $('.sidebar__tab-header-title, .sidebar__tab-menu').animate({width: '0px'})
-        ).done(function () {
-            $('.sidebar__tab-icon-wrapper--special').removeClass('sidebar__tab-icon-wrapper--special-hover');
-            $('.sidebar').addClass('sidebar--hoverable');
-        });
-        isSidebarExpanded = false;
+    $.when(
+        // hide tab's title and menu
+        $('.sidebar__tab-header-title, .sidebar__tab-menu').animate({width: '0px'})
+    ).done(function () {
+        $('.sidebar__tab-icon-wrapper--special').removeClass('sidebar__tab-icon-wrapper--special-hover');
+        $('.sidebar').addClass('sidebar--hoverable');
+    });
+    isSidebarExpanded = false;
 };
 
 $('.sidebar').mouseenter(sidebarMouseenterHandler);
@@ -50,6 +55,7 @@ $('.sidebar__tab-header').click(function () {
     var tabMenu = $(this).siblings('.sidebar__tab-menu');
     if (isSidebarExpanded) {
         if (tabMenu.height() === 0) {
+            // expand tab menu vertically to 'auto' height
             tabMenu.animate({height: tabMenu.get(0).scrollHeight}, function () {
                 // check if mouse is not over sidebar
                 if (!$('.sidebar:hover').length) {
