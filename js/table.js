@@ -469,10 +469,11 @@
         showHideManipulationIcons();
     });
 
-    $('.sheet__delete-icon').mouseenter(function () {
+    $('.sheet__delete-icon')
+        .mouseenter(function () {
         $('.table__row--selected').addClass('table__row--selected-to-delete');
-    });
-    $('.sheet__delete-icon').mouseleave(function () {
+    })
+        .mouseleave(function () {
         $('.table__row--selected').removeClass('table__row--selected-to-delete');
     });
 
