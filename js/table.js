@@ -417,14 +417,24 @@
 
             });
 
-            $('.table__select-one').change(function () {
+            $('.table__select-one').change(function (event) {
+                event.stopPropagation();
                 showHideManipulationIcons();
-
                 if($(this).is(':checked')) {
                     $(this).closest('.table__row').addClass('table__row--selected');
                 } else {
                     $(this).closest('.table__row').removeClass('table__row--selected');
                 }
+            });
+
+            $('.table__tbody .table__row').click(function () {
+                let rowCheckbox = $(this).find('.table__select-one');
+                if (rowCheckbox.is(':checked')) {
+                    $(this).find('.table__select-one').prop('checked', false).triggerHandler('change');
+                } else {
+                    $(this).find('.table__select-one').prop('checked', true).triggerHandler('change');
+                }
+
             })
         }
     });
