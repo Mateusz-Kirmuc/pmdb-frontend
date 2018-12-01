@@ -7,14 +7,17 @@
 */
 
 var isSidebarExpanded = false;
-var countOpenMenus = 0;
 
 var sidebarMouseenterHandler = function (event, delay = 100) {
     timer = setTimeout(function () {
         if (isSidebarExpanded === false) {
             $('.sidebar__tab-icon-wrapper--special').addClass('sidebar__tab-icon-wrapper--special-hover');
-            $('.sidebar__tab-header-title').animate({width: $('.sidebar__tab-header-title').css('max-width')});
-            $('.sidebar__tab-menu').animate({width: $('.sidebar__tab-menu').css('max-width')});
+
+            let sidebarHeaderTitle = $('.sidebar__tab-header-title');
+            let sidebarTabMenu = $('.sidebar__tab-menu');
+
+            sidebarHeaderTitle.animate({width: sidebarHeaderTitle.css('max-width')});
+            sidebarTabMenu.animate({width: sidebarTabMenu.css('max-width')});
 
             isSidebarExpanded = true;
         }
@@ -36,21 +39,6 @@ $('.sidebar').mouseenter(sidebarMouseenterHandler);
 
 $('.sidebar').mouseleave(sidebarMouseleaveHandler);
 
-$('.sidebar__tab-menu').on('customSlideUp', function (e) {
-    $(this).animate({height: 0}, function () {
-        countOpenMenus--;
-
-        // check if mouse is not over sidebar
-        if (!$('.sidebar:hover').length) {
-            $('.sidebar').trigger('mouseleave');
-        }
-    });
-});
-
-$('.sidebar__tab-menu').on('customSlideDown', function (e) {
-    $(this).animate({height: $(this).get(0).scrollHeight});
-});
-
 $('.sidebar__tab-header').click(function () {
     $(this).find('.sidebar__tab-arrow').toggleClass('sidebar__tab-arrow--rotated')
 
@@ -62,11 +50,15 @@ $('.sidebar__tab-header').click(function () {
     var tabMenu = $(this).siblings('.sidebar__tab-menu');
     if (isSidebarExpanded) {
         if (tabMenu.height() === 0) {
-            tabMenu.trigger('customSlideDown');
-            countOpenMenus++;
+            tabMenu.animate({height: tabMenu.get(0).scrollHeight}, function () {
+                // check if mouse is not over sidebar
+                if (!$('.sidebar:hover').length) {
+                    $('.sidebar').trigger('mouseleave');
+                }
+            });
         }
-        else {
-            tabMenu.trigger('customSlideUp');
+        else if (tabMenu.height() > 0){
+            tabMenu.animate({height: 0});
         }
     }
 });
