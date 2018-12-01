@@ -469,6 +469,13 @@
         showHideManipulationIcons();
     });
 
+    $('.sheet__delete-icon').mouseenter(function () {
+        $('.table__row--selected').addClass('table__row--selected-to-delete');
+    });
+    $('.sheet__delete-icon').mouseleave(function () {
+        $('.table__row--selected').removeClass('table__row--selected-to-delete');
+    });
+
     /**
      * Decide whether show or hide table rows manipulation icons (edit, delete, import) basing on number of selected rows
      */
