@@ -39,10 +39,10 @@ $sidebar-background-color: #37474f;
 }
 
 .sidebar__tab-header-title {
-  display: none;
+  width: 0px;
   overflow: hidden;
   white-space: nowrap;
-  width: $sidebar-hover-width - $sidebar-width;
+  max-width: $sidebar-hover-width - $sidebar-width;
 }
 
 .sidebar__tab-title-wraper {
@@ -88,11 +88,12 @@ $sidebar-background-color: #37474f;
   color: $sidebar-font-color;
   margin: 10px 0 0 $sidebar-width;
   padding: 0;
-  //text-transform: uppercase;
   list-style-position: inside;
-  display: none;
+  width: 0;
+  height: 0;
   overflow: hidden;
   white-space: nowrap;
+  max-width: $sidebar-hover-width - $sidebar-width;
 }
 
 .sidebar__tab-menu-item-title {

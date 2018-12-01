@@ -12,8 +12,10 @@ var countOpenMenus = 0;
 var sidebarMouseenterHandler = function (event, delay = 100) {
     timer = setTimeout(function () {
         if (isSidebarExpanded === false) {
-            $('.sidebar__tab-icon-wrapper--special').addClass('sidebar__tab-icon-wrapper--special-hover')
-            $('.sidebar__tab-header-title').animate({width: 'show'});
+            $('.sidebar__tab-icon-wrapper--special').addClass('sidebar__tab-icon-wrapper--special-hover');
+            $('.sidebar__tab-header-title').animate({width: $('.sidebar__tab-header-title').css('max-width')});
+            $('.sidebar__tab-menu').animate({width: $('.sidebar__tab-menu').css('max-width')});
+
             isSidebarExpanded = true;
         }
     }, delay);
@@ -21,15 +23,13 @@ var sidebarMouseenterHandler = function (event, delay = 100) {
 
 var sidebarMouseleaveHandler = function () {
     clearTimeout(timer);
-    if (countOpenMenus === 0) {
         $.when(
-            $('.sidebar__tab-header-title').animate({width: 'hide'})
+            $('.sidebar__tab-header-title, .sidebar__tab-menu').animate({width: '0px'})
         ).done(function () {
             $('.sidebar__tab-icon-wrapper--special').removeClass('sidebar__tab-icon-wrapper--special-hover');
             $('.sidebar').addClass('sidebar--hoverable');
         });
         isSidebarExpanded = false;
-    }
 };
 
 $('.sidebar').mouseenter(sidebarMouseenterHandler);
@@ -37,7 +37,7 @@ $('.sidebar').mouseenter(sidebarMouseenterHandler);
 $('.sidebar').mouseleave(sidebarMouseleaveHandler);
 
 $('.sidebar__tab-menu').on('customSlideUp', function (e) {
-    $(this).slideUp(function () {
+    $(this).animate({height: 0}, function () {
         countOpenMenus--;
 
         // check if mouse is not over sidebar
@@ -48,7 +48,7 @@ $('.sidebar__tab-menu').on('customSlideUp', function (e) {
 });
 
 $('.sidebar__tab-menu').on('customSlideDown', function (e) {
-    $(this).slideDown();
+    $(this).animate({height: $(this).get(0).scrollHeight});
 });
 
 $('.sidebar__tab-header').click(function () {
@@ -61,7 +61,7 @@ $('.sidebar__tab-header').click(function () {
 
     var tabMenu = $(this).siblings('.sidebar__tab-menu');
     if (isSidebarExpanded) {
-        if (tabMenu.is(':hidden')) {
+        if (tabMenu.height() === 0) {
             tabMenu.trigger('customSlideDown');
             countOpenMenus++;
         }
