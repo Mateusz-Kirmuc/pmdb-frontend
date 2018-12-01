@@ -383,7 +383,7 @@
         dom: 't',
         autoWidth: false,
         createdRow: function (row) {
-            $(row).addClass('table__row');
+            $(row).addClass('table__row table__body-row');
         },
         initComplete: function () {
             $('.table__thead > tr').addClass('table__row table__row--header');
@@ -421,20 +421,16 @@
                 event.stopPropagation();
                 showHideManipulationIcons();
                 if($(this).is(':checked')) {
-                    $(this).closest('.table__row').addClass('table__row--selected');
-                } else {
+                    $(this).prop('checked', false);
                     $(this).closest('.table__row').removeClass('table__row--selected');
+                } else {
+                    $(this).prop('checked', true);
+                    $(this).closest('.table__row').addClass('table__row--selected');
                 }
             });
 
-            $('.table__tbody .table__row').click(function () {
-                let rowCheckbox = $(this).find('.table__select-one');
-                if (rowCheckbox.is(':checked')) {
-                    $(this).find('.table__select-one').prop('checked', false).triggerHandler('change');
-                } else {
-                    $(this).find('.table__select-one').prop('checked', true).triggerHandler('change');
-                }
-
+            $('.table__body-row').click(function () {
+                $(this).find('.table__select-one').change();
             })
         }
     });
@@ -466,9 +462,9 @@
         var all_checked = $(this).prop('checked');
 
         if (all_checked) {
-            $('.table__select-one').prop('checked', true).change();
-        } else {
             $('.table__select-one').prop('checked', false).change();
+        } else {
+            $('.table__select-one').prop('checked', true).change();
         }
         showHideManipulationIcons();
     });
