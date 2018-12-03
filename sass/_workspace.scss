@@ -98,7 +98,7 @@ $menu-header-width: $menu-width - 2*$menu-horizontal-padding - 20px;
   background-color: #DFDFDF;
 }
 
-.table__row--header {
+.table__header-row {
   border-bottom: none;
 }
 
@@ -173,6 +173,14 @@ $menu-header-width: $menu-width - 2*$menu-horizontal-padding - 20px;
 
 .table__row--selected {
   background-color: rgba(73, 196, 161, 0.5);
+}
+
+.table__row--selected-to-delete {
+  background-color: rgba(196, 73, 73, 0.5);
+}
+
+.table__row--selected-to-export {
+  background-color: rgba(73, 157, 196, 0.5);
 }
 
 /* Menu rules */
