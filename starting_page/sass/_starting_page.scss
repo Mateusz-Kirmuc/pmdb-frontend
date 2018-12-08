@@ -30,9 +30,12 @@
     color: #37474f;
   }
 
-  .btn-outline-dark--wider {
-    padding-left: 40px;
-    padding-right: 40px;
+  .sign-up-btn {
+    color: white;
+  }
+
+  .sign-up-btn:hover {
+    font-weight: bold;
   }
 
   .central-space {
