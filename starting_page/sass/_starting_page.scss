@@ -17,4 +17,19 @@
     height: 200px;
     background-color: white;
   }
+
+  .btn-outline-dark--inversed {
+    border-color: white;
+    color: white;
+  }
+
+  .btn-outline-dark--inversed:hover {
+    background-color: white;
+    color: #37474f;
+  }
+
+  .btn-outline-dark--wider {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
