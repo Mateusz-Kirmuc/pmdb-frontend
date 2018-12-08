@@ -17,26 +17,4 @@
     height: 200px;
     background-color: white;
   }
-
-  .logo {
-    display: inline-flex;
-    align-items: center;
-  }
-
-  .logo__icon {
-    margin-right: 10px;
-  }
-
-  .logo__title {
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-
-  .logo__title--large {
-    font-size: 1.5rem;
-  }
-
-  .logo__title--white {
-    color: white;
-  }
 }
