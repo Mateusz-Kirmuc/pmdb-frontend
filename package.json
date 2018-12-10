@@ -15,8 +15,8 @@
     "build:autoprefixer": "autoprefixer-cli css/style.css",
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
     "watch": "npm-run-all build -p watch:*",
-    "watch:browser-sync": "node_modules/.bin/browser-sync start --server --files 'css/*.css' '*.html' 'static/js/*.js'",
-    "watch:sass": "node-sass --output-style expanded --source-map true -o css sass --watch --recursive"
+    "watch:browser-sync": "node_modules/.bin/browser-sync start --server --files '*/css/*.css' '*.html' 'static/js/*.js'",
+    "watch:sass": "node-sass --output-style expanded --source-map true -o css *sass --watch --recursive"
   },
   "keywords": [],
   "author": "",
