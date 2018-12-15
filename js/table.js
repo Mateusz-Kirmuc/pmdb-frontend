@@ -432,7 +432,7 @@
                     $(this).closest('.table__row').addClass('table__row--selected');
                 }
 
-                showHideManipulationIcons();
+                setIconsVisibility();
             });
 
             // Konfiguracja zachowania po kliknięciu w wiersz w tabeli
@@ -478,7 +478,7 @@
         } else {
             $('.table__select-one').prop('checked', true).change();
         }
-        showHideManipulationIcons();
+        setIconsVisibility();
     });
 
     // Konfiguracja zmiany kolorów wierszy po najechaniu na ikony nad tabelą
@@ -501,7 +501,7 @@
 
     // Konfiguracja widoczności ikon usuwania i eksportu (ikon nad tabelą) w zależności od zaznaczonych wierszy
 
-    function showHideManipulationIcons() {
+    function setIconsVisibility() {
         let numberOfSelectedRows = $('.table__select:checked').length;
 
         if (numberOfSelectedRows === 0) {
