@@ -5,7 +5,7 @@
                 'id': 1,
                 'name': '<a href="#" class="table__name-link">ADO-01</a>',
                 'type': 'chemical',
-                'group': '<img class="table__group-icon" src="img/non-toxic.svg">non-toxic',
+                'group': '<img class="table__group-icon" src="../img/non-toxic.svg">non-toxic',
                 'added_on': '2017-01-03',
                 'added_by': 'User1',
                 'author': 'User1',
@@ -17,7 +17,7 @@
                 'id': 2,
                 'name': '<a href="#" class="table__name-link">ADO-02</a>',
                 'type': 'chemical',
-                'group': '<img class="table__group-icon" src="img/toxic.svg">toxic',
+                'group': '<img class="table__group-icon" src="../img/toxic.svg">toxic',
                 'added_on': '2017-01-03',
                 'added_by': 'User1',
                 'author': 'User1',
@@ -29,7 +29,7 @@
                 'id': 3,
                 'name': '<a href="#" class="table__name-link">ADO-03</a>',
                 'type': 'chemical',
-                'group': '<img class="table__group-icon" src="img/flask.svg">toxic',
+                'group': '<img class="table__group-icon" src="../img/flask.svg">toxic',
                 'added_on': '2017-01-03',
                 'added_by': 'User1',
                 'author': 'User1',
@@ -41,7 +41,7 @@
                 'id': 4,
                 'name': '<a href="#" class="table__name-link">ADO-04</a>',
                 'type': 'chemical',
-                'group': '<img class="table__group-icon" src="img/light-bulb.svg">non-toxic',
+                'group': '<img class="table__group-icon" src="../img/light-bulb.svg">non-toxic',
                 'added_on': '2017-01-03',
                 'added_by': 'User1',
                 'author': 'User1',
@@ -53,7 +53,7 @@
                 'id': 5,
                 'name': '<a href="#" class="table__name-link">ADO-05</a>',
                 'type': 'chemical',
-                'group': '<img class="table__group-icon" src="img/key.svg">toxic',
+                'group': '<img class="table__group-icon" src="../img/key.svg">toxic',
                 'added_on': '2017-01-03',
                 'added_by': 'User1',
                 'author': 'User1',
@@ -65,7 +65,7 @@
                 'id': 1,
                 'name': '<a href="#" class="table__name-link">ADO-01</a>',
                 'type': 'chemical',
-                'group': '<img class="table__group-icon" src="img/non-toxic.svg">non-toxic',
+                'group': '<img class="table__group-icon" src="../img/non-toxic.svg">non-toxic',
                 'added_on': '2017-01-03',
                 'added_by': 'User1',
                 'author': 'User1',
@@ -77,7 +77,7 @@
                 'id': 2,
                 'name': '<a href="#" class="table__name-link">ADO-02</a>',
                 'type': 'chemical',
-                'group': '<img class="table__group-icon" src="img/toxic.svg">toxic',
+                'group': '<img class="table__group-icon" src="../img/toxic.svg">toxic',
                 'added_on': '2017-01-03',
                 'added_by': 'User1',
                 'author': 'User1',
@@ -89,7 +89,7 @@
                 'id': 3,
                 'name': '<a href="#" class="table__name-link">ADO-03</a>',
                 'type': 'chemical',
-                'group': '<img class="table__group-icon" src="img/flask.svg">toxic',
+                'group': '<img class="table__group-icon" src="../img/flask.svg">toxic',
                 'added_on': '2017-01-03',
                 'added_by': 'User1',
                 'author': 'User1',
@@ -101,7 +101,7 @@
                 'id': 4,
                 'name': '<a href="#" class="table__name-link">ADO-04</a>',
                 'type': 'chemical',
-                'group': '<img class="table__group-icon" src="img/light-bulb.svg">non-toxic',
+                'group': '<img class="table__group-icon" src="../img/light-bulb.svg">non-toxic',
                 'added_on': '2017-01-03',
                 'added_by': 'User1',
                 'author': 'User1',
@@ -113,7 +113,7 @@
                 'id': 5,
                 'name': '<a href="#" class="table__name-link">ADO-05</a>',
                 'type': 'chemical',
-                'group': '<img class="table__group-icon" src="img/key.svg">toxic',
+                'group': '<img class="table__group-icon" src="../img/key.svg">toxic',
                 'added_on': '2017-01-03',
                 'added_by': 'User1',
                 'author': 'User1',
@@ -125,7 +125,7 @@
                 'id': 1,
                 'name': '<a href="#" class="table__name-link">ADO-01</a>',
                 'type': 'chemical',
-                'group': '<img class="table__group-icon" src="img/non-toxic.svg">non-toxic',
+                'group': '<img class="table__group-icon" src="../img/non-toxic.svg">non-toxic',
                 'added_on': '2017-01-03',
                 'added_by': 'User1',
                 'author': 'User1',
@@ -137,7 +137,7 @@
                 'id': 2,
                 'name': '<a href="#" class="table__name-link">ADO-02</a>',
                 'type': 'chemical',
-                'group': '<img class="table__group-icon" src="img/toxic.svg">toxic',
+                'group': '<img class="table__group-icon" src="../img/toxic.svg">toxic',
                 'added_on': '2017-01-03',
                 'added_by': 'User1',
                 'author': 'User1',
@@ -149,7 +149,7 @@
                 'id': 3,
                 'name': '<a href="#" class="table__name-link">ADO-03</a>',
                 'type': 'chemical',
-                'group': '<img class="table__group-icon" src="img/flask.svg">toxic',
+                'group': '<img class="table__group-icon" src="../img/flask.svg">toxic',
                 'added_on': '2017-01-03',
                 'added_by': 'User1',
                 'author': 'User1',
@@ -161,7 +161,7 @@
                 'id': 4,
                 'name': '<a href="#" class="table__name-link">ADO-04</a>',
                 'type': 'chemical',
-                'group': '<img class="table__group-icon" src="img/light-bulb.svg">non-toxic',
+                'group': '<img class="table__group-icon" src="../img/light-bulb.svg">non-toxic',
                 'added_on': '2017-01-03',
                 'added_by': 'User1',
                 'author': 'User1',
@@ -173,7 +173,7 @@
                 'id': 5,
                 'name': '<a href="#" class="table__name-link">ADO-05</a>',
                 'type': 'chemical',
-                'group': '<img class="table__group-icon" src="img/key.svg">toxic',
+                'group': '<img class="table__group-icon" src="../img/key.svg">toxic',
                 'added_on': '2017-01-03',
                 'added_by': 'User1',
                 'author': 'User1',
@@ -185,7 +185,7 @@
                 'id': 1,
                 'name': '<a href="#" class="table__name-link">ADO-01</a>',
                 'type': 'chemical',
-                'group': '<img class="table__group-icon" src="img/non-toxic.svg">non-toxic',
+                'group': '<img class="table__group-icon" src="../img/non-toxic.svg">non-toxic',
                 'added_on': '2017-01-03',
                 'added_by': 'User1',
                 'author': 'User1',
@@ -197,7 +197,7 @@
                 'id': 2,
                 'name': '<a href="#" class="table__name-link">ADO-02</a>',
                 'type': 'chemical',
-                'group': '<img class="table__group-icon" src="img/toxic.svg">toxic',
+                'group': '<img class="table__group-icon" src="../img/toxic.svg">toxic',
                 'added_on': '2017-01-03',
                 'added_by': 'User1',
                 'author': 'User1',
@@ -209,7 +209,7 @@
                 'id': 3,
                 'name': '<a href="#" class="table__name-link">ADO-03</a>',
                 'type': 'chemical',
-                'group': '<img class="table__group-icon" src="img/flask.svg">toxic',
+                'group': '<img class="table__group-icon" src="../img/flask.svg">toxic',
                 'added_on': '2017-01-03',
                 'added_by': 'User1',
                 'author': 'User1',
@@ -221,7 +221,7 @@
                 'id': 4,
                 'name': '<a href="#" class="table__name-link">ADO-04</a>',
                 'type': 'chemical',
-                'group': '<img class="table__group-icon" src="img/light-bulb.svg">non-toxic',
+                'group': '<img class="table__group-icon" src="../img/light-bulb.svg">non-toxic',
                 'added_on': '2017-01-03',
                 'added_by': 'User1',
                 'author': 'User1',
@@ -233,7 +233,7 @@
                 'id': 5,
                 'name': '<a href="#" class="table__name-link">ADO-05</a>',
                 'type': 'chemical',
-                'group': '<img class="table__group-icon" src="img/key.svg">toxic',
+                'group': '<img class="table__group-icon" src="../img/key.svg">toxic',
                 'added_on': '2017-01-03',
                 'added_by': 'User1',
                 'author': 'User1',
@@ -245,7 +245,7 @@
                 'id': 1,
                 'name': '<a href="#" class="table__name-link">ADO-01</a>',
                 'type': 'chemical',
-                'group': '<img class="table__group-icon" src="img/non-toxic.svg">non-toxic',
+                'group': '<img class="table__group-icon" src="../img/non-toxic.svg">non-toxic',
                 'added_on': '2017-01-03',
                 'added_by': 'User1',
                 'author': 'User1',
@@ -257,7 +257,7 @@
                 'id': 2,
                 'name': '<a href="#" class="table__name-link">ADO-02</a>',
                 'type': 'chemical',
-                'group': '<img class="table__group-icon" src="img/toxic.svg">toxic',
+                'group': '<img class="table__group-icon" src="../img/toxic.svg">toxic',
                 'added_on': '2017-01-03',
                 'added_by': 'User1',
                 'author': 'User1',
@@ -269,7 +269,7 @@
                 'id': 3,
                 'name': '<a href="#" class="table__name-link">ADO-03</a>',
                 'type': 'chemical',
-                'group': '<img class="table__group-icon" src="img/flask.svg">toxic',
+                'group': '<img class="table__group-icon" src="../img/flask.svg">toxic',
                 'added_on': '2017-01-03',
                 'added_by': 'User1',
                 'author': 'User1',
@@ -281,7 +281,7 @@
                 'id': 4,
                 'name': '<a href="#" class="table__name-link">ADO-04</a>',
                 'type': 'chemical',
-                'group': '<img class="table__group-icon" src="img/light-bulb.svg">non-toxic',
+                'group': '<img class="table__group-icon" src="../img/light-bulb.svg">non-toxic',
                 'added_on': '2017-01-03',
                 'added_by': 'User1',
                 'author': 'User1',
@@ -293,7 +293,7 @@
                 'id': 5,
                 'name': '<a href="#" class="table__name-link">ADO-05</a>',
                 'type': 'chemical',
-                'group': '<img class="table__group-icon" src="img/key.svg">toxic',
+                'group': '<img class="table__group-icon" src="../img/key.svg">toxic',
                 'added_on': '2017-01-03',
                 'added_by': 'User1',
                 'author': 'User1',
@@ -388,7 +388,7 @@
         initComplete: function () {
             $('.table__thead > tr').addClass('table__row table__header-row');
             $('th').addClass('table__cell--header');
-            $('.table__cell--header.sorting').append('<img class="table__sort-icon" src="img/arrows.svg">');
+            $('.table__cell--header.sorting').append('<img class="table__sort-icon" src="../img/arrows.svg">');
             $('.table__cell--header:not(:first-child)').addClass('table__cell--header-no-checkbox');
 
             $('.table__name-link').click(function () {
@@ -443,18 +443,18 @@
 
     $('.sorting.table__cell--header.table__cell--header-no-checkbox').click(function () {
         $('.table__sort-icon-sorted')
-            .replaceWith('<img class="table__sort-icon" src="img/arrows.svg">');
+            .replaceWith('<img class="table__sort-icon" src="../img/arrows.svg">');
 
         if ($(this).hasClass('sorting_asc')) {
             $(this)
                 .children('.table__sort-icon')
-                .replaceWith('<img class="table__sort-icon table__sort-icon-sorted" src="img/sort_asc.svg">');
+                .replaceWith('<img class="table__sort-icon table__sort-icon-sorted" src="../img/sort_asc.svg">');
         }
 
         if ($(this).hasClass('sorting_desc')) {
             $(this)
                 .children('.table__sort-icon')
-                .replaceWith('<img class="table__sort-icon table__sort-icon-sorted" src="img/sort_desc.svg">');
+                .replaceWith('<img class="table__sort-icon table__sort-icon-sorted" src="../img/sort_desc.svg">');
         }
     });
 
