@@ -423,7 +423,7 @@
 
             $('.table__select-one').change(function (event) {
                 event.stopPropagation();
-                showHideManipulationIcons();
+
                 if($(this).is(':checked')) {
                     $(this).prop('checked', false);
                     $(this).closest('.table__row').removeClass('table__row--selected');
@@ -431,6 +431,8 @@
                     $(this).prop('checked', true);
                     $(this).closest('.table__row').addClass('table__row--selected');
                 }
+
+                showHideManipulationIcons();
             });
 
             // Konfiguracja zachowania po kliknięciu w wiersz w tabeli
