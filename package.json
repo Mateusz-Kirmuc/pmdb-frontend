@@ -11,12 +11,12 @@
     "init:files": "touch README.md index.html sass/style.scss js/script.js",
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
     "build": "npm-run-all build:* test",
-    "build:sass": "node-sass --output-style compact -o css */sass",
+    "build:sass": "node-sass --output-style compact -o css sass",
     "build:autoprefixer": "autoprefixer-cli css/style.css",
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css */sass",
     "watch": "npm-run-all build -p watch:*",
     "watch:browser-sync": "node_modules/.bin/browser-sync start --server --files 'css/*.css' '*.html' 'static/js/*.js'",
-    "watch:sass": "node-sass --output-style expanded --source-map true -o css */sass --watch --recursive"
+    "watch:sass": "node-sass --output-style expanded --source-map true -o css sass --watch --recursive"
   },
   "keywords": [],
   "author": "",
