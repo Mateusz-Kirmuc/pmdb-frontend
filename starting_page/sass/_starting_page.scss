@@ -61,4 +61,23 @@
     color: white;
     width: 35%;
   }
+
+  .nav-bar .dropdown .dropdown-menu {
+    width: 350px;
+  }
+
+  /* Login modal */
+  .login-input-btn {
+    background-color: #81d2e0;
+    border: none;
+  }
+
+  .login-input-icon {
+    color: black;
+  }
+
+  .login-submit-btn {
+    color: white;
+    background-color: #81d2e0;
+  }
 }
