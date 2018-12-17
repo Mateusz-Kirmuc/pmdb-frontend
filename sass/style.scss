@@ -1,15 +1,15 @@
-@import './_variables';
+@import '../main_page/sass/variables';
 
-@import './_navbar';
+@import '../main_page/sass/navbar';
 
-@import './_sidebar';
+@import '../main_page/sass/sidebar';
 
-@import './_workspace';
+@import '../main_page/sass/workspace';
 
-@import './_customize-bootstrap';
+@import '../main_page/sass/customize-bootstrap';
 
-@import './_select2_bootstrap4';
+@import '../main_page/sass/select2_bootstrap4';
 
-@import '../starting_page/sass/_starting_page';
+@import '../starting_page/sass/starting_page';
 
-@import './_general';
+@import 'general';
