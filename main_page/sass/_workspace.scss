@@ -328,29 +328,7 @@ $menu-header-width: $menu-width - 2*$menu-horizontal-padding - 20px;
   text-decoration: inherit;
 }
 
-.tabs__tab {
-  font-size: 0.65rem;
-  font-family: 'Source Sans Pro', sans-serif;
-  color: initial;
-}
 
-.tabs__tab.active {
-  .tabs__tab-icon {
-    display: none;
-  }
-  .tabs__tab-icon-active {
-    display: initial;
-  }
-}
-
-.tabs__tab:not(.active) {
-  .tabs__tab-icon {
-    display: initial;
-  }
-  .tabs__tab-icon-active {
-    display: none;
-  }
-}
 
 /* Columns control menu */
 .menu-header__header-icon {
