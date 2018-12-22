@@ -328,26 +328,26 @@ $menu-header-width: $menu-width - 2*$menu-horizontal-padding - 20px;
   text-decoration: inherit;
 }
 
-.details__tab {
+.tabs__tab {
   font-size: 0.65rem;
   font-family: 'Source Sans Pro', sans-serif;
   color: initial;
 }
 
-.details__tab.active {
-  .details__tab-icon {
+.tabs__tab.active {
+  .tabs__tab-icon {
     display: none;
   }
-  .details__tab-icon-active {
+  .tabs__tab-icon-active {
     display: initial;
   }
 }
 
-.details__tab:not(.active) {
-  .details__tab-icon {
+.tabs__tab:not(.active) {
+  .tabs__tab-icon {
     display: initial;
   }
-  .details__tab-icon-active {
+  .tabs__tab-icon-active {
     display: none;
   }
 }
