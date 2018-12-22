@@ -148,3 +148,71 @@ body {
   width: 99%;
 }
 
+/* File */
+
+.file {
+  border: 1px #EEEEEE solid;
+  border-radius: 10px;
+  margin: 10px 0;
+  display: flex;
+  padding: 5px 15px 5px 0;
+  position: relative;
+}
+
+.file__icon-container {
+  width: 40px;
+  display: flex;
+  //align-items: center;
+}
+
+.file__icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+}
+
+.file__info-container {
+  flex: 1;
+}
+
+.file__header {
+  font-weight: 700;
+}
+
+.file__short-info, .file__long-info {
+  font-size: 12px;
+  color: #959595;
+}
+
+.file__user {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.file__more-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: flex;
+  height: 20px;
+  width: 30px;
+  align-items: center;
+  justify-content: center;
+  border: 1px #EEEEEE solid;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  background: none;
+}
+
+.file__more-icon {
+  width: 10px;
+  //height: 10px;
+}
+
+.file__link, .file__link:hover {
+  font-size: 0.9rem;
+  color: inherit;
+  text-decoration: inherit;
+}
+
