@@ -119,3 +119,32 @@ body {
     display: none;
   }
 }
+
+/* Static table */
+.static-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.static-table__row {
+  border-bottom: 1px #EEEEEE solid;
+}
+
+.static-table__cell {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.static-table__cell:not(:last-child) {
+  white-space: nowrap;
+  padding-right: 30px;
+}
+
+.static-table__cell:first-child {
+  font-weight: bold;
+}
+
+.static-table__cell:last-child {
+  width: 99%;
+}
+
