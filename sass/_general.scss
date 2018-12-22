@@ -120,31 +120,31 @@ body {
   }
 }
 
-/* Static table */
-.static-table {
+/* Details table */
+.details-table {
   width: 100%;
   border-collapse: collapse;
 }
 
-.static-table__row {
+.details-table__row {
   border-bottom: 1px #EEEEEE solid;
 }
 
-.static-table__cell {
+.details-table__cell {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.static-table__cell:not(:last-child) {
+.details-table__cell:not(:last-child) {
   white-space: nowrap;
   padding-right: 30px;
 }
 
-.static-table__cell:first-child {
+.details-table__cell:first-child {
   font-weight: bold;
 }
 
-.static-table__cell:last-child {
+.details-table__cell:last-child {
   width: 99%;
 }
 
