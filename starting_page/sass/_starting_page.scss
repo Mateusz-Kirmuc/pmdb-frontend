@@ -84,4 +84,20 @@
     color: white;
     background-color: #81d2e0;
   }
+
+  .contact-icon {
+    background-image: url("../../img/arroba.svg");
+  }
+
+  .documentation-icon {
+    background-image: url("../../img/documentation.svg");
+  }
+
+  .contact-btn:hover .contact-icon {
+    background-image: url("../../img/arroba-hover.svg");
+  }
+
+  .documentation-btn:hover .documentation-icon {
+    background-image: url("../../img/documentation-hover.svg");
+  }
 }
