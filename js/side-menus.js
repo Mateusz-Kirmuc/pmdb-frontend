@@ -74,6 +74,8 @@ $('#create_form').submit(function(event){
 });
 
 $('.filter-form').submit(function (event) {
+    event.stopPropagation();
+    event.preventDefault();
     $.ajax({
         'url': filterApiUrl,
         'type': 'post',
