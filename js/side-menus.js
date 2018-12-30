@@ -4,10 +4,7 @@ let filterApiUrl = '/api/project/datatable/';
 let createApiUrl = '/api/project/create/';
 
 $('.menu__exit-icon').click(function () {
-    // child will be hide after container
-    $('.menu').hide(0, function () {
-        $('.menu-container').hide();
-    });
+    hideMenu($('.menu'));
 });
 
 $('.sheet__show-column-control-menu').click(function () {
@@ -41,6 +38,10 @@ $('.sheet__show-choices-menu').click(function () {
         $('.menu-choices').show();
     });
 });
+
+function hideMenu(menuElement) {
+    menuElement.animate({'width': 'hide'}, {'duration': 700});
+}
 
 $('.menu-filter__clear-container').click(function () {
     $('.menu-filter .form-control').val(null).trigger('change');
