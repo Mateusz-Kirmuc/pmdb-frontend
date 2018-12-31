@@ -4,43 +4,37 @@ let filterApiUrl = '/api/project/datatable/';
 let createApiUrl = '/api/project/create/';
 
 $('.menu__exit-icon').click(function () {
-    hideMenu($('.menu'));
+    hideMenu();
 });
 
 $('.sheet__show-column-control-menu').click(function () {
-    $('.menu-container').hide();
-    // child will show after parent
-    $('.menu').show(0, function () {
-        $('.columns-control').show();
-    });
+    showMenu($('.columns-control'));
 });
 
 $('.sheet__show-manipulation-menu').click(function () {
-    $('.menu-container').hide();
-    // child will show after parent
-    $('.menu').show(0, function () {
-        $('.menu-manipulate').show();
-    });
+    showMenu($('.menu-manipulate'));
+
 });
 
 $('.sheet__show-filter-menu').click(function () {
-    $('.menu-container').hide();
-    // child will show after parent
-    $('.menu').show(0, function () {
-        $('.menu-filter').show();
-    });
+    showMenu($('.menu-filter'));
 });
 
 $('.sheet__show-choices-menu').click(function () {
-    $('.menu-container').hide();
-    // child will show after parent
-    $('.menu').show(0, function () {
-        $('.menu-choices').show();
-    });
+    showMenu($('.menu-choices'))
 });
 
-function hideMenu(menuElement) {
-    menuElement.animate({'width': 'hide'}, {'duration': 700});
+function hideMenu() {
+    $('.menu').animate({'width': 'hide'}, {'duration': 700});
+}
+
+function showMenu(menuContent) {
+    $('.menu').animate({'width': 'hide'}, {'duration': 700, 'complete': function () {
+            $('.menu-container').hide();
+            menuContent.show();
+        }
+    });
+    $('.menu').animate({'width': 'show'}, {'duration': 700});
 }
 
 $('.menu-filter__clear-container').click(function () {
