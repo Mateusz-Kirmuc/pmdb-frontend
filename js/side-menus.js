@@ -24,17 +24,16 @@ $('.sheet__show-choices-menu').click(function () {
     showMenu($('.menu-choices'))
 });
 
-function hideMenu() {
-    $('.menu').animate({'width': 'hide'}, {'duration': 700});
+function hideMenu(completeFunction = null) {
+    $('.menu').animate({'width': 'hide'}, {'duration': 700, 'complete': completeFunction});
 }
 
 function showMenu(menuContent) {
-    $('.menu').animate({'width': 'hide'}, {'duration': 700, 'complete': function () {
-            $('.menu-container').hide();
-            menuContent.show();
-        }
+    hideMenu(function () {
+        $('.menu-container').hide();
+        menuContent.show();
+        $('.menu').animate({'width': 'show'}, {'duration': 700});
     });
-    $('.menu').animate({'width': 'show'}, {'duration': 700});
 }
 
 $('.menu-filter__clear-container').click(function () {
