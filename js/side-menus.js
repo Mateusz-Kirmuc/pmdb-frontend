@@ -25,14 +25,14 @@ $('.sheet__show-choices-menu').click(function () {
 });
 
 function hideMenu(completeFunction = null) {
-    $('.menu').animate({'width': 'hide'}, {'duration': 700, 'complete': completeFunction});
+    $('.menu').animate({'width': 'hide'}, {'duration': 500, 'complete': completeFunction});
 }
 
 function showMenu(menuContent) {
     hideMenu(function () {
         $('.menu-container').hide();
         menuContent.show();
-        $('.menu').animate({'width': 'show'}, {'duration': 700});
+        $('.menu').animate({'width': 'show'}, {'duration': 500});
     });
 }
 
