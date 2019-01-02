@@ -107,6 +107,7 @@ $menu-header-width: $menu-width - 2*$menu-horizontal-padding - 20px;
   padding-bottom: 5px;
   text-align: center;
   position: relative;
+  background-clip: padding-box; // required in firefox
 }
 
 .table__cell:first-child {
