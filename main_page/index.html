@@ -178,10 +178,7 @@
         </aside>
     </div>
     <div class="workspace">
-
-<!-- Table -->
-
-        <div class="sheet d-none">
+        <div class="sheet">
           <!-- Messages -->
            <div class="alert alert-success alert-dismissible fade show" role="alert">
              <strong>Success!</strong> Project has been successfully added.
@@ -221,12 +218,7 @@
                 </table>
             </div>
         </div>
-
-<!-- End Table -->
-
-<!-- Side menus -->
-
-        <div class="menu d-none">
+        <div class="menu">
             <img class="menu__exit-icon" src="../img/error.svg" alt="exit" />
             <div class="details menu-container">
                 <div class="menu-header">
@@ -238,212 +230,210 @@
                     </div>
                 </div>
                 <div class="menu-body">
-                    <div class="tabs">
-                        <ul class="nav nav-tabs" id="detailsTab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active tabs__tab" id="projectInformationTab-tab" data-toggle="tab" href="#projectInformationTab" role="tab" aria-controls="projectInformationTab-tab" aria-selected="true">
-                                    <div class="text-center mb-1">
-                                        <img class="icon-lg tabs__tab-icon-active" src="../img/information-tab-active.svg" alt="project information tab icon">
-                                        <img class="icon-lg tabs__tab-icon" src="../img/information-tab.svg" alt="project information tab icon">
-                                    </div>
-                                    Information
-                                </a>
-                            </li>
-                            <li class="nav-item text-center">
-                                <a class="nav-link tabs__tab" id="plan-tab" data-toggle="tab" href="#planTab" role="tab" aria-controls="plan-tab" aria-selected="false">
-                                    <div class="text-center mb-1">
-                                        <img class="icon-lg tabs__tab-icon-active" src="../img/plan-active.svg" alt="plan tab icon">
-                                        <img class="icon-lg tabs__tab-icon" src="../img/plan.svg" alt="plan tab icon">
-                                    </div>
-                                    Plan
-                                </a>
-                            </li>
-                            <li class="nav-item text-center">
-                                <a class="nav-link tabs__tab" id="realisation-tab" data-toggle="tab" href="#realisationTab" role="tab" aria-controls="realisation-tab" aria-selected="false">
-                                    <div class="text-center mb-1">
-                                        <img class="icon-lg tabs__tab-icon-active" src="../img/realisation-active.svg" alt="realisation tab icon">
-                                        <img class="icon-lg tabs__tab-icon" src="../img/realisation.svg" alt="realisation tab icon">
-                                    </div>
-                                    Realisation
-                                </a>
-                            </li>
-                            <li class="nav-item text-center">
-                                <a class="nav-link tabs__tab" id="agreements-tab" data-toggle="tab" href="#agreementsTab" role="tab" aria-controls="agreements-tab" aria-selected="false">
-                                    <div class="text-center mb-1">
-                                        <img class="icon-lg tabs__tab-icon-active" src="../img/agreement-active.svg" alt="agreement tab icon">
-                                        <img class="icon-lg tabs__tab-icon" src="../img/agreement.svg" alt="agreement tab icon">
-                                    </div>
-                                    Agreements
-                                </a>
-                            </li>
-                            <li class="nav-item text-center">
-                                <a class="nav-link tabs__tab" id="files-tab" data-toggle="tab" href="#filesTab" role="tab" aria-controls="files-tab" aria-selected="false">
-                                    <div class="text-center mb-1">
-                                        <img class="icon-lg tabs__tab-icon-active" src="../img/files-active.svg" alt="files tab icon">
-                                        <img class="icon-lg tabs__tab-icon" src="../img/files.svg" alt="files tab icon">
-                                    </div>
-                                    Files
-                                </a>
-                            </li>
-                            <li class="nav-item text-center">
-                                <a class="nav-link tabs__tab" id="other-tab" data-toggle="tab" href="#otherTab" role="tab" aria-controls="other-tab" aria-selected="false">
-                                    <div class="text-center mb-1">
-                                        <img class="icon-lg tabs__tab-icon-active" src="../img/other-active.svg" alt="other tab icon">
-                                        <img class="icon-lg tabs__tab-icon" src="../img/other.svg" alt="other tab icon">
-                                    </div>
-                                    Other
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="detatilsTabContent">
-                            <div class="tab-pane fade show active" id="projectInformationTab" role="tabpanel" aria-labelledby="projectInformationTab">
-                                <div class="details__basic-informations-container">
-                                    <div class="details__container-header">
-                                        Basic informations
-                                    </div>
-                                    <div class="details__data-container">
-                                        <div class="details__data-row">
-                                            <span class="details__data-key">Added on</span>
-                                            <span class="details__data-value">2017-01-03</span>
-                                        </div>
-                                    </div>
-                                    <div class="details__data-container">
-                                        <div class="details__data-row">
-                                            <span class="details__data-key">Added by</span>
-                                            <span class="details__data-value">User 1</span>
-                                        </div>
-                                    </div>
-                                    <div class="details__data-container">
-                                        <div class="details__data-row">
-                                            <span class="details__data-key">Project Manager</span>
-                                            <span class="details__data-value">User 2</span>
-                                        </div>
-                                    </div>
-                                    <div class="details__data-container">
-                                        <div class="details__data-row">
-                                            <span class="details__data-key">Added on</span>
-                                            <span class="details__data-value">2017-01-03</span>
-                                        </div>
-                                    </div>
-                                    <div class="details__data-container">
-                                        <div class="details__data-row">
-                                            <span class="details__data-key">Added by</span>
-                                            <span class="details__data-value">User 1</span>
-                                        </div>
-                                    </div>
-                                    <div class="details__data-container">
-                                        <div class="details__data-row">
-                                            <span class="details__data-key">Project Manager</span>
-                                            <span class="details__data-value">User 2</span>
-                                        </div>
-                                    </div>
-                                    <div class="details__data-container">
-                                        <div class="details__data-row">
-                                            <span class="details__data-key">Added on</span>
-                                            <span class="details__data-value">2017-01-03</span>
-                                        </div>
-                                    </div>
-                                    <div class="details__data-container">
-                                        <div class="details__data-row">
-                                            <span class="details__data-key">Added by</span>
-                                            <span class="details__data-value">User 1</span>
-                                        </div>
-                                    </div>
-                                    <div class="details__data-container">
-                                        <div class="details__data-row">
-                                            <span class="details__data-key">Project Manager</span>
-                                            <span class="details__data-value">User 2</span>
-                                        </div>
-                                    </div>
+                    <ul class="nav nav-tabs" id="detailsTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active details__tab" id="projectInformationTab-tab" data-toggle="tab" href="#projectInformationTab" role="tab" aria-controls="projectInformationTab-tab" aria-selected="true">
+                                <div class="text-center mb-1">
+                                    <img class="icon-lg details__tab-icon-active" src="../img/information-tab-active.svg" alt="project information tab icon">
+                                    <img class="icon-lg details__tab-icon" src="../img/information-tab.svg" alt="project information tab icon">
                                 </div>
-                            </div>
-                            <div class="tab-pane fade show" id="planTab" role="tabpanel" aria-labelledby="plan-tab">
+                                Information
+                            </a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a class="nav-link details__tab" id="plan-tab" data-toggle="tab" href="#planTab" role="tab" aria-controls="plan-tab" aria-selected="false">
+                                <div class="text-center mb-1">
+                                    <img class="icon-lg details__tab-icon-active" src="../img/plan-active.svg" alt="plan tab icon">
+                                    <img class="icon-lg details__tab-icon" src="../img/plan.svg" alt="plan tab icon">
+                                </div>
                                 Plan
-                            </div>
-                            <div class="tab-pane fade show" id="realisationTab" role="tabpanel" aria-labelledby="realisation-tab">
+                            </a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a class="nav-link details__tab" id="realisation-tab" data-toggle="tab" href="#realisationTab" role="tab" aria-controls="realisation-tab" aria-selected="false">
+                                <div class="text-center mb-1">
+                                    <img class="icon-lg details__tab-icon-active" src="../img/realisation-active.svg" alt="realisation tab icon">
+                                    <img class="icon-lg details__tab-icon" src="../img/realisation.svg" alt="realisation tab icon">
+                                </div>
                                 Realisation
-                            </div>
-                            <div class="tab-pane fade show" id="agreementsTab" role="tabpanel" aria-labelledby="agreements-tab">
+                            </a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a class="nav-link details__tab" id="agreements-tab" data-toggle="tab" href="#agreementsTab" role="tab" aria-controls="agreements-tab" aria-selected="false">
+                                <div class="text-center mb-1">
+                                    <img class="icon-lg details__tab-icon-active" src="../img/agreement-active.svg" alt="agreement tab icon">
+                                    <img class="icon-lg details__tab-icon" src="../img/agreement.svg" alt="agreement tab icon">
+                                </div>
                                 Agreements
+                            </a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a class="nav-link details__tab" id="files-tab" data-toggle="tab" href="#filesTab" role="tab" aria-controls="files-tab" aria-selected="false">
+                                <div class="text-center mb-1">
+                                    <img class="icon-lg details__tab-icon-active" src="../img/files-active.svg" alt="files tab icon">
+                                    <img class="icon-lg details__tab-icon" src="../img/files.svg" alt="files tab icon">
+                                </div>
+                                Files
+                            </a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a class="nav-link details__tab" id="other-tab" data-toggle="tab" href="#otherTab" role="tab" aria-controls="other-tab" aria-selected="false">
+                                <div class="text-center mb-1">
+                                    <img class="icon-lg details__tab-icon-active" src="../img/other-active.svg" alt="other tab icon">
+                                    <img class="icon-lg details__tab-icon" src="../img/other.svg" alt="other tab icon">
+                                </div>
+                                Other
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="detatilsTabContent">
+                        <div class="tab-pane fade show active" id="projectInformationTab" role="tabpanel" aria-labelledby="projectInformationTab">
+                            <div class="details__basic-informations-container">
+                                <div class="details__container-header">
+                                    Basic informations
+                                </div>
+                                <div class="details__data-container">
+                                    <div class="details__data-row">
+                                        <span class="details__data-key">Added on</span>
+                                        <span class="details__data-value">2017-01-03</span>
+                                    </div>
+                                </div>
+                                <div class="details__data-container">
+                                    <div class="details__data-row">
+                                        <span class="details__data-key">Added by</span>
+                                        <span class="details__data-value">User 1</span>
+                                    </div>
+                                </div>
+                                <div class="details__data-container">
+                                    <div class="details__data-row">
+                                        <span class="details__data-key">Project Manager</span>
+                                        <span class="details__data-value">User 2</span>
+                                    </div>
+                                </div>
+                                <div class="details__data-container">
+                                    <div class="details__data-row">
+                                        <span class="details__data-key">Added on</span>
+                                        <span class="details__data-value">2017-01-03</span>
+                                    </div>
+                                </div>
+                                <div class="details__data-container">
+                                    <div class="details__data-row">
+                                        <span class="details__data-key">Added by</span>
+                                        <span class="details__data-value">User 1</span>
+                                    </div>
+                                </div>
+                                <div class="details__data-container">
+                                    <div class="details__data-row">
+                                        <span class="details__data-key">Project Manager</span>
+                                        <span class="details__data-value">User 2</span>
+                                    </div>
+                                </div>
+                                <div class="details__data-container">
+                                    <div class="details__data-row">
+                                        <span class="details__data-key">Added on</span>
+                                        <span class="details__data-value">2017-01-03</span>
+                                    </div>
+                                </div>
+                                <div class="details__data-container">
+                                    <div class="details__data-row">
+                                        <span class="details__data-key">Added by</span>
+                                        <span class="details__data-value">User 1</span>
+                                    </div>
+                                </div>
+                                <div class="details__data-container">
+                                    <div class="details__data-row">
+                                        <span class="details__data-key">Project Manager</span>
+                                        <span class="details__data-value">User 2</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="tab-pane fade show" id="filesTab" role="tabpanel" aria-labelledby="files-tab">
-                                <div class="details__files-container">
-                                    <div class="details__container-header">
-                                        Files
+                        </div>
+                        <div class="tab-pane fade show" id="planTab" role="tabpanel" aria-labelledby="plan-tab">
+                            Plan
+                        </div>
+                        <div class="tab-pane fade show" id="realisationTab" role="tabpanel" aria-labelledby="realisation-tab">
+                            Realisation
+                        </div>
+                        <div class="tab-pane fade show" id="agreementsTab" role="tabpanel" aria-labelledby="agreements-tab">
+                            Agreements
+                        </div>
+                        <div class="tab-pane fade show" id="filesTab" role="tabpanel" aria-labelledby="files-tab">
+                            <div class="details__files-container">
+                                <div class="details__container-header">
+                                    Files
+                                </div>
+                                <div class="details__file-container">
+                                    <button class="details__more-btn">
+                                        <img src="../img/more.svg" alt="more" class="details__more-icon" />
+                                    </button>
+                                    <div class="details__file-icon-container">
+                                        <img src="../img/pdf.svg" alt="pdf" class="details__file-icon" />
                                     </div>
-                                    <div class="file">
-                                        <button class="file__more-btn">
-                                            <img src="../img/more.svg" alt="more" class="file__more-icon" />
-                                        </button>
-                                        <div class="file__icon-container">
-                                            <img src="../img/pdf.svg" alt="pdf" class="file__icon" />
+                                    <div class="details__file-info-container">
+                                        <div class="details__file-header">
+                                            <a href="#" class="details__file-link">Analitics_data_HNMR.pdf</a>
                                         </div>
-                                        <div class="file__info-container">
-                                            <div class="file__header">
-                                                <a href="#" class="file__link">Analitics_data_HNMR.pdf</a>
-                                            </div>
-                                            <div class="file__short-info">
-                                                <span class="file__user">User1</span>
-                                                <span class="details__file-date">Oct 6th at 11:31</span>
-                                            </div>
-                                            <div class="file__long-info">
-                                                This is some short description about file containing HNMR data. You can write anything
-                                                there.
-                                                And you test as you wish.
-                                            </div>
+                                        <div class="details__file-short-info">
+                                            <span class="details__file-user">User1</span>
+                                            <span class="details__file-date">Oct 6th at 11:31</span>
                                         </div>
-                                    </div>
-                                    <div class="file">
-                                        <button class="file__more-btn">
-                                            <img src="../img/more.svg" alt="more" class="file__more-icon" />
-                                        </button>
-                                        <div class="file__icon-container">
-                                            <img src="../img/doc.svg" alt="pdf" class="file__icon" />
-                                        </div>
-                                        <div class="file__info-container">
-                                            <div class="file__header">
-                                                <a href="#" class="file__link">Analitics_data_HNMR.pdf</a>
-                                            </div>
-                                            <div class="file__short-info">
-                                                <span class="file__user">User1</span>
-                                                <span class="details__file-date">Oct 6th at 11:31</span>
-                                            </div>
-                                            <div class="file__long-info">
-                                                This is some short description about file containing HNMR data. You can write anything
-                                                there.
-                                                And you test as you wish.
-                                            </div>
+                                        <div class="details__file-long-info">
+                                            This is some short description about file containing HNMR data. You can write anything
+                                            there.
+                                            And you test as you wish.
                                         </div>
                                     </div>
-                                    <div class="file">
-                                        <button class="file__more-btn">
-                                            <img src="../img/more.svg" alt="more" class="file__more-icon" />
-                                        </button>
-                                        <div class="file__icon-container">
-                                            <img src="../img/txt.svg" alt="pdf" class="file__icon" />
+                                </div>
+                                <div class="details__file-container">
+                                    <button class="details__more-btn">
+                                        <img src="../img/more.svg" alt="more" class="details__more-icon" />
+                                    </button>
+                                    <div class="details__file-icon-container">
+                                        <img src="../img/doc.svg" alt="pdf" class="details__file-icon" />
+                                    </div>
+                                    <div class="details__file-info-container">
+                                        <div class="details__file-header">
+                                            <a href="#" class="details__file-link">Analitics_data_HNMR.pdf</a>
                                         </div>
-                                        <div class="file__info-container">
-                                            <div class="file__header">
-                                                <a href="#" class="file__link">
-                                                    Analitics_data_HNMR.pdf
-                                                </a>
-                                            </div>
-                                            <div class="file__short-info">
-                                                <span class="file__user">User1</span>
-                                                <span class="details__file-date">Oct 6th at 11:31</span>
-                                            </div>
-                                            <div class="file__long-info">
-                                                This is some short description about file containing HNMR data. You can write anything
-                                                there.
-                                                And you test as you wish.
-                                            </div>
+                                        <div class="details__file-short-info">
+                                            <span class="details__file-user">User1</span>
+                                            <span class="details__file-date">Oct 6th at 11:31</span>
+                                        </div>
+                                        <div class="details__file-long-info">
+                                            This is some short description about file containing HNMR data. You can write anything
+                                            there.
+                                            And you test as you wish.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="details__file-container">
+                                    <button class="details__more-btn">
+                                        <img src="../img/more.svg" alt="more" class="details__more-icon" />
+                                    </button>
+                                    <div class="details__file-icon-container">
+                                        <img src="../img/txt.svg" alt="pdf" class="details__file-icon" />
+                                    </div>
+                                    <div class="details__file-info-container">
+                                        <div class="details__file-header">
+                                            <a href="#" class="details__file-link">
+                                                Analitics_data_HNMR.pdf
+                                            </a>
+                                        </div>
+                                        <div class="details__file-short-info">
+                                            <span class="details__file-user">User1</span>
+                                            <span class="details__file-date">Oct 6th at 11:31</span>
+                                        </div>
+                                        <div class="details__file-long-info">
+                                            This is some short description about file containing HNMR data. You can write anything
+                                            there.
+                                            And you test as you wish.
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade show" id="otherTab" role="tabpanel" aria-labelledby="other-tab">
-                                Other
-                            </div>
+                        </div>
+                        <div class="tab-pane fade show" id="otherTab" role="tabpanel" aria-labelledby="other-tab">
+                            Other
                         </div>
                     </div>
                 </div>
@@ -717,231 +707,6 @@
                 </div>
             </div>
         </div>
-
-<!-- End side menus -->
-
-<!-- Full screen details menu -->
-        <div class="container-fluid mx-5 full-screen-details-menu">
-            <div class="d-flex my-4">
-                <div class="flex-fill">
-                    <h1 class="font-lg"><span class="font-weight-bold">Details of project: </span> <a href="#">Test-Project-001</a></h1>
-                    <div class="text-muted"><span class="font-weight-bold">Last modification:</span> <span>Adrian Jasiński, Apr 24th 2018 at 10:24</span></div>
-                </div>
-                <table>
-                    <tr>
-                        <td class="text-right">Manager:</td>
-                        <td class="pl-2">Adrian Jasiński</td>
-                    </tr>
-                    <tr>
-                        <td class="text-right">Type:</td>
-                        <td class="pl-2">In-licence</td>
-                    </tr>
-                    <tr>
-                        <td class="text-right">Status:</td>
-                        <td class="pl-2">Draft</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="tabs">
-                <ul class="nav nav-tabs" id="fullScreenDetailsTab" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active tabs__tab" id="fullScreenDetailsInformationTab-tab" data-toggle="tab"
-                           href="#fullScreenDetailsProjectInformationTab" role="tab" aria-controls="fullScreenDetailsInformationTab-tab"
-                           aria-selected="true">
-                            <div class="text-center mb-1">
-                                <img class="icon-lg tabs__tab-icon-active" src="../img/information-tab-active.svg"
-                                     alt="project information tab icon">
-                                <img class="icon-lg tabs__tab-icon" src="../img/information-tab.svg"
-                                     alt="project information tab icon">
-                            </div>
-                            Informations
-                        </a>
-                    </li>
-                    <li class="nav-item text-center">
-                        <a class="nav-link tabs__tab" id="fullScreenDetailsRealisation-tab" data-toggle="tab" href="#fullScreenDetailsRealisationTab"
-                           role="tab" aria-controls="fullScreenDetailsRealisation-tab" aria-selected="false">
-                            <div class="text-center mb-1">
-                                <img class="icon-lg tabs__tab-icon-active" src="../img/realisation-active.svg"
-                                     alt="realisation tab icon">
-                                <img class="icon-lg tabs__tab-icon" src="../img/realisation.svg"
-                                     alt="realisation tab icon">
-                            </div>
-                            Schedule
-                        </a>
-                    </li>
-                    <li class="nav-item text-center">
-                        <a class="nav-link tabs__tab" id="fullScreenDetailsAgreements-tab" data-toggle="tab" href="#fullScreenDetailsAgreementsTab"
-                           role="tab" aria-controls="fullScreenDetailsAgreements-tab" aria-selected="false">
-                            <div class="text-center mb-1">
-                                <img class="icon-lg tabs__tab-icon-active" src="../img/agreement-active.svg"
-                                     alt="agreement tab icon">
-                                <img class="icon-lg tabs__tab-icon" src="../img/agreement.svg"
-                                     alt="agreement tab icon">
-                            </div>
-                            Agreements
-                        </a>
-                    </li>
-                    <li class="nav-item text-center">
-                        <a class="nav-link tabs__tab" id="fullScreenDetailsFiles-tab" data-toggle="tab" href="#fullScreenDetailsFilesTab" role="tab"
-                           aria-controls="fullScreenDetailsFiles-tab" aria-selected="false">
-                            <div class="text-center mb-1">
-                                <img class="icon-lg tabs__tab-icon-active" src="../img/files-active.svg"
-                                     alt="files tab icon">
-                                <img class="icon-lg tabs__tab-icon" src="../img/files.svg" alt="files tab icon">
-                            </div>
-                            Files
-                        </a>
-                    </li>
-                    <li class="nav-item text-center">
-                        <a class="nav-link tabs__tab" id="fullScreenDetailsOther-tab" data-toggle="tab" href="#fullScreenDetailsOtherTab" role="tab"
-                           aria-controls="fullScreenDetailsOther-tab" aria-selected="false">
-                            <div class="text-center mb-1">
-                                <img class="icon-lg tabs__tab-icon-active" src="../img/other-active.svg"
-                                     alt="other tab icon">
-                                <img class="icon-lg tabs__tab-icon" src="../img/other.svg" alt="other tab icon">
-                            </div>
-                            Others
-                        </a>
-                    </li>
-                </ul>
-                <div class="tab-content my-4" id="fullScreenDetailsTabContent">
-                    <div class="tab-pane fade show active" id="fullScreenDetailsProjectInformationTab" role="tabpanel"
-                         aria-labelledby="projectInformationTab">
-                        <table class="details-table">
-                            <tr class="details-table__row">
-                                <td class="details-table__cell">Product</td>
-                                <td class="details-table__cell">Prucalopride</td>
-                            </tr>
-                            <tr class="details-table__row">
-                                <td class="details-table__cell">API</td>
-                                <td class="details-table__cell">Prucalopride</td>
-                            </tr>
-                            <tr class="details-table__row">
-                                <td class="details-table__cell">Source</td>
-                                <td class="details-table__cell">Adamed</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="tab-pane fade show" id="fullScreenDetailsRealisationTab" role="tabpanel"
-                         aria-labelledby="fullScreenDetailsRealisation-tab">
-                        <table class="table table-sm w-50 mx-auto text-center my-4">
-                            <thead>
-                            <tr>
-                                <th>Milestone</th>
-                                <th>Plan</th>
-                                <th>Realisation</th>
-                                <th>Delay [days]</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>Dossier audit</td>
-                                <td>2018-02-07</td>
-                                <td>2018-02-05</td>
-                                <td>-2</td>
-                            </tr>
-                            <tr>
-                                <td>Registration order</td>
-                                <td>2018-03-10</td>
-                                <td>2018-03-14</td>
-                                <td>4</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                        <h2 class="text-center font-md font-weight-bold">Schedule comments</h2>
-                        <div class="w-75 mx-auto">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </div>
-                    </div>
-                    <div class="tab-pane fade show" id="fullScreenDetailsAgreementsTab" role="tabpanel"
-                         aria-labelledby="fullScreenDetailsAgreements-tab">
-                        Agreements
-                    </div>
-                    <div class="tab-pane fade show" id="fullScreenDetailsFilesTab" role="tabpanel" aria-labelledby="fullScreenDetailsFiles-tab">
-                            <div class="file">
-                                <button class="file__more-btn">
-                                    <img src="../img/more.svg" alt="more" class="file__more-icon"/>
-                                </button>
-                                <div class="file__icon-container">
-                                    <img src="../img/pdf.svg" alt="pdf" class="file__icon"/>
-                                </div>
-                                <div class="file__info-container">
-                                    <div class="file__header">
-                                        <a href="#" class="file__link">Analitics_data_HNMR.pdf</a>
-                                    </div>
-                                    <div class="file__short-info">
-                                        <span class="file__user">User1</span>
-                                        <span class="details__file-date">Oct 6th at 11:31</span>
-                                    </div>
-                                    <div class="file__long-info">
-                                        This is some short description about file containing HNMR data. You can
-                                        write anything
-                                        there.
-                                        And you test as you wish.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="file">
-                                <button class="file__more-btn">
-                                    <img src="../img/more.svg" alt="more" class="file__more-icon"/>
-                                </button>
-                                <div class="file__icon-container">
-                                    <img src="../img/doc.svg" alt="pdf" class="file__icon"/>
-                                </div>
-                                <div class="file__info-container">
-                                    <div class="file__header">
-                                        <a href="#" class="file__link">Analitics_data_HNMR.pdf</a>
-                                    </div>
-                                    <div class="file__short-info">
-                                        <span class="file__user">User1</span>
-                                        <span class="details__file-date">Oct 6th at 11:31</span>
-                                    </div>
-                                    <div class="file__long-info">
-                                        This is some short description about file containing HNMR data. You can
-                                        write anything
-                                        there.
-                                        And you test as you wish.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="file">
-                                <button class="file__more-btn">
-                                    <img src="../img/more.svg" alt="more" class="file__more-icon"/>
-                                </button>
-                                <div class="file__icon-container">
-                                    <img src="../img/txt.svg" alt="pdf" class="file__icon"/>
-                                </div>
-                                <div class="file__info-container">
-                                    <div class="file__header">
-                                        <a href="#" class="file__link">
-                                            Analitics_data_HNMR.pdf
-                                        </a>
-                                    </div>
-                                    <div class="file__short-info">
-                                        <span class="file__user">User1</span>
-                                        <span class="details__file-date">Oct 6th at 11:31</span>
-                                    </div>
-                                    <div class="file__long-info">
-                                        This is some short description about file containing HNMR data. You can
-                                        write anything
-                                        there.
-                                        And you test as you wish.
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="tab-pane fade show" id="fullScreenDetailsOtherTab" role="tabpanel" aria-labelledby="fullScreenDetailsOther-tab">
-                        Other
-                    </div>
-                </div>
-            </div>
-        </div>
-<!-- End full screen details menu -->
-
     </div>
 </div>
 <script src="../js/sidebar.js"></script>
