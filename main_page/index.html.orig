@@ -221,11 +221,17 @@
                 </table>
             </div>
         </div>
+<<<<<<< HEAD
 
 <!-- End Table -->
 
 <!-- Side menus -->
+
+        <div class="menu d-none">
+            <img class="menu__exit-icon" src="../img/error.svg" alt="exit" />
+=======
         <div class="menu" style="display: none">
+>>>>>>> fe463a9581688b8b32e165dbf1e73305f3eb41c7
             <div class="details menu-container">
                 <img class="menu__exit-icon" src="../img/error.svg" alt="exit" />
                 <div class="menu-header">
@@ -724,7 +730,7 @@
 <!-- End side menus -->
 
 <!-- Full screen details menu -->
-        <div class="container-fluid mx-5 full-screen-details-menu d-none">
+        <div class="container-fluid mx-5 full-screen-details-menu">
             <div class="d-flex my-4">
                 <div class="flex-fill">
                     <h1 class="font-lg"><span class="font-weight-bold">Details of project: </span> <a href="#">Test-Project-001</a></h1>

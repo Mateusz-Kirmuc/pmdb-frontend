@@ -394,7 +394,6 @@
             $('.table__cell--header:not(:first-child)').addClass('table__cell--header-no-checkbox');
 
             $('.table__name-link').click(function () {
-                $('.menu-container').hide();
                 // update details menu
                 // require of ObjID attribute on table__name-link
                 var objID = $(this).attr('objID');
@@ -412,11 +411,7 @@
                     });
                   }
                 });
-                // child will show after parent
-                $('.menu').show(0, function () {
-                    $('.details').show();
-                });
-
+                showMenu($('.details'));
             });
 
             // Konfiguracja zachowania po kliknięciu w checkbox pojedyńczego wiersza

@@ -16,10 +16,6 @@
     background-color: white;
   }
 
-  .nav-bar {
-    padding: 10px 5px 0 5px;
-  }
-
   .btn-outline-dark--white {
     border-color: white;
     color: white;
@@ -31,6 +27,11 @@
   }
 
   .sign-up-btn {
+    color: #e0e0e0;
+    font-weight: bold;
+  }
+
+  .sign-up-btn:hover {
     color: white;
   }
 
@@ -43,7 +44,6 @@
   }
 
   .central-space {
-    margin: 0 5%;
     flex: 1;
     position: relative;
   }
@@ -63,7 +63,6 @@
 
   .description {
     color: white;
-    width: 35%;
   }
 
   .nav-bar .dropdown .dropdown-menu {
@@ -83,5 +82,21 @@
   .login-submit-btn {
     color: white;
     background-color: #81d2e0;
+  }
+
+  .contact-icon {
+    background-image: url("../../img/arroba.svg");
+  }
+
+  .documentation-icon {
+    background-image: url("../../img/documentation.svg");
+  }
+
+  .contact-btn:hover .contact-icon {
+    background-image: url("../../img/arroba-hover.svg");
+  }
+
+  .documentation-btn:hover .documentation-icon {
+    background-image: url("../../img/documentation-hover.svg");
   }
 }

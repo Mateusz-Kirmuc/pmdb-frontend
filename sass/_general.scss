@@ -35,6 +35,11 @@ body {
 .icon {
   width: 24px;
   height: 24px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  vertical-align: middle;
+  transition: background-image 0.15s;
 }
 
 .icon-lg {
